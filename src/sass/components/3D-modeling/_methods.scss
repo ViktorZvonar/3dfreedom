@@ -1,2 +1,23 @@
 
+.method__title {
+     margin-bottom: 16px;
+          font-family: 'Cera Pro';
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 1.25;
+          text-align: left;
+          text-transform: uppercase;
+     
+          color: #487996;
+     
+          @media screen and (min-width: 768px) {
+               margin-bottom: 16px;
+          }
+     
+          @media screen and (min-width: 1440px) {
+               margin-bottom: 67px;
+               font-size: 48px;
+               line-height: 1.25;
+          }
+}
 
