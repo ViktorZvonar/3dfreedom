@@ -11,3 +11,11 @@ $colors: (
 @function getColor($key) {
     @return map-get($colors, $key);
 }
+
+$width-min-allowable: 320px;
+$width-mobile: 480px;
+$width-tablet: 768px;
+$width-desktop: 1440px;
+
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$duration: 250ms;
