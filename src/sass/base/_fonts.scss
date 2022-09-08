@@ -25,12 +25,12 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'CeraPro';
-  src: url('/src/fonts/CeraPro-500.eot');
-  src: local('☺'), url('/src/fonts/CeraPro-500.woff') format('woff'),
-    url('/src/fonts/CeraPro-500.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
+	font-family: 'CeraPro';
+	src: url('/src/fonts/CeraPro-300.eot');
+	src: local('☺'), url('/src/fonts/CeraPro-300.woff') format('woff'), url('/src/fonts/CeraPro-300.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+>>>>>>> main
 }
 
 $font-general: ('CeraPro');
