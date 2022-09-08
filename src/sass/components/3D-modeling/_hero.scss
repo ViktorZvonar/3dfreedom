@@ -12,11 +12,11 @@
           text-align: left;
           color: #487996;
           
-          @media screen and (min-width: $tablet) {
+          @media screen and (min-width: 768px) {
                     margin-bottom: 16px;
                }
           
-          @media screen and (min-width: $desktop) {
+          @media screen and (min-width: 1200px) {
                     margin-bottom: 67px;
                     font-size: 48px;
                     line-height: 1.25;
@@ -37,11 +37,11 @@
      gap: 16px;
      margin-bottom: 40px;
 
-     @media screen and (min-width: $tablet) {
+     @media screen and (min-width: 768px) {
                margin-bottom: 16px;
           }
      
-     @media screen and (min-width: $desktop) {     
+     @media screen and (min-width: 1200px) {     
               gap: 58px;
               margin-bottom: 78px;
                              
@@ -55,7 +55,7 @@
                }
           }    
             
-          @media screen and (min-width: $desktop) {
+          @media screen and (min-width: 1200px) {
                max-width: calc((100% - 58px) / 2);
           }
 }
@@ -66,7 +66,7 @@
      
      color: #2B2B2B;
 
-     @media screen and (min-width: $desktop) {
+     @media screen and (min-width: 1200px) {
           font-size: 18px;
           line-height: 1.27;
           }
