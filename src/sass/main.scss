@@ -1,5 +1,9 @@
 @import './base/normalize';
+@import './base/fonts';
 @import './base/reset';
+@import './utils/variables';
+@import './base/common';
 @import './utils/visually_hidden';
+@import './utils/placeholders';
 @import './components/page-footer';
 @import './components/page-header/page-header';
