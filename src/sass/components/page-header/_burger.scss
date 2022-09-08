@@ -1,0 +1,74 @@
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+  @include animate(transform);
+
+  @include mq($width-desktop) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+
+  &:hover &__stroke,
+  &:focus &__stroke,
+  &:hover &__stroke::before,
+  &:focus &__stroke::before,
+  &:hover &__stroke::after,
+  &:focus &__stroke::after {
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  &__stroke,
+  &__stroke::before,
+  &__stroke::after {
+    width: 32px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #487996;
+  }
+
+  &__stroke {
+    position: relative;
+    display: block;
+    @include animate(transform box-shadow);
+
+    :not(.is-hidden) + .burger & {
+      transform: rotate(45deg);
+    }
+  }
+
+  &__stroke::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -8px;
+    @include animate(transform top box-shadow);
+    :not(.is-hidden) + .burger & {
+      top: 0;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__stroke::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    @include animate(transform bottom box-shadow);
+    :not(.is-hidden) + .burger & {
+      bottom: 0;
+      transform: rotate(-90deg);
+    }
+  }
+}
