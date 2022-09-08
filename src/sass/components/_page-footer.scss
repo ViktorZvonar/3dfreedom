@@ -63,6 +63,7 @@
 
 .footer-contacts__link {
     @extend %link;
+    color: getColor('title-text');
 }
 
 .footer-contacts__name {
@@ -81,4 +82,5 @@
 
 .phones__link {
     @extend %link;
+    color: getColor('title-text');
 }
