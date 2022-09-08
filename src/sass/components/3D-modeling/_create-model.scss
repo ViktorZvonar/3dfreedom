@@ -1,0 +1,40 @@
+.section {
+     padding-top: 0;
+     padding-bottom: 40px;
+}
+.container {
+     width: 100%;
+     margin: 0 auto;
+     padding-left: 20px;
+     padding-right: 20px;
+}
+.modeling-title {
+     margin-bottom: 16px;
+     font-family: 'Cera Pro';
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 1.25;
+     text-align: left;
+     
+     color: #487996;
+     
+          @media screen and (min-width: 768px) {
+               margin-bottom: 16px;
+          }
+     
+          @media screen and (min-width: 1200px) {
+               margin-bottom: 67px;
+               font-size: 48px;
+               line-height: 1.25;
+          }
+}
+
+.modeling-container {
+     
+}
+.modeling-list {
+
+}
+.modeling-list__img {
+     list-style: none;
+}
