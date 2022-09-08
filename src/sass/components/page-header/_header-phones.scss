@@ -1,9 +1,13 @@
-.phones {
+.header-phones {
   position: relative;
   display: flex;
   align-items: center;
 
   margin-right: 24px;
+
+  @include mq($width-tablet) {
+    margin-right: 0;
+  }
 
   &__button {
     padding: 0;
@@ -13,6 +17,10 @@
     @include mq($width-tablet) {
       display: none;
     }
+  }
+
+  & > &__icon {
+    padding: 8px 0;
   }
 
   &__icon {
@@ -28,7 +36,7 @@
   &__popup {
     @include mq($until: $width-tablet - 0.1px) {
       position: absolute;
-      top: calc(100% + 15px);
+      top: calc(100% + 7px);
       left: 0;
       transform: translateX(-50%);
 
@@ -45,8 +53,8 @@
 
     @include animate(opacity);
 
-    .phones:hover &,
-    .phones:focus-within & {
+    .header-phones:hover &,
+    .header-phones:focus-within & {
       opacity: 1;
       visibility: visible;
       pointer-events: all;
@@ -57,7 +65,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(calc(-50% + 10px), -75%);
+    transform: translate(calc(-50% + 12px), -75%);
     fill: #fff;
   }
 

@@ -4,11 +4,12 @@
 @import './utils';
 @import './reset';
 @import './burger';
-@import './phones';
+@import './header-phones';
 @import './page-nav';
 @import './dropdown';
 
-.container {
+// Должно быть .container, но стиль перебивается
+.h-container {
   min-width: $width-min-allowable;
   max-width: $width-mobile;
   margin: 0 auto;
@@ -25,8 +26,21 @@
 .page-header {
   position: relative;
   z-index: 1;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 36px;
+
+  @include mq($width-tablet) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: +15px;
+  }
+
+  @include mq($width-desktop) {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-bottom: +60px;
+  }
 
   &__container {
     display: grid;
@@ -36,6 +50,11 @@
   }
 
   &__logo {
+    margin-right: auto;
+    padding: 7px 0;
+    @include mq($width-desktop) {
+      padding: 0;
+    }
   }
 
   &__right-block {
@@ -71,6 +90,7 @@
   border: none;
   border-radius: 4px;
   appearance: none;
+  background-color: transparent;
   cursor: pointer;
   @include mq($width-tablet) {
     order: -1;
@@ -80,4 +100,8 @@
   @include mq($width-desktop) {
     margin-right: 118px;
   }
+}
+
+body.is-locked {
+  overflow: hidden;
 }

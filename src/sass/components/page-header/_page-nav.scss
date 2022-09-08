@@ -31,28 +31,31 @@
 
 .page-nav__list {
   @include mq($until: $width-desktop) {
-    --margin-top: 40px;
+    // --margin-top: 40px
+    --margin-top: 115px;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(
-      max(0px, 50vw - 50%),
-      max(var(--margin-top), 50vh - 50%)
-    );
+    // transform: translate(
+    //   max(0px, 50vw - 50%),
+    //   max(var(--margin-top), 50vh - 50%)
+    // );
 
+    transform: translate(max(0px, 50vw - 50%), var(--margin-top));
     display: flex;
     flex-direction: column;
     align-items: center;
     // text-align: center;
     max-height: calc(100% - var(--margin-top));
     width: 100%;
+    min-width: $width-min-allowable;
     padding: 10px 15px 40px;
     gap: 24px;
     overflow: auto;
 
-    @include mq($width-tablet) {
-      --margin-top: 100px;
-    }
+    // @include mq($width-tablet) {
+    //   --margin-top: 100px;
+    // }
 
     @include font(24px, 30px, null, 700);
     color: $text-color-secondary;
@@ -60,7 +63,7 @@
 
   @include mq($width-desktop) {
     display: flex;
-    gap: 56px;
+    gap: 36px;
     font-family: $font-secondary;
 
     @include font(18px, 21px, 0.01em);
@@ -76,6 +79,7 @@
   @include animate(transform text-shadow color -webkit-text-stroke);
   @include mq($width-desktop) {
     color: $text-color-primary;
+    padding: 10px;
   }
 }
 

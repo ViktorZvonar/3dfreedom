@@ -10,21 +10,21 @@
   cursor: default;
   @include mq($width-desktop) {
     margin-bottom: 0;
+    padding: 10px;
   }
 }
+
 .dropdown__list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
-}
 
-@include mq($width-desktop) {
-  .dropdown__list {
+  @include mq($width-desktop) {
     position: absolute;
     z-index: 0;
     left: 50%;
-    top: -12px;
+    top: 0;
     transform: translate(-50%, -16px);
 
     // display: flex;
@@ -43,10 +43,16 @@
 
     @include animate(transform opacity box-shadow visibility);
   }
+}
 
-  .dropdown:hover .dropdown__list,
-  .dropdown:focus-within .dropdown__list {
-    transform: translate(-50%, 0px);
+.dropdown__list .page-nav__link {
+  padding: 2px 0;
+}
+
+.dropdown:hover .dropdown__list,
+.dropdown:focus-within .dropdown__list {
+  @include mq($width-desktop) {
+    transform: translate(-50%, -2px);
     opacity: 1;
     visibility: visible;
     pointer-events: all;
