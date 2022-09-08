@@ -1,27 +1,22 @@
-.section {
-     padding-top: 0;
-     padding-bottom: 40px;
-}
-.container {
-     width: 100%;
-     margin: 0 auto;
-     padding-left: 20px;
-     padding-right: 20px;
-
-     @media screen and (max-width: 767px) {
-          max-width: 480px;
-     }
-
+.modeling {
      @media screen and (min-width: 768px) {
-          max-width: 768px;
-          padding: 0 32px;
-     }
-
-     @media screen and (min-width: 1440px) {
-          width: 1440px;
-     }
-
+               margin-bottom: 100px;
+                         }
 }
+
+.container-modeling {
+    
+     @media screen and (min-width: 768px) {
+     display: flex;
+     max-width: 768px;
+          }
+     @media screen and (min-width: 1440px) {
+          display: flex;
+          width: 1440px;
+                    }
+     
+}
+
 .modeling-title {
      margin-bottom: 16px;
      font-family: 'Cera Pro';
@@ -44,21 +39,11 @@
           }
 }
 
-// .modeling-container {
-
-//        @media screen and (min-width: 768px) {
-//           display: flex;
-//        } 
-//        @media screen and (min-width: 1440px) {
-//           display: flex;
-//           }
-
-// }
 .modeling-list {
- list-style: disc;
+ list-style: none;
 
 @media screen and (min-width: 768px) {
-          margin-bottom: 16px;
+          margin-bottom: 40px;         
      }
 
 @media screen and (min-width: 1440px) {
@@ -68,7 +53,7 @@
      }
 }
 .modeling-list__img {
-
+ list-style: none;
      @media screen and (min-width: 768px) {
                margin-bottom: 16px;
           }
@@ -80,12 +65,14 @@
           }
 }
 .modeling-item {
+     font-family: 'Cera Pro';
      font-weight: 300;
      font-size: 16px;
      line-height: 1.25;
-     text-align: right;
+     text-align: left;
      color: #2B2B2B;
      gap: 16px;
+     padding-left: 0;
 
      @media screen and (min-width: 768px) {
                margin-bottom: 16px;
@@ -97,4 +84,18 @@
      
           }
 
+}
+.modeling-img__item {
+     width: 280px;
+
+     @media screen and (min-width: 768px) {
+               width: 246px;
+               margin-right: 0;
+          }
+     
+          @media screen and (min-width: 1440px) {
+               width: 555px;
+               margin-right: 0;
+     
+          }
 }
