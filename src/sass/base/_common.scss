@@ -7,21 +7,18 @@ body {
 
 
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 32px 20px;
-
-    @media screen and (min-width: 320px) {
-        width: 320px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        padding: 0 32px;
-    }
-
-    @media screen and (min-width: 1440px) {
-        width: 1440px;
-    }
+    min-width: $width-min-allowable;
+        max-width: $width-mobile;
+        margin: 0 auto;
+        padding: 0 20px;
+    
+        @include mq($width-tablet) {
+            max-width: $width-tablet;
+            padding: 0 32px;
+        }
+    
+        @include mq($width-desktop) {
+            max-width: $width-desktop;
+        }
 }
 
