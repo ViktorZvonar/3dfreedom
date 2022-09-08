@@ -30,17 +30,10 @@
 }
 
 
-.CeraPro300{font-family: 'CeraPro' ;
-font-weight:300;}
+$font-general: (
+	'CeraPro'
+);
 
-.CeraPro400{font-family: 'CeraPro' ;
-    font-weight:400;}
-    
-.CeraPro500{font-family: 'CeraPro';
-        font-weight:500;}
-        
-.CeraPro700{font-family: 'CeraPro' ;
-            font-weight:700 ;}
-
-.CaviarDreams400{font-family: 'CaviarDreams';
-            font-weight: 400;}
+$font-hero: (
+	'CaviarDreams'
+);
