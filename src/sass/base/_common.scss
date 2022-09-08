@@ -1,8 +1,10 @@
 body {
     color: getColor('primary-text');
+    background-color: getColor('background');
     font-family: $font-general;
     font-weight: 400;
 }
+
 
 .container {
     max-width: 1440px;

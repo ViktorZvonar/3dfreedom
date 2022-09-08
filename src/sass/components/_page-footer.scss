@@ -1,4 +1,6 @@
-.footer {}
+.footer {
+    padding: 32px;
+}
 
 .footer__container {
     display: flex;
@@ -60,6 +62,7 @@
 
 .footer-contacts__link {
     @extend %link;
+    color: getColor('title-text');
 }
 
 .footer-contacts__name {
@@ -77,5 +80,6 @@
 }
 
 .phones__link {
+    color: getColor('title-text');
     @extend %link;
 }
