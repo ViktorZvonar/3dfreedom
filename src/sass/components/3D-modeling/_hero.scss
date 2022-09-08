@@ -16,7 +16,7 @@
                     margin-bottom: 16px;
                }
           
-          @media screen and (min-width: 1200px) {
+          @media screen and (min-width: 1440px) {
                     margin-bottom: 67px;
                     font-size: 48px;
                     line-height: 1.25;
@@ -29,6 +29,18 @@
      margin: 0 auto;
      padding-left: 20px;
      padding-right: 20px;
+
+     @media screen and (max-width: 767px) {
+          max-width: 480px;
+     }
+     @media screen and (min-width: 768px) {
+          max-width: 768px;
+          padding: 0 32px;
+     }
+     @media screen and (min-width: 1440px) {
+          width: 1440px;          
+     }
+
 }
 .hero-list {
      list-style: none;  
@@ -41,23 +53,27 @@
                margin-bottom: 16px;
           }
      
-     @media screen and (min-width: 1200px) {     
+     @media screen and (min-width: 1440px) {     
               gap: 58px;
               margin-bottom: 78px;
                              
           }
 
 }
-.hero__item {
-     &:not(:last-child) {
-          @media screen and (max-width: 767px) {
-                    margin-bottom: 16px;
-               }
-          }    
-            
-          @media screen and (min-width: 1200px) {
-               max-width: calc((100% - 58px) / 2);
+.hero__item {      
+          
+     @media screen and (min-width: 768px) {
+               width: 515px;
           }
+}
+
+.hero__item:not(:last-child) {
+     margin-bottom: 16px;
+
+     @media screen and (min-width: 1440px){
+     margin-bottom: 0;
+     margin-right: 72px;
+     }
 }
 .hero__description {
      font-weight: 300;
@@ -66,7 +82,7 @@
      
      color: #2B2B2B;
 
-     @media screen and (min-width: 1200px) {
+     @media screen and (min-width: 1440px) {
           font-size: 18px;
           line-height: 1.27;
           }
