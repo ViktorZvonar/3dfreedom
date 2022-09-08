@@ -317,13 +317,14 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 32px 20px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 320px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -352,7 +353,7 @@ body {
   overflow: hidden;
 }
 
-.footer-contacts__phones, .footer-contacts, .footer-socials, .footer-nav__list, .hero__list {
+.footer-contacts__phones, .footer-contacts, .footer-socials, .footer-nav__list, .gallery__list, .hero__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -376,6 +377,12 @@ body {
   justify-content: space-between;
   margin-bottom: 32px;
 }
+@media screen and (min-width: 768px) {
+  .hero__list {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
 
 .hero__item {
   border-radius: 50%;
@@ -395,16 +402,50 @@ body {
   text-align: center;
 }
 
+.gallery__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #487996;
+  margin-bottom: 16px;
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery__item {
+  display: inline-block;
+  max-width: 280px;
+}
+.gallery__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 320px) {
+  .gallery__item {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+.gallery__description {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #487996;
+  margin-top: 8px;
+}
+
 .section {
   padding-top: 0;
   padding-bottom: 40px;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .modeling-title {
@@ -460,13 +501,6 @@ body {
   }
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .hero-list {
   list-style: none;
   justify-content: center;
@@ -500,7 +534,7 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 @media screen and (min-width: 1200px) {
   .hero__description {

@@ -12,6 +12,10 @@
   justify-content: space-between;
   @extend %list;
   margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    width: 400px;
+    margin: 0 auto;
+  }
 }
 
 .hero__item {
@@ -30,4 +34,42 @@
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+}
+
+.gallery__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: calc(30 / 24);
+  color: getColor('title-text');
+  margin-bottom: 16px;
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @extend %list;
+}
+
+.gallery__item {
+  display: inline-block;
+  max-width: 280px;
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 320px) {
+    width: 280px;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+.gallery__description {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: getColor('title-text');
+  margin-top: 8px;
 }
