@@ -1,5 +1,5 @@
 .footer {
-    padding: 32px;
+  padding: 32px;
 }
 
 .footer__container {
@@ -61,8 +61,8 @@
 
 .footer-contacts__link {
   @extend %link;
-    @extend %link;
-    color: getColor('title-text');
+  @extend %link;
+  color: getColor('title-text');
 }
 
 .footer-contacts__name {
@@ -80,11 +80,6 @@
 }
 
 .phones__link {
-<<<<<<< HEAD
+  color: getColor('title-text');
   @extend %link;
 }
-=======
-    color: getColor('title-text');
-    @extend %link;
-}
->>>>>>> main
