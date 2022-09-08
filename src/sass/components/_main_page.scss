@@ -1,0 +1,33 @@
+.hero__title {
+  font-family: $font-hero, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.hero__list {
+  display: flex;
+  justify-content: space-between;
+  @extend %list;
+  margin-bottom: 32px;
+}
+
+.hero__item {
+  border-radius: 50%;
+  overflow: hidden;
+  &:last-child {
+    border-radius: 0 25px 0 25px;
+  }
+  &:first-child {
+    border-radius: 0px 35px 0px 0px;
+  }
+}
+
+.hero__text {
+  font-family: $font-hero, sans-serif;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
