@@ -1,39 +1,38 @@
 @font-face {
-	font-family: 'CeraPro';
-	src: url('/src/fonts/CeraPro-700.eot');
-	src: local('☺'), url('/src/fonts/CeraPro-700.woff') format('woff'), url('/src/fonts/CeraPro-700.ttf') format('truetype');
-	font-weight: 700;
-	font-style: normal;
+  font-family: 'CeraPro';
+  src: url('/src/fonts/CeraPro-700.eot');
+  src: local('☺'), url('/src/fonts/CeraPro-700.woff') format('woff'),
+    url('/src/fonts/CeraPro-700.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'CeraPro';
-	src: url('/src/fonts/CeraPro-400.eot');
-	src: local('☺'), url('/src/fonts/CeraPro-400.woff') format('woff'), url('/src/fonts/CeraPro-400.ttf') format('truetype');
-	font-weight: 400;
-	font-style: normal;
+  font-family: 'CeraPro';
+  src: url('/src/fonts/CeraPro-400.eot');
+  src: local('☺'), url('/src/fonts/CeraPro-400.woff') format('woff'),
+    url('/src/fonts/CeraPro-400.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'CaviarDreams';
-	src: url('/src/fonts/CaviarDreams-400.eot');
-	src: local('☺'), url('/src/fonts/CaviarDreams-400.woff') format('woff'), url('/src/fonts/CaviarDreams-400.ttf') format('truetype');
-	font-weight: 400;
-	font-style: normal;
+  font-family: 'CaviarDreams';
+  src: url('/src/fonts/CaviarDreams-400.eot');
+  src: local('☺'), url('/src/fonts/CaviarDreams-400.woff') format('woff'),
+    url('/src/fonts/CaviarDreams-400.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'CeraPro';
-	src: url('/src/fonts/CeraPro-500.eot');
-	src: local('☺'), url('/src/fonts/CeraPro-500.woff') format('woff'), url('/src/fonts/CeraPro-500.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
+  font-family: 'CeraPro';
+  src: url('/src/fonts/CeraPro-500.eot');
+  src: local('☺'), url('/src/fonts/CeraPro-500.woff') format('woff'),
+    url('/src/fonts/CeraPro-500.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
 
+$font-general: ('CeraPro');
 
-$font-general: (
-	'CeraPro'
-);
-
-$font-hero: (
-	'CaviarDreams'
-);
+$font-hero: ('CaviarDreams');

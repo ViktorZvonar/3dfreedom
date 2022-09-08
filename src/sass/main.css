@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -260,6 +261,34 @@ summary {
   display: list-item;
 }
 
+@font-face {
+  font-family: "CeraPro";
+  src: url("/src/fonts/CeraPro-700.eot");
+  src: local("☺"), url("/src/fonts/CeraPro-700.woff") format("woff"), url("/src/fonts/CeraPro-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CeraPro";
+  src: url("/src/fonts/CeraPro-400.eot");
+  src: local("☺"), url("/src/fonts/CeraPro-400.woff") format("woff"), url("/src/fonts/CeraPro-400.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("/src/fonts/CaviarDreams-400.eot");
+  src: local("☺"), url("/src/fonts/CaviarDreams-400.woff") format("woff"), url("/src/fonts/CaviarDreams-400.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CeraPro";
+  src: url("/src/fonts/CeraPro-500.eot");
+  src: local("☺"), url("/src/fonts/CeraPro-500.woff") format("woff"), url("/src/fonts/CeraPro-500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
 img,
 svg {
   display: block;
@@ -278,6 +307,12 @@ h4,
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+body {
+  color: #2B2B2B;
+  font-family: "CeraPro";
+  font-weight: 400;
 }
 
 .container {
@@ -316,7 +351,7 @@ p {
   overflow: hidden;
 }
 
-.footer-contacts__phones, .footer-contacts, .footer-socials, .footer-nav__list {
+.footer-contacts__phones, .footer-contacts, .footer-socials, .footer-nav__list, .hero__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -324,6 +359,39 @@ p {
 
 .phones__link, .footer-contacts__link, .footer-socials__link, .footer-nav__link {
   text-decoration: none;
+}
+
+.hero__title {
+  font-family: "CaviarDreams", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1666666667;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.hero__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.hero__item {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.hero__item:last-child {
+  border-radius: 0 25px 0 25px;
+}
+.hero__item:first-child {
+  border-radius: 0px 35px 0px 0px;
+}
+
+.hero__text {
+  font-family: "CaviarDreams", sans-serif;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
 }
 
 .footer__container {
@@ -343,6 +411,12 @@ p {
 
 .footer-nav__item:not(:last-child) {
   margin-bottom: 8px;
+}
+
+.footer-nav__link {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
 }
 
 .footer-socials {
