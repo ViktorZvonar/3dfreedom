@@ -1,0 +1,67 @@
+.model__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: getColor('title-text');
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  @include mq($width-tablet) {
+    font-size: 36px;
+  }
+}
+.model__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 20px;
+  margin-left: 0;
+  @include mq($width-tablet) {
+    column-gap: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .model__item {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+.model__item {
+  @include mq($width-tablet) {
+    width: calc((100% - 96px) / 4);
+  }
+}
+
+.card-thumb {
+  position: relative;
+  min-width: 130px;
+  max-width: $width-mobile;
+  min-height: 158px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: getColor('white');
+  opacity: 0.8;
+  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
+    inset -1px -1px 16px getColor('white');
+  border-radius: 50px 0px;
+  @include mq($width-tablet) {
+    min-width: 152px;
+    min-height: 182px;
+    max-width: calc((100% - 96px) / 4);
+  }
+}
+
+.model__picture {
+  margin-bottom: 10px;
+}
+.content__title {
+  max-width: 129.48px;
+  max-height: 24.39px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: getColor('title-text');
+  text-transform: uppercase;
+}
