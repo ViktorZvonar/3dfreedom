@@ -358,6 +358,31 @@ body {
   }
 }
 
+.title {
+  color: #487996;
+}
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 48px;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+}
+
 .main-hero,
 .main-gallery {
   margin-bottom: 40px;
@@ -434,8 +459,18 @@ body {
 .main-hero__item:last-child {
   border-radius: 0 25px 0 25px;
 }
+@media screen and (min-width: 1440px) {
+  .main-hero__item:last-child {
+    border-radius: 0 72px 0 72px;
+  }
+}
 .main-hero__item:first-child {
   border-radius: 0px 35px 0px 0px;
+}
+@media screen and (min-width: 1440px) {
+  .main-hero__item:first-child {
+    border-radius: 0 72px 0 0;
+  }
 }
 
 .main-hero__text {
@@ -488,13 +523,19 @@ body {
   display: inline-block;
   width: 100%;
 }
-.main-gallery__item:not(:last-child) {
-  margin-bottom: 24px;
+@media screen and (max-width: 768px) {
+  .main-gallery__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
 @media screen and (min-width: 768px) {
   .main-gallery__item {
     width: calc((100% - 32px) / 2);
   }
+}
+
+.main-gallery__img {
+  width: 100%;
 }
 
 .main-gallery__description {
@@ -750,12 +791,12 @@ body {
   }
 }
 
-.hero {
+.scanning-hero {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.hero__title {
+.scanning-hero__title {
   margin-top: 0;
   margin-bottom: 16px;
   font-family: "CeraPro";
@@ -767,31 +808,74 @@ body {
   text-transform: uppercase;
 }
 
-.hero__descr {
+.scanning-hero__item {
+  margin-bottom: 16px;
+}
+.scanning-hero__item:last-child {
+  margin-bottom: 20px;
+}
+
+.scanning-hero__descr {
   font-family: "CeraPro";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 
-.section {
+.scanning-hero__overlay {
+  background-image: url("/src/images/3d-scanning/mobile/scanning.jpg");
+  background-position: center;
+  background-size: 280px 199px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .scanning-hero__overlay {
+    background-image: url("/src/images/3d-scanning/mobile/scanning@2x.jpg");
+  }
+}
+
+.scanning-section__button {
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+
+.button-scan {
+  cursor: pointer;
+  text-align: center;
+  font-family: "CeraPro";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #487996;
+  padding: 16px 32px;
+  border: none;
+  border-color: transparent;
+  background: #f5f5fa;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  border-radius: 30.5px;
+  min-width: 280px;
+  height: 56px;
+}
+
+.scanning-section {
   padding-top: 0;
   padding-bottom: 40px;
 }
 
-.container {
+.scanning-container {
   width: 100%;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.section__title {
+.scanning-section__title {
   margin-top: 0;
   margin-bottom: 16px;
-  font-family: ‘Cera Pro’;
+  font-family: "CeraPro";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -802,42 +886,52 @@ body {
 
 .scan-list {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.scan-list__item {
+  width: 130px;
+  height: 182px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.scan-list__item:nth-child(2n) {
+  margin-right: 0;
+}
+.scan-list__item:nth-last-child(-n+2) {
+  margin-bottom: 0;
 }
 
 .scan-list__canvas {
   position: relative;
-  width: 130px;
-  height: 182px;
-  background: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
   opacity: 0.8;
-  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
+  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
 }
+.scan-list__canvas::after {
+  content: " ";
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  background-image: url("/src/images/3d-scanning/mobile/scan-process-1.png");
+}
 
-.scan-list__descr {
+.scan-list__title {
   position: absolute;
   top: 114px;
   left: 0;
   text-align: center;
-}
-
-.button {
-  text-align: center;
-  font-family: inherit;
-  text-transform: uppercase;
-  padding: 16px 32px;
-  border: none;
-  border-color: transparent;
-  background: #F5F5FA;
-  box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #FFFFFF;
-  border-radius: 30.5px;
-  min-width: 280px;
-  height: 56px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Cera Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #487996;
 }
 
 .footer {

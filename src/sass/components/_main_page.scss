@@ -56,9 +56,15 @@
   overflow: hidden;
   &:last-child {
     border-radius: 0 25px 0 25px;
+    @include mq($width-desktop) {
+      border-radius: 0 72px 0 72px;
+    }
   }
   &:first-child {
     border-radius: 0px 35px 0px 0px;
+    @include mq($width-desktop) {
+      border-radius: 0 72px 0 0;
+    }
   }
 }
 
@@ -104,12 +110,18 @@
 .main-gallery__item {
   display: inline-block;
   width: 100%;
-  &:not(:last-child) {
-    margin-bottom: 24px;
+  @include mq(null, $width-tablet) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
   @include mq($width-tablet) {
     width: calc((100% - 32px) / 2);
   }
+}
+
+.main-gallery__img {
+  width: 100%;
 }
 
 .main-gallery__description {
