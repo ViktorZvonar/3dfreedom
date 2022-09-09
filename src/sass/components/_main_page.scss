@@ -1,24 +1,51 @@
-.hero__title {
+.main-hero,
+.main-gallery {
+  margin-bottom: 40px;
+}
+.main-hero__title {
   font-family: $font-hero, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: calc(21 / 18);
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 32px;
-}
-
-.hero__list {
-  display: flex;
-  justify-content: space-between;
-  @extend %list;
-  margin-bottom: 32px;
-  @media screen and (min-width: 768px) {
-    width: 400px;
-    margin: 0 auto;
+  width: 280px;
+  color: getColor('primary-text');
+  @include mq($width-tablet) {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    width: 336px;
+  }
+  @include mq($width-desktop) {
+    font-size: 48px;
+    line-height: calc(56 / 48);
+    width: 630px;
   }
 }
 
-.hero__item {
+.main-hero__list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  @extend %list;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq($width-mobile) {
+    max-width: 280px;
+  }
+  @include mq($width-tablet) {
+    max-width: 400px;
+    gap: 29px;
+  }
+  @include mq($width-desktop) {
+    max-width: 672px;
+  }
+}
+
+.main-hero__item {
   border-radius: 50%;
   overflow: hidden;
   &:last-child {
@@ -29,14 +56,14 @@
   }
 }
 
-.hero__text {
+.main-hero__text {
   font-family: $font-hero, sans-serif;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
 }
 
-.gallery__title {
+.main-gallery__title {
   text-transform: uppercase;
   font-size: 24px;
   line-height: calc(30 / 24);
@@ -44,28 +71,26 @@
   margin-bottom: 16px;
 }
 
-.gallery__list {
+.main-gallery__list {
+  @extend %list;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  @extend %list;
+  gap: 32px;
 }
 
-.gallery__item {
+.main-gallery__item {
   display: inline-block;
-  max-width: 280px;
+  width: 100%;
   &:not(:last-child) {
     margin-bottom: 24px;
   }
-  @media screen and (min-width: 320px) {
-    width: 280px;
-  }
-  @media screen and (min-width: 768px) {
+  @include mq($width-tablet) {
     width: calc((100% - 32px) / 2);
   }
 }
 
-.gallery__description {
+.main-gallery__description {
   display: inline-block;
   font-weight: 300;
   font-size: 16px;
