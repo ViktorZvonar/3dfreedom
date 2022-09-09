@@ -534,6 +534,10 @@ body {
   }
 }
 
+.main-gallery__img {
+  width: 100%;
+}
+
 .main-gallery__description {
   display: inline-block;
   font-weight: 300;
