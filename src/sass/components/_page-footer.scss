@@ -74,6 +74,12 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.01em;
+
+  &:hover,
+    &:focus {
+      color: getColor('title-text');
+      outline: none;
+    }
 }
 
 .footer-socials {
@@ -100,6 +106,12 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.01em;
+
+  &:hover,
+    &:focus {
+      color: getColor('title-text');
+      outline: none;
+    }
 }
 
 .footer-contacts {
