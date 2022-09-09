@@ -21,10 +21,17 @@
 
   dropdown_button.forEach(e => {
     e.addEventListener('click', dropdown_toggle);
+    e.addEventListener('keydown', dropdown_toggle);
   });
 
   function dropdown_toggle(event) {
-    event.currentTarget.classList.toggle('is-dropdown');
+    if (
+      !(event.type == 'keydown') ||
+      event.code == 'Enter' ||
+      event.code == 'Space'
+    ) {
+      event.currentTarget.classList.toggle('is-dropdown');
+    }
   }
   // Повесим класс page-nav__link--current на элементы с классом page-nav__link,
   // Если они указывают на текущую страницу.
