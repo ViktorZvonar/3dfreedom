@@ -1,20 +1,57 @@
-.hero__title {
+.main-hero,
+.main-gallery {
+  margin-bottom: 40px;
+  @include mq($width-tablet) {
+    margin-bottom: 60px;
+  }
+  @include mq($width-desktop) {
+    margin-bottom: 120px;
+  }
+}
+.main-hero__title {
   font-family: $font-hero, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: calc(21 / 18);
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 32px;
+  width: 280px;
+  color: getColor('primary-text');
+  @include mq($width-tablet) {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    width: 336px;
+  }
+  @include mq($width-desktop) {
+    font-size: 48px;
+    line-height: calc(56 / 48);
+    width: 630px;
+  }
 }
 
-.hero__list {
+.main-hero__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 15px;
   @extend %list;
   margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq($width-mobile) {
+    max-width: 280px;
+  }
+  @include mq($width-tablet) {
+    max-width: 400px;
+    gap: 29px;
+  }
+  @include mq($width-desktop) {
+    max-width: 672px;
+  }
 }
 
-.hero__item {
+.main-hero__item {
   border-radius: 50%;
   overflow: hidden;
   &:last-child {
@@ -25,9 +62,68 @@
   }
 }
 
-.hero__text {
+.main-hero__text {
   font-family: $font-hero, sans-serif;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+  @include mq($width-tablet) {
+    font-size: 18px;
+    line-height: calc(21 / 21);
+  }
+  @include mq($width-desktop) {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
+}
+
+.main-gallery__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: calc(30 / 24);
+  color: getColor('title-text');
+  margin-bottom: 16px;
+  @include mq($width-desktop) {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+  }
+  @include mq($width-desktop) {
+    font-size: 48px;
+    line-height: calc(60 / 48);
+  }
+}
+
+.main-gallery__list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.main-gallery__item {
+  display: inline-block;
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  @include mq($width-tablet) {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+.main-gallery__description {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: getColor('title-text');
+  margin-top: 8px;
+  @include mq($width-tablet) {
+    margin-top: 16px;
+  }
+  @include mq($width-desktop) {
+    font-size: 18px;
+    line-height: calc(23 / 18);
+  }
 }
