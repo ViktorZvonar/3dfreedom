@@ -4,65 +4,52 @@
       <picture>
         <source
           srcset="
-            ./images/logo/browser-png/logo_192x48.png     1x,
-            ./images/logo/browser-png/logo_192x48.@2x.png 2x
+            ./images/logo/oxi-png/logo_192x48.png     1x,
+            ./images/logo/oxi-png/logo_192x48.@2x.png 2x
           "
           media="(min-width: 1440px)"
         />
         <source
           srcset="
-            ./images/logo/browser-png/logo_125x31.png    1x,
-            ./images/logo/browser-png/logo_125x31@2x.png 2x
+            ./images/logo/oxi-png/logo_125x31.png    1x,
+            ./images/logo/oxi-png/logo_125x31@2x.png 2x
           "
           media="(min-width: 768px)"
         />
         <source
           srcset="
-            ./images/logo/browser-png/logo_101x25.png    1x,
-            ./images/logo/browser-png/logo_101x25@2x.png 2x
+            ./images/logo/oxi-png/logo_101x25.png    1x,
+            ./images/logo/oxi-png/logo_101x25@2x.png 2x
           "
           media="(max-width: 767px)"
         />
-        <img
-          src="./images/logo/browser-png/logo_192x48.@2x.png"
-          alt="3D Freedom"
-        />
+        <img src="./images/logo/oxi-png/logo_192x48.@2x.png" alt="3D Freedom" />
       </picture>
     </a>
-
-    <button type="button" class="burger">
-      <span class="burger__stroke"></span>
-    </button>
 
     <nav class="page-nav is-hidden">
       <ul class="page-nav__list">
         <li class="page-nav__item">
           <a href="./index.html" class="page-nav__link">Головна</a>
         </li>
-        <li class="page-nav__item dropdown page-nav__dropdown">
+        <li class="page-nav__item dropdown">
           <div class="dropdown__heading page-nav__link" tabindex="0">
             Послуги
           </div>
 
-          <ul class="dropdown__list">
-            <li class="page-nav__item">
-              <a
-                href="./modeling.html"
-                class="page-nav__link marked page-nav__sublink"
+          <ul class="dropdown__list page-nav__sublist dropdown_content">
+            <li class="page-nav__subitem">
+              <a href="./modeling.html" class="page-nav__link page-nav__sublink"
                 >3D Моделювання</a
               >
             </li>
-            <li class="page-nav__item">
-              <a
-                href="./scanning.html"
-                class="page-nav__link marked page-nav__sublink"
+            <li class="page-nav__subitem">
+              <a href="./scanning.html" class="page-nav__link page-nav__sublink"
                 >3D Сканування</a
               >
             </li>
-            <li class="page-nav__item">
-              <a
-                href="./printing.html"
-                class="page-nav__link marked page-nav__sublink"
+            <li class="page-nav__subitem">
+              <a href="./printing.html" class="page-nav__link page-nav__sublink"
                 >3D Друк</a
               >
             </li>
@@ -77,6 +64,10 @@
         </li>
       </ul>
     </nav>
+
+    <button type="button" class="burger">
+      <span class="burger__stroke"></span>
+    </button>
 
     <div class="page-header__right-block">
       <div class="header-phones">
