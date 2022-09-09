@@ -1,24 +1,37 @@
 body {
-    color: getColor('primary-text');
-    background-color: getColor('white');
-    font-family: $font-general;
-    font-weight: 400;
+  color: getColor('primary-text');
+  background-color: getColor('white');
+  font-family: $font-general;
+  font-weight: 400;
 }
-
 
 .container {
-    min-width: $width-min-allowable;
-        max-width: $width-mobile;
-        margin: 0 auto;
-        padding: 0 20px;
-    
-        @include mq($width-tablet) {
-            max-width: $width-tablet;
-            padding: 0 32px;
-        }
-    
-        @include mq($width-desktop) {
-            max-width: $width-desktop;
-        }
+  min-width: $width-min-allowable;
+  max-width: $width-mobile;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include mq($width-tablet) {
+    max-width: $width-tablet;
+    padding: 0 32px;
+  }
+
+  @include mq($width-desktop) {
+    max-width: $width-desktop;
+  }
 }
 
+.title {
+  color: getColor('title-text');
+  @media screen and (max-width: 767px) {
+    @include font(24px, 1.25, 700, null);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include font(36px, 1.25, 700, null);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(48px, 1.25, 700, null);
+  }
+}
