@@ -76,10 +76,15 @@
   min-width: fit-content;
   color: $text-color-secondary;
   -webkit-text-stroke: 1px transparent;
+  text-transform: uppercase;
   @include animate(transform text-shadow color -webkit-text-stroke);
   @include mq($width-desktop) {
     color: $text-color-primary;
     padding: 10px;
+    text-transform: none;
+  }
+  &.page-nav__sublink {
+    text-transform: none;
   }
 }
 
@@ -101,7 +106,7 @@
     color: #ffffff;
   }
   @include mq($width-desktop) {
-    font-weight: 500;
+    font-weight: 700;
   }
 }
 

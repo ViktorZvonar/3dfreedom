@@ -8,9 +8,28 @@
   margin-bottom: 24px;
   text-align: center;
   cursor: default;
+  text-transform: uppercase;
   @include mq($width-desktop) {
     margin-bottom: 0;
     padding: 10px;
+    text-transform: none;
+    &::after {
+      content: '';
+      position: absolute;
+      right: -4px;
+      top: 50%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 3px 4px 0 4px;
+      border-color: #007bff transparent transparent transparent;
+      @include animate(transform);
+    }
+
+    .dropdown:hover &::after,
+    .dropdown:focus-within &::after {
+      transform: rotateX(180deg);
+    }
   }
 }
 
