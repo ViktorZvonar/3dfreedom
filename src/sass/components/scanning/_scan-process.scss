@@ -2,12 +2,7 @@
   padding-top: 0;
   padding-bottom: 40px;
 }
-.scanning-container {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+
 .scanning-section__title {
   margin-top: 0;
   margin-bottom: 16px;
@@ -23,6 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .scan-list__item {
@@ -31,10 +27,6 @@
   margin-right: 20px;
   margin-bottom: 16px;
   text-align: center;
-
-  // display: block;
-  // align-items: center;
-  // justify-items: center;
 
   &:nth-child(2n) {
     margin-right: 0;
@@ -47,6 +39,8 @@
 
 .scan-list__canvas {
   position: relative;
+  display: flex;
+  align-items: flex-end;
   width: 100%;
   height: 100%;
   background: #ffffff;
@@ -54,27 +48,73 @@
   box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
     inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
+  padding: 15px 19px;
 
-  &::after {
-    content: ' ';
+  &::before {
+    content: '';
+
     position: absolute;
-
-    left: 15px;
     top: 15px;
-
-    background-image: url('/src/images/3d-scanning/mobile/scan-process-1.png');
+    left: 19px;
+    display: block;
+    // background-image: url();
+    height: 83px;
+    width: 92px;
+    background-color: rgba(33, 33, 33, 0.2);
   }
 }
+
 .scan-list__title {
-  position: absolute;
-  top: 114px;
-  left: 0;
   text-align: center;
 
-  font-family: 'Cera Pro';
+  font-family: 'CeraPro';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
   color: #487996;
+}
+
+@media screen and (min-width: 469px) {
+  .scan-list__item {
+    &:nth-child(2n) {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .scanning-section {
+    padding-bottom: 60px;
+  }
+  .scanning-section__title {
+    margin-bottom: 24px;
+  }
+
+  .scan-list__item {
+    width: 152px;
+    height: 210px;
+
+    &:nth-child(n) {
+      margin-right: 32px;
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .scan-list__canvas {
+    padding: 23px 22px;
+
+    &::before {
+      top: 23px;
+      left: 21px;
+      // background-image: url();
+      height: 94px;
+      width: 107px;
+      background-color: rgba(33, 33, 33, 0.2);
+    }
+  }
 }
