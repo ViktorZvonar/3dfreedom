@@ -7,17 +7,19 @@
           line-height: 1.25;
           text-align: left;
           text-transform: uppercase;
-     
+          width: 280px;
           color: #487996;
      
           @include mq($width-tablet) {
                margin-bottom: 16px;
+               width: 648px;
           }
      
           @include mq($width-desktop) {
                margin-bottom: 67px;
                font-size: 48px;
                line-height: 1.25;
+               width: 842px;
           }
 }
 
@@ -37,3 +39,16 @@
           }
 }
 
+ .method__item {
+     width: calc((100% - 20px) / 2);
+     
+     @include mq($width-tablet) {
+               margin-bottom: 16px;
+               width: calc((100% - 32px*3) / 4);
+          }
+
+     @include mq($width-desktop) {
+               width: calc((100% - 32px*3) / 4);
+               
+ }
+ }
