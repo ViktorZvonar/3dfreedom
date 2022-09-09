@@ -8,29 +8,21 @@
 }
 
 .hero__bg {
-<<<<<<< Updated upstream
-=======
-  //   width: fit-content;
-  //   height: fit-content;
->>>>>>> Stashed changes
-  background-image: url(../src/images/order/mobile/order-img.jpg);
-
-  border-radius: 15px;
-
+  width: 280px;
+  height: 171px;
+  background-image: url(../images/order/mobile/order-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
-<<<<<<< Updated upstream
-  background-size: cover;
-=======
->>>>>>> Stashed changes
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../src/images/order/mobile/order-img@2x.jpg);
-  }
-
+  background-size: 280px 171px;
+  border-radius: 15px;
   margin-top: 16px;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero__bg {
+    background-image: url(../images/order/mobile/order-img@2x.jpg);
+  }
 }
 
 .hero__ad {
