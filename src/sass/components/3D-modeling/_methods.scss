@@ -27,35 +27,39 @@
      list-style: none;
      display: flex;
      flex-wrap: wrap;
-     gap: 20px;
-     width: 280px;
+     margin-right: 20px;
+    
 
      
-          @include mq($width-tablet) {
+     @include mq($width-tablet) {
                margin-bottom: 40px;
-               display: flex;
-               width: 704px;
+               display: flex;              
           }
      
-          @include mq($width-desktop) {              
+     @include mq($width-desktop) {              
                margin-bottom: 78px;
                display: flex;
-               width: 1377px;
+               
           }
 }
 
  .method__item {
      width: calc((100% - 20px) / 2);
+     padding: 0;
     
      
      @include mq($width-tablet) {
                margin-bottom: 16px;
                width: calc((100% - 32px*3)/4);
                margin-right: 32px;
+               padding: 0;
+          
           }
 
      @include mq($width-desktop) {
                width: calc((100% - 32px*3) / 4);
                margin-right: 32px;
+               padding: 0;
+              
  }
  }
