@@ -1,0 +1,48 @@
+.contacts__title {
+  text-transform: uppercase;
+  color: map-get($colors, 'title-text');
+  margin-bottom: 16px;
+}
+.hero-video {
+  margin-bottom: 16px;
+}
+.hero-description {
+  margin-bottom: 40px;
+}
+
+.print-features {
+  display: block;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  &:last-child {
+    display: flex;
+  }
+  &__emoji {
+    margin-left: 8px;
+  }
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.28;
+  color: map-get($colors, 'title-text');
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+label {
+  font-size: 14px;
+  line-height: 1.43;
+}
+.form__input {
+  display: block;
+  line-height: 1.25;
+  width: 100%;
+  border: transparent;
+  border-bottom: 1px solid map-get($colors, 'title-text');
+  margin-bottom: 44px;
+}
+.form__input:last-child {
+  margin-bottom: 48px;
+}
