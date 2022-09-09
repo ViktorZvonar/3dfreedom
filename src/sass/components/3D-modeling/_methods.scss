@@ -10,11 +10,11 @@
      
           color: #487996;
      
-          @media screen and (min-width: 768px) {
+          @include mq($width-tablet) {
                margin-bottom: 16px;
           }
      
-          @media screen and (min-width: 1440px) {
+          @include mq($width-desktop) {
                margin-bottom: 67px;
                font-size: 48px;
                line-height: 1.25;
@@ -24,12 +24,12 @@
 .method__list {
      list-style: none;
      
-          @media screen and (min-width: 768px) {
+          @include mq($width-tablet) {
                margin-bottom: 40px;
                display: flex;
           }
      
-          @media screen and (min-width: 1440px) {
+          @include mq($width-desktop) {
                gap: 58px;
                margin-bottom: 78px;
                display: flex;
