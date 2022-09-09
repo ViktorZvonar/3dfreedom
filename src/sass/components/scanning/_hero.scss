@@ -1,23 +1,71 @@
-.hero {
-    padding-top: 40px;
-    padding-bottom: 40px;
+// .hero {
+//   padding-top: 40px;
+//   padding-bottom: 40px;
+// }
+// .hero__title {
+//   margin-top: 0;
+//   margin-bottom: 16px;
+//   font-family: 'CeraPro';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 24px;
+//   line-height: 1.25;
+//   color: #487996;
+//   text-transform: uppercase;
+// }
+// .hero__descr {
+//   font-family: 'CeraPro';
+//   font-style: normal;
+//   font-weight: 300;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   color: #2b2b2b;
+// }
+
+.scanning-hero {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.scanning-hero__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: 'CeraPro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #487996;
+  text-transform: uppercase;
+}
+
+.scanning-hero__item {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 20px;
   }
-  .hero__title {
-    margin-top: 0;
-    margin-bottom: 16px;
-    font-family: $font-general;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.25;
-    color: #487996;
-    text-transform: uppercase;
+}
+
+.scanning-hero__descr {
+  font-family: 'CeraPro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2b2b2b;
+}
+
+.scanning-hero__overlay {
+  background-image: url('/src/images/3d-scanning/mobile/scanning.jpg');
+  background-position: center;
+  background-size: 280px 199px;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url('/src/images/3d-scanning/mobile/scanning@2x.jpg');
+    }
   }
-  .hero__descr {
-    font-family: $font-general;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.25;
-    color: #2B2B2B;
-  }
+}
