@@ -65,6 +65,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
+  font-family: 'Cera Pro';
 
   @include mq($width-desktop) {
     font-size: 18px;
