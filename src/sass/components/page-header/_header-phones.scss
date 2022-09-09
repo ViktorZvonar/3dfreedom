@@ -20,7 +20,7 @@
   }
 
   & > &__icon {
-    padding: 8px 0;
+    padding: 6px 0;
   }
 
   &__icon {
@@ -67,10 +67,14 @@
     left: 50%;
     transform: translate(calc(-50% + 12px), -75%);
     fill: #fff;
+    @include mq($width-tablet) {
+      display: none;
+    }
   }
 
-  &__list {
-  }
+  // &__list {
+  // }
+
   &__item {
     width: max-content;
   }
