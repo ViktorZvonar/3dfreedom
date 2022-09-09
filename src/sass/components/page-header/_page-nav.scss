@@ -81,6 +81,7 @@
   color: $text-color-secondary;
   -webkit-text-stroke: 1px transparent;
   text-transform: uppercase;
+  outline: none;
   @include animate(
     transform text-shadow color -webkit-text-stroke margin-bottom
   );

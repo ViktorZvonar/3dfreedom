@@ -49,7 +49,7 @@
   overflow: hidden;
 
   height: 150px; // Костыль, поплывет если изменится контент
-  @include animate(height);
+  @include animate(height visibility);
   // width: 100%;
 
   @include mq($width-desktop) {
@@ -83,7 +83,8 @@
 
 // .dropdown:hover .dropdown__list,
 // .dropdown:focus-within .dropdown__list,
-.is-dropdown + .dropdown__list {
+.is-dropdown + .dropdown__list,
+.dropdown__list:focus-within {
   @include mq($width-desktop) {
     transform: translate(-50%, -2px);
     opacity: 1;
@@ -95,5 +96,6 @@
 :not(.is-dropdown) + .dropdown__list {
   @include mq($until: $width-desktop - 0.1px) {
     height: 0;
+    visibility: hidden;
   }
 }
