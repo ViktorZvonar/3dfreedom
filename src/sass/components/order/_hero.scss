@@ -1,0 +1,35 @@
+.hero__title {
+  font-weight: 700;
+  line-height: calc(30 / 24);
+  font-size: 24px;
+  color: getColor('title-text');
+
+  text-transform: uppercase;
+}
+
+.hero__bg {
+  background-image: url(../src/images/order/mobile/order-img.jpg);
+
+  border-radius: 15px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../src/images/order/mobile/order-img@2x.jpg);
+  }
+
+  margin-top: 16px;
+}
+
+.hero__ad {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+
+  color: getColor('primary-text');
+  margin-top: 16px;
+}
