@@ -17,6 +17,15 @@
     if (visualViewport.width >= 1440) menu_toggle();
   }
 
+  const dropdown_button = document.querySelectorAll('.dropdown__heading');
+
+  dropdown_button.forEach(e => {
+    e.addEventListener('click', dropdown_toggle);
+  });
+
+  function dropdown_toggle(event) {
+    event.currentTarget.classList.toggle('is-dropdown');
+  }
   // Повесим класс page-nav__link--current на элементы с классом page-nav__link,
   // Если они указывают на текущую страницу.
   const current_page = window.location.pathname;

@@ -1,148 +1,147 @@
 .footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: getColor('background');
-    
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: getColor('background');
+  box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
 }
 
 .footer__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
-    @include mq($width-tablet) {
-            align-items:stretch;
-        }
+  @include mq($width-tablet) {
+    align-items: stretch;
+  }
 
-    @include mq($width-desktop) {
-            flex-direction: row;
-            
-        }
+  @include mq($width-desktop) {
+    flex-direction: row;
+  }
 }
 
 .footer__navigation {
-    display: flex;
-        flex-direction: column;
-        align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    @include mq($width-tablet) {
-            flex-direction: row;
-            align-items: stretch;
-        }
+  @include mq($width-tablet) {
+    flex-direction: row;
+    align-items: stretch;
+  }
 
-    @include mq($width-desktop) {
-                margin-left: 277px;
-        }
-    }
+  @include mq($width-desktop) {
+    margin-left: 277px;
+  }
+}
 
 .footer__logo {
-    display: block;
-    margin-bottom: 19px;
+  display: block;
+  margin-bottom: 19px;
 
-    @include mq($width-tablet) {
-        margin-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  @include mq($width-tablet) {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    @include mq($width-desktop) {
+  @include mq($width-desktop) {
     margin: 0;
-    }
+  }
 }
 
 .footer-nav {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 
-    @include mq($width-tablet) {
-            text-align: start;
-            margin-right: 52px;
-        }
+  @include mq($width-tablet) {
+    text-align: start;
+    margin-right: 52px;
+  }
 }
 
 .footer-nav__list {
-    @extend %list;
+  @extend %list;
 }
 
 .footer-nav__item {
-    &:not(:last-child) {
-            margin-bottom: 8px;
-        }
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 
 .footer-nav__link {
-    @extend %link;
-    font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.01em;
+  @extend %link;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
 }
 
 .footer-socials {
-    @extend %list;
-    margin-bottom: 24px;
+  @extend %list;
+  margin-bottom: 24px;
 
-    @include mq($width-tablet) {
-            text-align: start;
-        }
+  @include mq($width-tablet) {
+    text-align: start;
+  }
 
-        @include mq($width-desktop) {
-            margin-left: 103px;
-        }
+  @include mq($width-desktop) {
+    margin-left: 103px;
+  }
 }
 
 .footer-socials__item {
-    &:not(:last-child) {
-            margin-bottom: 8px;
-        }
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 
 .footer-socials__link {
-    @extend %link;
-    font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.01em;
+  @extend %link;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
 }
 
 .footer-contacts {
-    @extend %list;
+  @extend %list;
 
-    @include mq($width-tablet) {
-        margin-left: auto;
-        text-align: end;
-        }
+  @include mq($width-tablet) {
+    margin-left: auto;
+    text-align: end;
+  }
 
-    @include mq($width-desktop) {
-            text-align: start;
-            margin-left: 161px;
-        }
+  @include mq($width-desktop) {
+    text-align: start;
+    margin-left: 161px;
+  }
 }
 
 .footer-contacts__item {
-    &:not(:last-child) {
-                margin-bottom: 24px;
-            }
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
 
 .footer-contacts__link {
-    @extend %link;
-    color: getColor('title-text');
+  @extend %link;
+  color: getColor('title-text');
 }
 
 .footer-contacts__name {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .footer-contacts__phones {
-    @extend %list;
+  @extend %list;
 }
 
 .phones__item {
-    &:not(:last-child) {
-            margin-bottom: 8px;
-        }
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 
 .phones__link {
-    @extend %link;
-    color: getColor('title-text');
+  @extend %link;
+  color: getColor('title-text');
 }

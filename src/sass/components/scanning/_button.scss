@@ -1,17 +1,25 @@
-.button {
-    text-align: center;
-    font-family: inherit;
-    text-transform: uppercase;
-    padding: 16px 32px;
-    border: none;
-    border-color: transparent;
-    background: #F5F5FA;
-    box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(72, 121, 150, 0.1),
-      5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #FFFFFF;
-    border-radius: 30.5px;
-    min-width: 280px;
-    height: 56px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.5;
-  }
+.scanning-section__button {
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+
+.button-scan {
+  cursor: pointer;
+  text-align: center;
+  font-family: 'CeraPro';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #487996;
+  padding: 16px 32px;
+  border: none;
+  border-color: transparent;
+  background: #f5f5fa;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  border-radius: 30.5px;
+  min-width: 280px;
+  height: 56px;
+}
