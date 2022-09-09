@@ -8,13 +8,21 @@
 }
 
 .hero__bg {
+<<<<<<< Updated upstream
+=======
+  //   width: fit-content;
+  //   height: fit-content;
+>>>>>>> Stashed changes
   background-image: url(../src/images/order/mobile/order-img.jpg);
 
   border-radius: 15px;
 
   background-repeat: no-repeat;
   background-position: center;
+<<<<<<< Updated upstream
   background-size: cover;
+=======
+>>>>>>> Stashed changes
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
