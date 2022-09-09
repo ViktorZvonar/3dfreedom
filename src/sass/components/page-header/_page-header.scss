@@ -1,5 +1,3 @@
-@use 'sass:map';
-
 @import './variables';
 @import './utils';
 @import './reset';
@@ -7,21 +5,6 @@
 @import './header-phones';
 @import './page-nav';
 @import './dropdown';
-
-// Должно быть .container, но стиль перебивается
-.h-container {
-  min-width: $width-min-allowable;
-  max-width: $width-mobile;
-  margin: 0 auto;
-  padding: 0 15px;
-
-  @include mq($width-tablet) {
-    max-width: $width-tablet;
-  }
-  @include mq($width-desktop) {
-    max-width: $width-desktop;
-  }
-}
 
 .page-header {
   position: relative;

@@ -1,5 +1,5 @@
 <header class="page-header">
-  <div class="h-container page-header__container">
+  <div class="container page-header__container">
     <a href="./index.html" class="logo page-header__logo">
       <picture>
         <source
@@ -9,7 +9,6 @@
           "
           media="(min-width: 1440px)"
         />
-
         <source
           srcset="
             ./images/logo/browser-png/logo_125x31.png    1x,
@@ -30,6 +29,10 @@
         />
       </picture>
     </a>
+
+    <button type="button" class="burger">
+      <span class="burger__stroke"></span>
+    </button>
 
     <nav class="page-nav is-hidden">
       <ul class="page-nav__list">
@@ -74,10 +77,6 @@
         </li>
       </ul>
     </nav>
-
-    <button type="button" class="burger">
-      <span class="burger__stroke"></span>
-    </button>
 
     <div class="page-header__right-block">
       <div class="header-phones">
