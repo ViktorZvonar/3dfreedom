@@ -362,6 +362,18 @@ body {
 .main-gallery {
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .main-hero,
+.main-gallery {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-hero,
+.main-gallery {
+    margin-bottom: 120px;
+  }
+}
 
 .main-hero__title {
   font-family: "CaviarDreams", sans-serif;
@@ -432,6 +444,18 @@ body {
   line-height: 1.1875;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .main-hero__text {
+    font-size: 18px;
+    line-height: 1;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-hero__text {
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
+}
 
 .main-gallery__title {
   text-transform: uppercase;
@@ -439,6 +463,18 @@ body {
   line-height: 1.25;
   color: #487996;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 1440px) {
+  .main-gallery__title {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-gallery__title {
+    font-size: 48px;
+    line-height: 1.25;
+  }
 }
 
 .main-gallery__list {
@@ -468,6 +504,17 @@ body {
   line-height: 1.25;
   color: #487996;
   margin-top: 8px;
+}
+@media screen and (min-width: 768px) {
+  .main-gallery__description {
+    margin-top: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-gallery__description {
+    font-size: 18px;
+    line-height: 1.2777777778;
+  }
 }
 
 @media screen and (min-width: 768px) {

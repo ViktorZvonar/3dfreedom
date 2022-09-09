@@ -1,6 +1,12 @@
 .main-hero,
 .main-gallery {
   margin-bottom: 40px;
+  @include mq($width-tablet) {
+    margin-bottom: 60px;
+  }
+  @include mq($width-desktop) {
+    margin-bottom: 120px;
+  }
 }
 .main-hero__title {
   font-family: $font-hero, sans-serif;
@@ -61,6 +67,14 @@
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+  @include mq($width-tablet) {
+    font-size: 18px;
+    line-height: calc(21 / 21);
+  }
+  @include mq($width-desktop) {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
 }
 
 .main-gallery__title {
@@ -69,6 +83,14 @@
   line-height: calc(30 / 24);
   color: getColor('title-text');
   margin-bottom: 16px;
+  @include mq($width-desktop) {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+  }
+  @include mq($width-desktop) {
+    font-size: 48px;
+    line-height: calc(60 / 48);
+  }
 }
 
 .main-gallery__list {
@@ -97,4 +119,11 @@
   line-height: calc(20 / 16);
   color: getColor('title-text');
   margin-top: 8px;
+  @include mq($width-tablet) {
+    margin-top: 16px;
+  }
+  @include mq($width-desktop) {
+    font-size: 18px;
+    line-height: calc(23 / 18);
+  }
 }
