@@ -20,3 +20,18 @@ body {
     max-width: $width-desktop;
   }
 }
+
+.title {
+  color: getColor('title-text');
+  @media screen and (max-width: 767px) {
+    @include font(24px, 1.25, 700, null);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include font(36px, 1.25, 700, null);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(48px, 1.25, 700, null);
+  }
+}
