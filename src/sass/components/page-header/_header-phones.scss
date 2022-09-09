@@ -1,0 +1,94 @@
+.header-phones {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  margin-right: 24px;
+
+  @include mq($width-tablet) {
+    margin-right: 0;
+  }
+
+  &__button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    @include mq($width-tablet) {
+      display: none;
+    }
+  }
+
+  & > &__icon {
+    padding: 6px 0;
+  }
+
+  &__icon {
+    // display: inline-block;
+    fill: currentColor;
+    color: #008cef;
+    @include mq($width-tablet) {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &__popup {
+    @include mq($until: $width-tablet - 0.1px) {
+      position: absolute;
+      top: calc(100% + 7px);
+      left: 0;
+      transform: translateX(-50%);
+
+      padding: 11px 8px;
+
+      border-radius: 2px;
+
+      background: #ffffff;
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    @include animate(opacity);
+
+    .header-phones:hover &,
+    .header-phones:focus-within & {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
+  }
+
+  &__popup-arrow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(calc(-50% + 12px), -75%);
+    fill: #fff;
+    @include mq($width-tablet) {
+      display: none;
+    }
+  }
+
+  // &__list {
+  // }
+
+  &__item {
+    width: max-content;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    padding: 5px 0;
+    @include font(16px, 20px, 0.01em);
+    color: #2b2b2b;
+
+    @include mq($width-tablet) {
+      gap: 4px;
+    }
+  }
+}

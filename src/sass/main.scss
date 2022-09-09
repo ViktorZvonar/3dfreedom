@@ -2,11 +2,14 @@
 @import './base/fonts';
 @import './base/reset';
 @import './utils/variables';
-@import './base/common';
 @import './utils/visually_hidden';
 @import './utils/placeholders';
+@import './utils/mixins';
+@import './base/common';
 @import './components/main_page';
 @import './components/3D-modeling/create-model';
 @import './components/3D-modeling/hero';
 @import './components/3D-modeling/methods';
+@import './components/scanning/page-scanning';
 @import './components/page-footer';
+@import './components/page-header/page-header';

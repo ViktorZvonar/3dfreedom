@@ -2,15 +2,26 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
-  &-title {
-    margin-top: 0;
-    margin-bottom: 16px;
-    font-family: 'Cera Pro';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.25;
-    text-align: left;
-    color: #487996;
+     &-title {
+          margin-top: 0;
+          margin-bottom: 16px;
+          font-family: 'Cera Pro';
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 1.25;
+          text-align: left;
+          color: #487996;
+
+          @media screen and (min-width: 768px) {
+                    margin-bottom: 16px;
+               }
+
+          @media screen and (min-width: 1440px) {
+                    margin-bottom: 100px;
+                    font-size: 48px;
+                    line-height: 1.25;
+               }
+     }
 
     @media screen and (min-width: 768px) {
       margin-bottom: 16px;
@@ -23,48 +34,42 @@
     }
   }
 }
-// .container {
-//      width: 100%;
-//      margin: 0 auto;
-//      padding-left: 20px;
-//      padding-right: 20px;
-// }
 .hero-list {
   list-style: none;
   justify-content: center;
 
-  gap: 16px;
-  margin-bottom: 40px;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 16px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    gap: 58px;
-    margin-bottom: 78px;
-  }
-}
-.hero__item {
-  &:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 16px;
+     @media screen and (min-width: 768px) {
+              gap: 58px;
+              margin-bottom: 78px;
+              padding-left: 0;
+              display: flex;
+          }
     }
-  }
+.hero__item {
+          font-family: 'Cera Pro';
 
-  @media screen and (min-width: 1200px) {
-    max-width: calc((100% - 58px) / 2);
-  }
+     @media screen and (min-width: 768px) {
+               width: 515px;
+
+          }
+}
+
+.hero__item:not(:last-child) {
+     margin-bottom: 16px;
+
+     @media screen and (min-width: 1440px){
+     margin-bottom: 0;
+     margin-right: 72px;
+     }
 }
 .hero__description {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
 
-  color: #2b2b2b;
-
-  @media screen and (min-width: 1200px) {
-    font-size: 18px;
-    line-height: 1.27;
-  }
+     @media screen and (min-width: 1440px) {
+          font-size: 18px;
+          line-height: 1.27;
+          }
 }

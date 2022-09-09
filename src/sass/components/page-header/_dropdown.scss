@@ -1,0 +1,99 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown__heading {
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+  cursor: default;
+  text-transform: uppercase;
+
+  @include mq($until: $width-desktop - 0.1px) {
+    &.is-dropdown {
+      margin-bottom: 24px;
+    }
+  }
+
+  @include mq($width-desktop) {
+    margin-bottom: 0;
+    padding: 10px;
+    text-transform: none;
+    &::after {
+      content: '';
+      position: absolute;
+      right: -4px;
+      top: 50%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 3px 4px 0 4px;
+      border-color: #007bff transparent transparent transparent;
+      @include animate(transform);
+    }
+
+    // .dropdown:hover &::after,
+    // .dropdown:focus-within &::after,
+    &.is-dropdown::after {
+      transform: rotateX(180deg);
+    }
+  }
+}
+
+.dropdown__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  overflow: hidden;
+
+  height: 150px; // Костыль, поплывет если изменится контент
+  @include animate(height);
+  // width: 100%;
+
+  @include mq($width-desktop) {
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -16px);
+
+    // display: flex;
+    // flex-direction: column;
+    gap: 4px;
+    min-width: max-content; //144px;
+    padding: 37px 6px 12px;
+
+    background-color: #ffffff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 50% 50%;
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    @include animate(transform opacity box-shadow visibility);
+  }
+}
+
+.dropdown__list .page-nav__link {
+  padding: 2px 0;
+}
+
+// .dropdown:hover .dropdown__list,
+// .dropdown:focus-within .dropdown__list,
+.is-dropdown + .dropdown__list {
+  @include mq($width-desktop) {
+    transform: translate(-50%, -2px);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+
+:not(.is-dropdown) + .dropdown__list {
+  @include mq($until: $width-desktop - 0.1px) {
+    height: 0;
+  }
+}

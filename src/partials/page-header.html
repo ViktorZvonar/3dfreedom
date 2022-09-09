@@ -1,0 +1,126 @@
+<header class="page-header">
+  <div class="h-container page-header__container">
+    <a href="./index.html" class="logo page-header__logo">
+      <picture>
+        <source
+          srcset="
+            ./images/logo/browser-png/logo_192x48.png     1x,
+            ./images/logo/browser-png/logo_192x48.@2x.png 2x
+          "
+          media="(min-width: 1440px)"
+        />
+
+        <source
+          srcset="
+            ./images/logo/browser-png/logo_125x31.png    1x,
+            ./images/logo/browser-png/logo_125x31@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/logo/browser-png/logo_101x25.png    1x,
+            ./images/logo/browser-png/logo_101x25@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          src="./images/logo/browser-png/logo_192x48.@2x.png"
+          alt="3D Freedom"
+        />
+      </picture>
+    </a>
+
+    <nav class="page-nav is-hidden">
+      <ul class="page-nav__list">
+        <li class="page-nav__item">
+          <a href="./index.html" class="page-nav__link">Головна</a>
+        </li>
+        <li class="page-nav__item dropdown page-nav__dropdown">
+          <div class="dropdown__heading page-nav__link" tabindex="0">
+            Послуги
+          </div>
+
+          <ul class="dropdown__list">
+            <li class="page-nav__item">
+              <a
+                href="./modeling.html"
+                class="page-nav__link marked page-nav__sublink"
+                >3D Моделювання</a
+              >
+            </li>
+            <li class="page-nav__item">
+              <a
+                href="./scanning.html"
+                class="page-nav__link marked page-nav__sublink"
+                >3D Сканування</a
+              >
+            </li>
+            <li class="page-nav__item">
+              <a
+                href="./printing.html"
+                class="page-nav__link marked page-nav__sublink"
+                >3D Друк</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="page-nav__item">
+          <a href="./order.html" class="page-nav__link">Замовити</a>
+        </li>
+        <li class="page-nav__item">
+          <a href="./contacts.html" class="page-nav__link">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button type="button" class="burger">
+      <span class="burger__stroke"></span>
+    </button>
+
+    <div class="page-header__right-block">
+      <div class="header-phones">
+        <svg
+          width="24"
+          height="24"
+          class="header-phones__button header-phones__icon"
+          tabindex="0"
+        >
+          <use href="images/icons.svg#phone"></use>
+        </svg>
+        <div class="header-phones__popup">
+          <svg width="28" height="19" class="header-phones__popup-arrow">
+            <use href="images/icons.svg#popup-arrow"></use>
+          </svg>
+          <ul class="header-phones__list">
+            <li class="header-phones__item">
+              <a href="tel:+380936432288" class="header-phones__link">
+                <svg width="24" height="24" class="header-phones__icon">
+                  <use href="images/icons.svg#phone"></use>
+                </svg>
+                +38 (093) 643 22 88
+              </a>
+            </li>
+            <li class="header-phones__item">
+              <a href="tel:+380936432288" class="header-phones__link"
+                ><svg width="24" height="24" class="header-phones__icon">
+                  <use href="images/icons.svg#phone"></use>
+                </svg>
+                +38 (050) 345 44 23
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <span class="lang" tabindex="0">ENG</span> -->
+      <select class="lang" name="lang">
+        <option value="ukr" selected>UKR</option>
+        <option value="eng">ENG</option>
+        <option value="UKR">UKR</option>
+      </select>
+    </div>
+  </div>
+  <script src="./js/nav-menu.js"></script>
+</header>

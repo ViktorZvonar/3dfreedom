@@ -1,0 +1,42 @@
+.section {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-family: ‘Cera Pro’;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    color: #487996;
+    text-transform: uppercase;
+  }
+  .scan-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .scan-list__canvas {
+    position: relative;
+    width: 130px;
+    height: 182px;
+    background: #FFFFFF;
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
+      inset -1px -1px 16px #FFFFFF;
+    border-radius: 50px 0px;
+  }
+  .scan-list__descr {
+    position: absolute;
+    top: 114px;
+    left: 0;
+    text-align: center;
+  }

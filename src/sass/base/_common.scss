@@ -1,26 +1,22 @@
 body {
   color: getColor('primary-text');
-  background-color: getColor('background');
+  background-color: getColor('white');
   font-family: $font-general;
   font-weight: 400;
 }
 
 .container {
-  width: 100%;
-  max-width: 1440px;
+  min-width: $width-min-allowable;
+  max-width: $width-mobile;
   margin: 0 auto;
-  padding: 32px 20px;
+  padding: 0 20px;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @include mq($width-tablet) {
+    max-width: $width-tablet;
     padding: 0 32px;
   }
 
-  @media screen and (min-width: 1440px) {
-    width: 1440px;
+  @include mq($width-desktop) {
+    max-width: $width-desktop;
   }
 }

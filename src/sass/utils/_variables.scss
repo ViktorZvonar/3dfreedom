@@ -1,7 +1,7 @@
 $colors: (
     'primary-text': #2B2B2B,
     'title-text': #487996,
-    'background': #E5E5E5,
+    'background': #F5F5FA,
     'header-text': #BDBDBD,
     'white': #ffffff,
     'backdrop': rgba(43, 43, 43, 0.8),
@@ -11,3 +11,11 @@ $colors: (
 @function getColor($key) {
     @return map-get($colors, $key);
 }
+
+$width-min-allowable: 320px;
+$width-mobile: 480px;
+$width-tablet: 768px;
+$width-desktop: 1440px;
+
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$duration: 250ms;
