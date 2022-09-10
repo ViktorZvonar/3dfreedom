@@ -1,5 +1,6 @@
 .more-photos {
   padding-bottom: 60px;
+
   @media screen and (min-width: 768px) {
     padding-bottom: 80px;
   }
@@ -11,6 +12,7 @@
 .more-photos__title {
   color: getColor('title-text');
   margin-bottom: 16px;
+  text-transform: uppercase;
   @media screen and (max-width: 767px) {
     @include font2(24px, 1.25, 700, null);
   }
@@ -26,38 +28,43 @@
   }
 }
 
-// .more-photos__list {
-//   display: flex;
-//   justify-content: center;
-//   flex-wrap: wrap;
-//   gap: 16px;
-
-//   .more-photos__item {
-//     width: 100%;
-//     max-width: 480;
-//     @media screen and (min-width: 768px) {
-//       width: calc((100% - 32px) / 3);
-//     }
-
-//     @media screen and (min-width: 1200px) {
-//       width: calc((100% - 32px) / 3);
-//     }
-//   }
-// }
 .more-photos__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
-  .more-photos__item {
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    @media screen and (min-width: 768px) {
-      width: calc((100% - 32px) / 3);
-    }
-    @media screen and (min-width: 1200px) {
-      width: calc((100% - 32px) / 3);
-    }
+  @media screen and (min-width: 768px) {
+    gap: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
   }
 }
+
+.more-photos__item {
+  width: 280px;
+
+  @media screen and (min-width: 768px) {
+    width: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: auto;
+  }
+}
+
+// .more-photos__list {
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   gap: 16px;
+//   .more-photos__item {
+//     // width: 280px;
+//     @media screen and (min-width: 768px) {
+//       width: calc((100% - 32px) / 3);
+//     }
+//     @media screen and (min-width: 1200px) {
+//       width: calc((100% - 32px) / 3);
+//     }
+//   }
+// }
