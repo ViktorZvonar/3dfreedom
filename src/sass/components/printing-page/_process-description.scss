@@ -9,7 +9,11 @@
     &__item:not(:last-child) {
         margin-bottom: 60px;}
 
-    
+    &__item {display: block; 
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     }
 
 
