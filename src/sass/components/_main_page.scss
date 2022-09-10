@@ -164,8 +164,8 @@
 
 .main-hero__arrow {
   position: absolute;
-  bottom: -20px;
-  left: 120px;
+  bottom: -17px;
+  left: 237px;
   &:hover,
   &:focus {
     fill: getColor('active-color');
@@ -173,5 +173,11 @@
   }
   @include mq(null, $width-tablet) {
     display: none;
+  }
+  @include mq(null, $width-desktop) {
+    width: 16px;
+    height: 16px;
+    left: 103px;
+    bottom: 133px;
   }
 }
