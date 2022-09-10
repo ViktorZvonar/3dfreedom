@@ -1,3 +1,9 @@
+.scanning-container {
+  width: 1440px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
 .scanning-hero {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -45,5 +51,38 @@
     & {
       background-image: url('../images/3d-scanning/mobile/scanning@2x.jpg');
     }
+  }
+}
+
+@media screen and (min-width: $width-tablet) {
+  .scanning-hero__title {
+    font-size: 36px;
+  }
+
+  .scanning-hero__item {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $width-desktop) {
+  .scanning-hero__title {
+    margin-bottom: 24px;
+    font-size: 48px;
+  }
+
+  .scanning-hero__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .scanning-hero__item {
+    display: block;
+    width: 515px;
+
+    margin-right: 72px;
+    margin-bottom: 24px;
   }
 }
