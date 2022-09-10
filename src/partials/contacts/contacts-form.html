@@ -7,7 +7,7 @@
 
         <label for="name" class="form__label"> Ім'я </label>
         <input
-          class="form__input form__input--first"
+          class="form__input"
           type="text"
           name="name"
           id="name"
@@ -23,16 +23,30 @@
           placeholder="Email"
         />
 
-        <div class="form__comment">
-          <label for="comment" class="label__comment">Повідомлення</label>
-          <div class="comment-area">
-            <textarea
-              class="form__input__comment"
-              name="comment"
-              id="comment"
-              placeholder="Залишіть своє повідомлення"
-            >
-            </textarea>
+        
+          <label for="comment" class="comment__label">Повідомлення</label>
+          <div class="comment__area">
+          <textarea
+            class="comment__text"
+            name="comment"
+            id="comment"
+            placeholder="Залишіть своє повідомлення"
+          ></textarea>
+          <div>
+            <input
+              class="comment__upload visually-hidden"
+              type="file"
+              id="file"
+              name="file"
+              multiple
+            />
+            <label for="file">
+              <svg class="comment__icon" width="22" height="22">
+                <use href="./images/icons.svg#icon-paper-clip"></use>
+              </svg>
+            </label>
+          </div>
+        
           </div>
         </div>
         <p class="comment__add-file">
