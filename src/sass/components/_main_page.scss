@@ -159,7 +159,7 @@
   left: 120px;
   &:hover,
   &:focus {
-    fill: getColor('active-text');
+    fill: getColor('active-color');
     cursor: pointer;
   }
   @include mq(null, $width-tablet) {

@@ -593,6 +593,7 @@ body {
 }
 .main-hero__arrow:hover,
 .main-hero__arrow:focus {
+=======
   cursor: pointer;
 }
 @media screen and (max-width: 767.9px) {
