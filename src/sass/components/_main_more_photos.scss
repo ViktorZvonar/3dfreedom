@@ -12,16 +12,16 @@
   color: getColor('title-text');
   margin-bottom: 16px;
   @media screen and (max-width: 767px) {
-    @include font(24px, 1.25, 700, null);
+    @include font2(24px, 1.25, 700, null);
   }
 
   @media screen and (min-width: 768px) {
-    @include font(36px, 1.25, 700, null);
+    @include font2(36px, 1.25, 700, null);
     margin-bottom: 32px;
   }
 
   @media screen and (min-width: 1200px) {
-    @include font(48px, 1.25, 700, null);
+    @include font2(48px, 1.25, 700, null);
     margin-bottom: 60px;
   }
 }
@@ -51,6 +51,8 @@
   gap: 16px;
   .more-photos__item {
     width: 280px;
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (min-width: 768px) {
       width: calc((100% - 32px) / 3);
     }
