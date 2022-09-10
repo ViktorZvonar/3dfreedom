@@ -41,6 +41,8 @@
 }
 
 .comment__area {
+  width: 280px;
+  height: 199px;
   position: relative;
   background-color: transparent;
 }
@@ -48,8 +50,8 @@
 .comment__text {
   background-color: transparent;
 
-  min-width: 280px;
-  min-height: 199px;
+  width: 280px;
+  height: 199px;
   resize: none;
 
   margin-top: 4px;
@@ -62,17 +64,16 @@
   &::placeholder {
     line-height: 1.25;
 
-    color: #cdcdcd;
+    color: getColor('icon-color');
   }
 }
 
 .comment__icon {
   position: absolute;
-  bottom: 23px;
-  right: 21px;
+  bottom: 18px;
+  right: 18px;
 
-  fill: #cdcdcd;
-  z-index: 999;
+  fill: getColor('icon-color');
 }
 
 .comment__add-file {
