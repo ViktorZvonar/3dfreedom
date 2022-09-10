@@ -52,6 +52,9 @@
 }
 
 @media screen and (min-width: $width-tablet) {
+  .scanning-hero {
+    position: relative;
+  }
   .scanning-hero__title {
     font-size: 36px;
   }
@@ -71,7 +74,11 @@
   }
 
   .scanning-hero__overlay {
-    max-width: 241px;
+    position: absolute;
+    z-index: -1;
+    right: 6px;
+    bottom: 40px;
+    width: 241px;
     height: 172px;
     background-image: url('../images/3d-scanning/tablet/scanning.jpg');
     background-size: 241px 172px;
