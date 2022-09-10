@@ -7,33 +7,41 @@
           line-height: 1.25;
           text-align: left;
           text-transform: uppercase;
-     
+          width: 280px;
           color: #487996;
      
-          @media screen and (min-width: 768px) {
+          @include mq($width-tablet) {
                margin-bottom: 16px;
+               width: 648px;
           }
      
-          @media screen and (min-width: 1440px) {
+          @include mq($width-desktop) {
                margin-bottom: 67px;
                font-size: 48px;
                line-height: 1.25;
+               width: 842px;
           }
 }
 
 .method__list {
      list-style: none;
-     
-          @media screen and (min-width: 768px) {
-               margin-bottom: 40px;
-               display: flex;
-          }
-     
-          @media screen and (min-width: 1440px) {
-               gap: 58px;
-               margin-bottom: 78px;
-               display: flex;
-     
-          }
-}
+     display: flex;
+     flex-wrap: wrap;
+     column-gap: 20px;
+     row-gap: 16px;
 
+          @include mq($width-tablet) {
+          margin-bottom: 40px;
+          column-gap: 32px;
+          row-gap: 16px;
+            }
+     }
+     
+.method__item {
+     width: calc((100% - 20px) / 2);
+
+     @include mq($width-tablet) {
+          width: calc((100% - 32px * 3) / 4);
+          
+     }     
+}
