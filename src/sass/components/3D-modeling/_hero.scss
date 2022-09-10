@@ -1,38 +1,37 @@
-.hero {
+.hero-container {
   padding-top: 40px;
   padding-bottom: 40px;
-
-  &-title {
-    margin-top: 0;
-    margin-bottom: 16px;
-    font-family: 'Cera Pro';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.25;
-    text-align: left;
-    color: #487996;
-
+}
+    .hero-title {
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-family: 'Cera Pro';
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.25;
+      text-align: left;
+      color: #487996;
+  
+      @include mq($width-tablet) {
+        margin-bottom: 16px;
+      }
+  
+      @include mq($width-desktop) {
+        margin-bottom: 100px;
+        font-size: 48px;
+        line-height: 1.25;
+      }
+    }
+  
     @include mq($width-tablet) {
       margin-bottom: 16px;
     }
-
-        @include mq($width-desktop) {
-      margin-bottom: 100px;
+  
+    @include mq($width-desktop) {
+      margin-bottom: 67px;
       font-size: 48px;
       line-height: 1.25;
     }
-  }
-
-    @include mq($width-tablet) {
-    margin-bottom: 16px;
-  }
-
-    @include mq($width-desktop) {
-    margin-bottom: 67px;
-    font-size: 48px;
-    line-height: 1.25;
-  }
-}
 
 .hero-list {
   list-style: none;
