@@ -26,7 +26,6 @@ html {
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-  tab-size: 4;
      tab-size: 4;
   /* 3 */
 }
@@ -584,8 +583,8 @@ body {
 
 .main-hero__arrow {
   position: absolute;
-  bottom: -20px;
-  left: 120px;
+  bottom: -17px;
+  left: 237px;
 }
 .main-hero__arrow:hover, .main-hero__arrow:focus {
   fill: #008cef;
@@ -594,6 +593,14 @@ body {
 @media screen and (max-width: 767.9px) {
   .main-hero__arrow {
     display: none;
+  }
+}
+@media screen and (max-width: 1439.9px) {
+  .main-hero__arrow {
+    width: 16px;
+    height: 16px;
+    left: 103px;
+    bottom: 133px;
   }
 }
 
