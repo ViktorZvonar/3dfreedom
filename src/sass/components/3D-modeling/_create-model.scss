@@ -10,7 +10,6 @@ padding-right: 149px;
 }
 }
 .container-modeling {
-  
 padding-bottom: 56px;
 display: flex;
 flex-direction: column;
@@ -99,15 +98,13 @@ height: 8px;
   margin-right: auto;
   margin-left: auto;
   background-size: contain;
-  @include mq(min-device-pixel-ratio:2),
-  (min-resolution: 192pi),
-  (min-resolution: 2dppx) {
-  background-color: url(/src/images/3d-modeling/mobile/3d-model@2x.png)
+  @include retina() {
+  background-color: url(../images/3d-modeling/mobile/3d-model@2x.png);
   background-repeat: no-repeat;
   background-position: center;
 }
  @include mq($width-tablet) {
-  background-image: url(/src/images/3d-modeling/tablet/3d-model.png);
+  background-image: url(../images/3d-modeling/tablet/3d-model.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 246px;
@@ -115,140 +112,45 @@ height: 8px;
   position: relative;
   margin-left: auto;
   background-size: contain;
-  @include mq($width-tablet) {
-    background-image: url(/src/images/3d-modeling/tablet/3d-model@2x.png);
+  @include retina() {
+    background-image: url(../images/3d-modeling/tablet/3d-model@2x.png);
       background-repeat: no-repeat;
       background-position: center;
   }
 }
 @include mq($width-desktop) {
-  background-image: url(/src/images/3d-modeling/desktop/3d-model.png);
+  background-image: url(../images/3d-modeling/desktop/3d-model.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 555px;
   height: 301px;
   background-size: contain;
-  @include (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  background-image: url(/src/images/3d-modeling/desktop/3d-model@2x.png);
+  @include retina() {
+  background-image: url(../images/3d-modeling/desktop/3d-model@2x.png);
   background-repeat: no-repeat;
   background-position: center;
   }
 }
 }
+.modeling__t-img {
 
-// .container-modeling {
-//   @include mq($width-tablet) {
-//     display: flex;
-//     max-width: 768px;
-//   }
-
-//   @include mq($width-desktop) {
-//     display: flex;
-//     width: 1440px;
-//   }
-// }
-
-// .modeling-title {
-//   margin-bottom: 16px;
-//   font-family: 'Cera Pro';
-//   font-weight: 700;
-//   font-size: 18px;
-//   line-height: 1.25;
-//   text-align: left;
-//   text-transform: uppercase;
-
-//   color: #487996;
-
-//   @include mq($width-tablet) {
-//     margin-bottom: 16px;
-//     font-size: 24px;
-//   }
-
-//   @include mq($width-desktop) {
-//     margin-bottom: 67px;
-//     font-size: 36px;
-//     line-height: 1.25;
-//   }
-// }
-
-// .modeling-list {
-//   list-style: none;
-
-//   @include mq($width-tablet) {
-//     margin-bottom: 40px;
-//   }
-
-//   @include mq($width-desktop) {
-//     gap: 58px;
-//     margin-bottom: 78px;
-//   }
-// }
-
-// .modeling-list__img {
-//   list-style: none;
-
-//   @include mq($width-tablet) {
-//     margin-bottom: 16px;
-//   }
-
-//   @include mq($width-desktop) {
-//     gap: 58px;
-//     margin-bottom: 78px;
-//   }
-// }
-
-// .modeling-item {
-//   font-weight: 300;
-//   font-family: 'Cera Pro';
-//   font-size: 16px;
-//   line-height: 1.25;
-//   text-align: left;
-//   color: #2B2B2B;
-//   gap: 16px;
-//   padding-left: 0;
-
-//   @include mq($width-tablet) {
-//     margin-bottom: 16px;
-//   }
-
-//   @include mq($width-desktop) {
-//     gap: 58px;
-//     margin-bottom: 78px;
-//   }
-
-//   &::before {
-//     content: '';
-//     display: inline-block;
-//     width: 7px;
-//     height: 7px;
-//     margin: 0 12px 4px -19px;
-//     background-color: getColor(title-text);
-//     border-radius: 3px 0;
-//     border: 1px solid getColor('title-text');
-
-//     @include mq($width-tablet) {
-//       width: 8px;
-//       height: 8px;
-//     }
-//   }
-// }
-
-// .modeling-img__item {
-//   width: 280px;
+  @include mq($width-desktop) {
+  background-color: #fff;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 0px 35px;
+  transform: rotate(-90deg);
+  width: 74px;
+  height: 71px;
+  z-index: -1;
+  position: absolute;
+  bottom: 15;
+  right: 0;
+  }
+  @include mq($width-desktop) {
+  display: none;  
+  }
+}
 
 
-//   @include mq($width-tablet) {
-//     width: 246px;
-//     margin-right: 0;
-//     float: right;
-//   }
 
-//   @include mq($width-desktop) {
-//     width: 555px;
-//     margin-right: 0;
-//     float: right;
-//   }
-// }
 
