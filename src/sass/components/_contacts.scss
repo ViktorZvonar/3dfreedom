@@ -1,3 +1,8 @@
+.contacts-container {
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
 .contacts__title {
   text-transform: uppercase;
   color: map-get($colors, 'title-text');
@@ -5,9 +10,6 @@
 }
 .hero-video {
   margin-bottom: 16px;
-}
-.hero-description {
-  margin-bottom: 40px;
 }
 
 .print-features {
@@ -45,4 +47,48 @@ label {
 }
 .form__input:last-child {
   margin-bottom: 48px;
+}
+///////// contacts
+.container-info {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.info {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  &__tel,
+  &__email,
+  &__schedule {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.28;
+    color: map-get($colors, 'title-text');
+    margin-bottom: 8px;
+  }
+  &__email__link {
+    line-height: 1.25;
+  }
+  &__tel {
+    text-transform: uppercase;
+  }
+  &__link,
+  &__days {
+    margin-bottom: 8px;
+    line-height: 1.25;
+  }
+  &__link:last-child {
+    margin-bottom: 0;
+  }
+  &__days:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.page-header,
+.footer {
+  display: none;
 }
