@@ -1,7 +1,7 @@
 .decor-main {
-  width: 1562px;
-  height: 2996px;
-  background-image: url('../images/decor.png');
+  width: 369.65px;
+  height: 1425.49px;
+  background-image: url('../images/decor/mobile/decor-mob.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1440px 2996px;
@@ -10,4 +10,43 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: -2;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/decor/mobile/decor-mob-2x.png');
+  }
+  @media screen and (min-width: 768px) {
+    width: 802px;
+    height: 1507.15px;
+    background-image: url('../images/decor/tablet/decor-tab-main.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/decor/tablet/decor-tab-main-2x.png');
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1562px;
+    height: 2996px;
+    background-image: url('../images/decor/desktop/decor-main.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/decor/desktop/decor-main-2x.png');
+    }
+  }
 }
+// код круг desktop
+// background-image: url('../images/main/desktop/backgraund-imgs/gallary-bgi-5.jpg');
+// position: absolute;
+// width: 144px;
+// height: 144px;
+// left: 1264px;
+// top: 1512px;
+// box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+// border-radius: 72px;
+// @media (min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   background-image: url('../images/main/desktop/backgraund-imgs/gallary-bgi-5@2x.jpg');
+// }
