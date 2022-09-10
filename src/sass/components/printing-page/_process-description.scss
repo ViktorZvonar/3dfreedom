@@ -1,22 +1,65 @@
 .process-description {
+    padding-top: 0;
+    padding-bottom: 60px;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.25;
     color: getColor('primary-text');
 
+    &__item:not(:last-child) {
+        margin-bottom: 60px;}
 
-    &--current{
-        font-weight: 700;
-        color: getColor('title-text');
-        
-
+    
     }
+
+
+.explanations{
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+    &__item:not(:last-child) {
+      margin-bottom: 16px;}
+
+
+    &__current{
+    font-weight: 700;
+    color: getColor('title-text');}
+
 }
+/*
+    @include mq($width-tablet) {
+      font-size: 36px;
+    }
+    @include mq($width-desktop) {
+      font-size: 48px;
+      margin-bottom: 24px;
+    }
+  }
+  
+
+ 
+  }
+  .content__title {
+    height: 45px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    color: getColor('title-text');
+    text-transform: uppercase;
+    @include mq($width-desktop) {
+      height: 65px;
+      font-size: 18px;
+    }
+  }*/
+  
 
 .button-print{
-    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    font-family: 'CeraPro';
+    @extend %button;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
