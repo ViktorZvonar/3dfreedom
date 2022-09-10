@@ -31,10 +31,13 @@
   color: #2b2b2b;
 }
 
-// background-image: url(../images/order/mobile/order-img.jpg);
-
 .scanning-hero__overlay {
+  max-width: 280px;
+  height: 199px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url('../images/3d-scanning/mobile/scanning.jpg');
+  background-repeat: no-repeat;
   background-position: center;
   background-size: 280px 199px;
 
@@ -52,10 +55,35 @@
   .scanning-hero__title {
     font-size: 36px;
   }
-
   .scanning-hero__item {
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+  // .scanning__thumb {
+  //   // display: flex;
+  //   // flex-direction: row;
+  // }
+
+  .scanning-hero__descr {
+    display: block;
+    width: 514px;
+  }
+
+  .scanning-hero__overlay {
+    max-width: 241px;
+    height: 172px;
+    background-image: url('../images/3d-scanning/tablet/scanning.jpg');
+    background-size: 241px 172px;
+    background-position: right 6px bottom 40px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/3d-scanning/tablet/scanning@2x.jpg');
+      }
     }
   }
 }
@@ -81,5 +109,23 @@
 
   .scanning-hero__descr {
     font-size: 18px;
+  }
+
+  .scanning-hero__overlay {
+    // position: absolute;
+    max-width: 435px;
+    height: 286px;
+    background-image: url('../images/3d-scanning/desktop/scanning.jpg');
+    background-size: 435px 286px;
+    // background-position: right;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/3d-scanning/desktop/scanning@2x.jpg');
+      }
+    }
   }
 }

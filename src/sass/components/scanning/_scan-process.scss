@@ -19,6 +19,10 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  // gap: 16px 20px;
+  // flex-wrap: wrap;
+  // align-items: center;
+  // display: flex;
 }
 
 .scan-list__item {
@@ -50,19 +54,53 @@
   border-radius: 50px 0px;
   padding: 15px 19px;
 
-  &::before {
-    content: '';
+  &:nth-child(1) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 19px;
+      display: block;
+      height: 83px;
+      width: 92px;
+      background-image: url('../images/3d-scanning/mobile/scan-process-1.png');
+    }
+  }
 
-    position: absolute;
-    top: 15px;
-    left: 19px;
-    display: block;
-    // background-image: url();
-    height: 83px;
-    width: 92px;
-    background-color: rgba(33, 33, 33, 0.2);
+  &:nth-child(2) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 19px;
+      display: block;
+      height: 83px;
+      width: 92px;
+      background-image: url('../images/3d-scanning/mobile/scan-process-2.png');
+    }
   }
 }
+
+// &:nth-child(2) {
+//   background-image: url('../images/3d-scanning/mobile/scan-process-2.png');
+// }
+
+// &:nth-child(2) {
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     top: 15px;
+//     left: 19px;
+//     display: block;
+//     background-image: url('../images/3d-scanning/mobile/scan-process-2.png');
+//     height: 83px;
+//     width: 92px;
+//   }
+// }
+
+// url('../images/3d-scanning/mobile/scan-process-2.png'),
+// url('../images/3d-scanning/mobile/scan-process-3.png'),
+// url('../images/3d-scanning/mobile/scan-process-4.png');
 
 .scan-list__title {
   text-align: center;
@@ -90,6 +128,7 @@
   .scanning-section__title {
     font-size: 24px;
     margin-bottom: 24px;
+    margin-left: 28px;
   }
 
   .scan-list__item {
@@ -115,7 +154,6 @@
       // background-image: url();
       height: 94px;
       width: 107px;
-      background-color: rgba(33, 33, 33, 0.2);
     }
   }
 
@@ -126,6 +164,7 @@
     .scanning-section__title {
       font-size: 36px;
       margin-bottom: 40px;
+      margin-left: 117px;
     }
 
     .scan-list__item {
