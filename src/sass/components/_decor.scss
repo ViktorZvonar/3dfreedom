@@ -1,0 +1,13 @@
+.decor-main {
+  width: 1562px;
+  height: 2996px;
+  background-image: url('../images/decor.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -2;
+}
