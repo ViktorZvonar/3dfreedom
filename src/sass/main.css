@@ -27,6 +27,7 @@ html {
   /* 3 */
   -o-tab-size: 4;
   tab-size: 4;
+     tab-size: 4;
   /* 3 */
 }
 
@@ -41,8 +42,7 @@ Sections
 body {
   margin: 0;
   /* 1 */
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   /* 2 */
 }
 
@@ -70,7 +70,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /**
@@ -89,8 +89,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
-    monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -172,9 +171,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -227,7 +226,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type='search'] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -264,34 +263,30 @@ summary {
 }
 
 @font-face {
-  font-family: 'CeraPro';
-  src: url('/src/fonts/CeraPro-700.eot');
-  src: local('☺'), url('/src/fonts/CeraPro-700.woff') format('woff'),
-    url('/src/fonts/CeraPro-700.ttf') format('truetype');
+  font-family: "CeraPro";
+  src: url("/src/fonts/CeraPro-700.eot");
+  src: local("☺"), url("/src/fonts/CeraPro-700.woff") format("woff"), url("/src/fonts/CeraPro-700.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'CeraPro';
-  src: url('/src/fonts/CeraPro-400.eot');
-  src: local('☺'), url('/src/fonts/CeraPro-400.woff') format('woff'),
-    url('/src/fonts/CeraPro-400.ttf') format('truetype');
+  font-family: "CeraPro";
+  src: url("/src/fonts/CeraPro-400.eot");
+  src: local("☺"), url("/src/fonts/CeraPro-400.woff") format("woff"), url("/src/fonts/CeraPro-400.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'CaviarDreams';
-  src: url('/src/fonts/CaviarDreams-400.eot');
-  src: local('☺'), url('/src/fonts/CaviarDreams-400.woff') format('woff'),
-    url('/src/fonts/CaviarDreams-400.ttf') format('truetype');
+  font-family: "CaviarDreams";
+  src: url("/src/fonts/CaviarDreams-400.eot");
+  src: local("☺"), url("/src/fonts/CaviarDreams-400.woff") format("woff"), url("/src/fonts/CaviarDreams-400.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'CeraPro';
-  src: url('/src/fonts/CeraPro-300.eot');
-  src: local('☺'), url('/src/fonts/CeraPro-300.woff') format('woff'),
-    url('/src/fonts/CeraPro-300.ttf') format('truetype');
+  font-family: "CeraPro";
+  src: url("/src/fonts/CeraPro-300.eot");
+  src: local("☺"), url("/src/fonts/CeraPro-300.woff") format("woff"), url("/src/fonts/CeraPro-300.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
@@ -331,33 +326,25 @@ p {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-.footer-contacts__phones,
-.footer-contacts,
-.footer-socials,
-.footer-nav__list,
-.main-gallery__list,
-.main-hero__list {
+.footer-contacts__phones, .footer-contacts, .footer-socials, .footer-nav__list, .main-gallery__list, .main-hero__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.phones__link,
-.footer-contacts__link,
-.footer-socials__link,
-.footer-nav__link {
+.phones__link, .footer-contacts__link, .footer-socials__link, .footer-nav__link {
   text-decoration: none;
 }
 
 body {
   color: #2b2b2b;
   background-color: #ffffff;
-  font-family: 'CeraPro', sans-serif;
+  font-family: "CeraPro", sans-serif;
 }
 
 .container {
@@ -403,19 +390,25 @@ body {
 }
 @media screen and (min-width: 768px) {
   .main-hero,
-  .main-gallery {
+.main-gallery {
     margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1440px) {
   .main-hero,
-  .main-gallery {
+.main-gallery {
     margin-bottom: 120px;
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .main-gallery > .container {
+    padding: 0 149px;
+  }
+}
+
 .main-hero__title {
-  font-family: 'CaviarDreams', sans-serif;
+  font-family: "CaviarDreams", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.1666666667;
@@ -492,7 +485,7 @@ body {
 }
 
 .main-hero__text {
-  font-family: 'CaviarDreams', sans-serif;
+  font-family: "CaviarDreams", sans-serif;
   font-size: 16px;
   line-height: 1.1875;
   text-align: center;
@@ -535,8 +528,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    -moz-column-gap: 32px;
-    column-gap: 32px;
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-gallery__list {
     row-gap: 40px;
   }
 }
@@ -591,9 +587,8 @@ body {
   bottom: -20px;
   left: 120px;
 }
-.main-hero__arrow:hover,
-.main-hero__arrow:focus {
-=======
+.main-hero__arrow:hover, .main-hero__arrow:focus {
+  fill: #008cef;
   cursor: pointer;
 }
 @media screen and (max-width: 767.9px) {
@@ -623,7 +618,7 @@ body {
 
 .modeling-title {
   margin-bottom: 16px;
-  font-family: 'Cera Pro';
+  font-family: "Cera Pro";
   font-weight: 700;
   font-size: 18px;
   line-height: 1.25;
@@ -675,7 +670,7 @@ body {
 }
 
 .modeling-item {
-  font-family: 'Cera Pro';
+  font-family: "Cera Pro";
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
@@ -719,7 +714,7 @@ body {
 .hero-title {
   margin-top: 0;
   margin-bottom: 16px;
-  font-family: 'Cera Pro';
+  font-family: "Cera Pro";
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
@@ -765,7 +760,7 @@ body {
 }
 
 .hero__item {
-  font-family: 'Cera Pro';
+  font-family: "Cera Pro";
 }
 @media screen and (min-width: 768px) {
   .hero__item {
@@ -797,7 +792,7 @@ body {
 
 .method__title {
   margin-bottom: 16px;
-  font-family: 'Cera Pro';
+  font-family: "Cera Pro";
   font-weight: 700;
   font-size: 18px;
   line-height: 1.25;
@@ -843,7 +838,7 @@ body {
 .scanning-hero__title {
   margin-top: 0;
   margin-bottom: 16px;
-  font-family: 'CeraPro';
+  font-family: "CeraPro";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -860,7 +855,7 @@ body {
 }
 
 .scanning-hero__descr {
-  font-family: 'CeraPro';
+  font-family: "CeraPro";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -869,16 +864,13 @@ body {
 }
 
 .scanning-hero__overlay {
-  background-image: url('/src/images/3d-scanning/mobile/scanning.jpg');
+  background-image: url("/src/images/3d-scanning/mobile/scanning.jpg");
   background-position: center;
   background-size: 280px 199px;
 }
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .scanning-hero__overlay {
-    background-image: url('/src/images/3d-scanning/mobile/scanning@2x.jpg');
+    background-image: url("/src/images/3d-scanning/mobile/scanning@2x.jpg");
   }
 }
 
@@ -890,7 +882,7 @@ body {
 .button-scan {
   cursor: pointer;
   text-align: center;
-  font-family: 'CeraPro';
+  font-family: "CeraPro";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -901,8 +893,7 @@ body {
   border: none;
   border-color: transparent;
   background: #f5f5fa;
-  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
-    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
   border-radius: 30.5px;
   min-width: 280px;
   height: 56px;
@@ -923,7 +914,7 @@ body {
 .scanning-section__title {
   margin-top: 0;
   margin-bottom: 16px;
-  font-family: 'CeraPro';
+  font-family: "CeraPro";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -948,7 +939,7 @@ body {
 .scan-list__item:nth-child(2n) {
   margin-right: 0;
 }
-.scan-list__item:nth-last-child(-n + 2) {
+.scan-list__item:nth-last-child(-n+2) {
   margin-bottom: 0;
 }
 
@@ -958,16 +949,15 @@ body {
   height: 100%;
   background: #ffffff;
   opacity: 0.8;
-  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
-    inset -1px -1px 16px #ffffff;
+  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
 }
 .scan-list__canvas::after {
-  content: ' ';
+  content: " ";
   position: absolute;
   left: 15px;
   top: 15px;
-  background-image: url('/src/images/3d-scanning/mobile/scan-process-1.png');
+  background-image: url("/src/images/3d-scanning/mobile/scan-process-1.png");
 }
 
 .scan-list__title {
@@ -975,7 +965,7 @@ body {
   top: 114px;
   left: 0;
   text-align: center;
-  font-family: 'Cera Pro';
+  font-family: "Cera Pro";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1062,8 +1052,7 @@ body {
   transition-property: color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-nav__link:hover,
-.footer-nav__link:focus {
+.footer-nav__link:hover, .footer-nav__link:focus {
   color: #487996;
   font-weight: 700;
   outline: none;
@@ -1094,8 +1083,7 @@ body {
   transition-property: color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-socials__link:hover,
-.footer-socials__link:focus {
+.footer-socials__link:hover, .footer-socials__link:focus {
   color: #487996;
   font-weight: 700;
   outline: none;
@@ -1137,6 +1125,10 @@ body {
 .phones__link {
   color: #487996;
 }
+.phones__link:focus {
+  font-weight: 700;
+  outline: none;
+}
 
 .burger {
   display: flex;
@@ -1155,21 +1147,13 @@ body {
     display: none;
   }
 }
-.burger:hover,
-.burger:focus {
+.burger:hover, .burger:focus {
   transform: scale(1.1);
 }
-.burger:hover .burger__stroke,
-.burger:focus .burger__stroke,
-.burger:hover .burger__stroke::before,
-.burger:focus .burger__stroke::before,
-.burger:hover .burger__stroke::after,
-.burger:focus .burger__stroke::after {
+.burger:hover .burger__stroke, .burger:focus .burger__stroke, .burger:hover .burger__stroke::before, .burger:focus .burger__stroke::before, .burger:hover .burger__stroke::after, .burger:focus .burger__stroke::after {
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
 }
-.burger__stroke,
-.burger__stroke::before,
-.burger__stroke::after {
+.burger__stroke, .burger__stroke::before, .burger__stroke::after {
   width: 32px;
   height: 2px;
   border-radius: 1px;
@@ -1178,14 +1162,13 @@ body {
 .burger__stroke {
   position: relative;
   display: block;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 :not(.is-hidden) + .burger .burger__stroke {
   transform: rotate(45deg);
 }
 .burger__stroke::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: -8px;
@@ -1198,7 +1181,7 @@ body {
   transform: rotate(90deg);
 }
 .burger__stroke::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -1264,8 +1247,7 @@ body {
     pointer-events: none;
   }
 }
-.header-phones:hover .header-phones__popup,
-.header-phones:focus-within .header-phones__popup {
+.header-phones:hover .header-phones__popup, .header-phones:focus-within .header-phones__popup {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
@@ -1307,7 +1289,7 @@ body {
 }
 
 .page-nav__sublink::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 7px;
   height: 7px;
@@ -1317,7 +1299,7 @@ body {
   background-color: currentColor;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1439.9px) {
   .page-nav {
     position: fixed;
     z-index: -1;
@@ -1327,8 +1309,7 @@ body {
     bottom: 0;
     background-color: #ffffff;
     overflow: hidden;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -1367,7 +1348,7 @@ body {
   .page-nav__list {
     display: flex;
     gap: 36px;
-    font-family: 'CaviarDreams', sans-serif;
+    font-family: "CaviarDreams", sans-serif;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.01em;
@@ -1384,8 +1365,7 @@ body {
   -webkit-text-stroke: 1px transparent;
   text-transform: uppercase;
   outline: none;
-  transition-property: transform, text-shadow, color, -webkit-text-stroke,
-    margin-bottom;
+  transition-property: transform, text-shadow, color, -webkit-text-stroke, margin-bottom;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1423,8 +1403,8 @@ body {
 
 @media screen and (max-width: 1439.9px) {
   .page-nav__link--current,
-  .page-nav__link:hover,
-  .page-nav__link:focus {
+.page-nav__link:hover,
+.page-nav__link:focus {
     -webkit-text-stroke: 1px #487996;
   }
 }
@@ -1436,7 +1416,7 @@ body {
 }
 @media screen and (max-width: 1439.9px) {
   .page-nav__link:hover,
-  .page-nav__link:focus {
+.page-nav__link:focus {
     color: #dceef8;
   }
 }
@@ -1458,7 +1438,7 @@ body {
     text-transform: none;
   }
   .dropdown__heading::after {
-    content: '';
+    content: "";
     position: absolute;
     right: -4px;
     top: 50%;
@@ -1540,8 +1520,8 @@ body {
   border: none;
   border-radius: 4px;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: transparent;
   cursor: pointer;
 }
@@ -1622,10 +1602,7 @@ body.is-locked {
   margin-top: 16px;
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .order-hero__bg {
     background-image: url(../images/order/mobile/order-img@2x.jpg);
   }
@@ -1673,7 +1650,7 @@ body.is-locked {
 @media screen and (min-width: 768px) {
   .model__list {
     -moz-column-gap: 32px;
-    column-gap: 32px;
+         column-gap: 32px;
   }
 }
 
@@ -1697,8 +1674,7 @@ body.is-locked {
   justify-content: end;
   background: #ffffff;
   opacity: 0.8;
-  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
-    inset -1px -1px 16px #ffffff;
+  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
 }
 @media screen and (min-width: 768px) {
@@ -1735,4 +1711,4 @@ body.is-locked {
     height: 65px;
     font-size: 18px;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
