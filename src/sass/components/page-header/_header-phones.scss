@@ -34,7 +34,7 @@
   }
 
   &__popup {
-    @include mq($until: $width-tablet - 0.1px) {
+    @include mq($until: $width-tablet) {
       position: absolute;
       top: calc(100% + 7px);
       left: 0;

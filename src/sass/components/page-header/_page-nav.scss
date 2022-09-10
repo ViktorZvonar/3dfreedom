@@ -29,7 +29,7 @@
 }
 
 .page-nav.is-hidden {
-  @include mq($until: $width-desktop - 0.1px) {
+  @include mq($until: $width-desktop) {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -109,7 +109,7 @@
 }
 
 .page-nav__link--current {
-  @include mq($until: $width-desktop - 0.1px) {
+  @include mq($until: $width-desktop) {
     color: #ffffff;
   }
   @include mq($width-desktop) {
@@ -120,7 +120,7 @@
 .page-nav__link--current,
 .page-nav__link:hover,
 .page-nav__link:focus {
-  @include mq($until: $width-desktop - 0.1px) {
+  @include mq($until: $width-desktop) {
     -webkit-text-stroke: 1px $text-color-secondary;
 
     // Вариант с тенями вместо -webkit-text-stroke,
@@ -139,7 +139,7 @@
   transform: scale(1.1);
   text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 
-  @include mq($until: $width-desktop - 0.1px) {
+  @include mq($until: $width-desktop) {
     color: #dceef8;
   }
 }
