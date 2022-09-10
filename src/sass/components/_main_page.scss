@@ -23,6 +23,7 @@
     font-size: 24px;
     line-height: calc(28 / 24);
     width: 336px;
+    margin-bottom: 60px;
   }
   @include mq($width-desktop) {
     font-size: 48px;
@@ -44,6 +45,7 @@
   }
   @include mq($width-tablet) {
     max-width: 400px;
+    margin-bottom: 60px;
     gap: 29px;
   }
   @include mq($width-desktop) {
@@ -137,5 +139,23 @@
   @include mq($width-desktop) {
     font-size: 18px;
     line-height: calc(23 / 18);
+  }
+}
+
+.main-hero > .container {
+  position: relative;
+}
+
+.main-hero__arrow {
+  position: absolute;
+  bottom: -20px;
+  left: 120px;
+  &:hover,
+  &:focus {
+    fill: getColor('active-text');
+    cursor: pointer;
+  }
+  @include mq(null, $width-tablet) {
+    display: none;
   }
 }
