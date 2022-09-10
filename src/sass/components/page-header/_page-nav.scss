@@ -1,3 +1,17 @@
+%marked {
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 0 12px 4px -19px;
+    border-radius: 3px 0;
+    border: 1px solid $text-color-secondary;
+
+    background-color: currentColor;
+  }
+}
+
 .page-nav {
   @include mq($until: $width-desktop) {
     position: fixed;
@@ -6,45 +20,29 @@
     left: 0;
     right: 0;
     bottom: 0;
-    // min-width: 100vw;
-    // min-height: 100vh;
-
-    // padding: 15px 15px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
 
     background-color: #ffffff;
     overflow: hidden;
 
     @include animate(opacity visibility);
   }
-
-  &.is-hidden {
-    @include mq($until: $width-desktop - 0.1px) {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-    }
-  }
 }
 
-.page-nav__item {
-  width: 100%;
+.page-nav.is-hidden {
+  @include mq($until: $width-desktop) {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .page-nav__list {
   text-align: center;
   @include mq($until: $width-desktop) {
-    // --margin-top: 40px
     --margin-top: 115px;
     position: absolute;
     top: 0;
     left: 0;
-    // transform: translate(
-    //   max(0px, 50vw - 50%),
-    //   max(var(--margin-top), 50vh - 50%)
-    // );
 
     transform: translate(max(0px, 50vw - 50%), var(--margin-top));
     display: flex;
@@ -56,10 +54,6 @@
     padding: 10px 15px 40px;
     gap: 24px;
     overflow: auto;
-
-    // @include mq($width-tablet) {
-    //   --margin-top: 100px;
-    // }
 
     @include font(24px, 30px, null, 700);
     color: $text-color-secondary;
@@ -75,12 +69,16 @@
   }
 }
 
+// .page-nav__item {
+// }
+
 .page-nav__link {
   display: block;
   min-width: fit-content;
   color: $text-color-secondary;
   -webkit-text-stroke: 1px transparent;
   text-transform: uppercase;
+  outline: none;
   @include animate(
     transform text-shadow color -webkit-text-stroke margin-bottom
   );
@@ -94,11 +92,40 @@
   }
 }
 
+// .page-nav__subitem {
+// }
+
+//Обязательно после .page-nav__link, чтоб можно было перекрвать стили
+.page-nav__sublink {
+  @extend %marked;
+
+  @include mq($width-desktop) {
+    @include font(16px, 19px);
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.page-nav__link--current {
+  @include mq($until: $width-desktop) {
+    color: #ffffff;
+  }
+  @include mq($width-desktop) {
+    font-weight: 700;
+  }
+}
+
 .page-nav__link--current,
 .page-nav__link:hover,
 .page-nav__link:focus {
-  @include mq($until: $width-desktop - 0.1px) {
+  @include mq($until: $width-desktop) {
     -webkit-text-stroke: 1px $text-color-secondary;
+
+    // Вариант с тенями вместо -webkit-text-stroke,
+    // но тогда hover и focus отредактировать надо. Там text-shadow переопределяется
+
     // text-shadow: 1px 0px 0px $text-color-secondary,
     //   -1px 0px 0px $text-color-secondary, 0px 1px 0px $text-color-secondary,
     //   0px -1px 0px $text-color-secondary, 1px -1px 0px $text-color-secondary,
@@ -107,23 +134,12 @@
   }
 }
 
-.page-nav__link--current {
-  @include mq($until: $width-desktop - 0.1px) {
-    color: #ffffff;
-  }
-  @include mq($width-desktop) {
-    font-weight: 700;
-  }
-}
-
 .page-nav__link:hover,
 .page-nav__link:focus {
-  @include mq($until: $width-desktop - 0.1px) {
-    color: #dceef8;
-  }
-  @include mq($width-desktop) {
-    // font-weight: 700;
-  }
   transform: scale(1.1);
   text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+
+  @include mq($until: $width-desktop) {
+    color: #dceef8;
+  }
 }

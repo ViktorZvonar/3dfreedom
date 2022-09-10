@@ -8,8 +8,15 @@
     margin-bottom: 120px;
   }
 }
+
+.main-gallery > .container {
+  @include mq($width-desktop) {
+    padding: 0 149px;
+  }
+}
+
 .main-hero__title {
-  font-family: $font-hero, sans-serif;
+  font-family: $font-hero;
   font-weight: 400;
   font-size: 18px;
   line-height: calc(21 / 18);
@@ -23,11 +30,14 @@
     font-size: 24px;
     line-height: calc(28 / 24);
     width: 336px;
+    margin-bottom: 60px;
   }
   @include mq($width-desktop) {
     font-size: 48px;
     line-height: calc(56 / 48);
     width: 630px;
+    margin-left: 426px;
+    margin-right: 384px;
   }
 }
 
@@ -44,6 +54,7 @@
   }
   @include mq($width-tablet) {
     max-width: 400px;
+    margin-bottom: 60px;
     gap: 29px;
   }
   @include mq($width-desktop) {
@@ -69,7 +80,7 @@
 }
 
 .main-hero__text {
-  font-family: $font-hero, sans-serif;
+  font-family: $font-hero;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -101,15 +112,22 @@
 
 .main-gallery__list {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 32px;
+  @include mq($width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+  @include mq($width-desktop) {
+    row-gap: 40px;
+  }
 }
 
 .main-gallery__item {
-  display: inline-block;
-  width: 100%;
+  display: block;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   @include mq(null, $width-tablet) {
     &:not(:last-child) {
       margin-bottom: 24px;
@@ -138,4 +156,87 @@
     font-size: 18px;
     line-height: calc(23 / 18);
   }
+}
+
+.main-hero > .container {
+  position: relative;
+}
+
+.main-hero__arrow {
+  position: absolute;
+  bottom: -17px;
+  left: 237px;
+  &:hover,
+  &:focus {
+    fill: getColor('active-color');
+    cursor: pointer;
+  }
+  @include mq(null, $width-tablet) {
+    display: none;
+  }
+  @include mq(null, $width-desktop) {
+    width: 16px;
+    height: 16px;
+    left: 103px;
+    bottom: 133px;
+  }
+}
+.gallary__image.is-surfaced {
+  position: fixed;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  max-width: none;
+  object-fit: contain;
+}
+.gallary__backdrop {
+  display: none;
+  &.is-surfaced {
+    display: block;
+  }
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #0004;
+}
+
+.is-surfaced .gallary__btn-next,
+.is-surfaced .gallary__btn-prev {
+  display: block;
+}
+
+.gallary__btn-next {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: rotate(45deg);
+  border-width: 5 5 0 0;
+  border-style: solid;
+  border-color: #ee4444;
+
+  z-index: 5;
+  height: 50px;
+  width: 50px;
+}
+
+.gallary__btn-prev {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: rotate(-45deg);
+  border-width: 5 0 0 5;
+  border-style: solid;
+  border-color: #ee4444;
+
+  z-index: 5;
+  height: 50px;
+  width: 50px;
 }
