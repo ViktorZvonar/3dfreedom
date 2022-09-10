@@ -64,6 +64,16 @@
       height: 83px;
       width: 92px;
       background-image: url('../images/3d-scanning/mobile/scan-process-1.png');
+      background-size: contain;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+          background-image: url('../images/3d-scanning/mobile/scan-process-1@2x.png');
+        }
+      }
     }
   }
 
