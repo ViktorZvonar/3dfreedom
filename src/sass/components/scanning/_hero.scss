@@ -63,10 +63,6 @@
       margin-bottom: 0;
     }
   }
-  // .scanning__thumb {
-  //   // display: flex;
-  //   // flex-direction: row;
-  // }
 
   .scanning-hero__descr {
     display: block;
@@ -102,9 +98,11 @@
   }
 
   .scanning-hero__list {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 515px;
   }
 
   .scanning-hero__item {
@@ -119,12 +117,12 @@
   }
 
   .scanning-hero__overlay {
-    // position: absolute;
-    max-width: 435px;
+    position: absolute;
+    z-index: 1;
+    width: 435px;
     height: 286px;
     background-image: url('../images/3d-scanning/desktop/scanning.jpg');
     background-size: 435px 286px;
-    // background-position: right;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
