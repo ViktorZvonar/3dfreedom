@@ -1,15 +1,15 @@
 $colors: (
-    'primary-text': #2B2B2B,
-    'title-text': #487996,
-    'background': #F5F5FA,
-    'header-text': #BDBDBD,
-    'white': #ffffff,
-    'backdrop': rgba(43, 43, 43, 0.8),
+  'primary-text': #2b2b2b,
+  'title-text': #487996,
+  'background': #f5f5fa,
+  'header-text': #bdbdbd,
+  'active-color': #008cef,
+  'white': #ffffff,
+  'backdrop': rgba(43, 43, 43, 0.8),
 );
 
-
 @function getColor($key) {
-    @return map-get($colors, $key);
+  @return map-get($colors, $key);
 }
 
 $width-min-allowable: 320px;
