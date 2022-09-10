@@ -170,19 +170,34 @@
   }
 }
 
+// .more-photos__list {
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   gap: 16px;
+
+//   .more-photos__item {
+//     width: 100%;
+//     max-width: 480;
+//     @media screen and (min-width: 768px) {
+//       width: calc((100% - 32px) / 3);
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//       width: calc((100% - 32px) / 3);
+//     }
+//   }
+// }
 .more-photos__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
-
   .more-photos__item {
-    width: 100%;
-
+    width: 280px;
     @media screen and (min-width: 768px) {
       width: calc((100% - 32px) / 3);
     }
-
     @media screen and (min-width: 1200px) {
       width: calc((100% - 32px) / 3);
     }
