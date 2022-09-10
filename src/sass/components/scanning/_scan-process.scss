@@ -9,7 +9,7 @@
   font-family: 'CeraPro';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.25;
   color: #487996;
   text-transform: uppercase;
@@ -88,6 +88,7 @@
     padding-bottom: 60px;
   }
   .scanning-section__title {
+    font-size: 24px;
     margin-bottom: 24px;
   }
 
@@ -115,6 +116,29 @@
       height: 94px;
       width: 107px;
       background-color: rgba(33, 33, 33, 0.2);
+    }
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    .scanning-section {
+      padding-bottom: 80px;
+    }
+    .scanning-section__title {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .scan-list__item {
+      width: 320px;
+      height: 381px;
+    }
+
+    .scan-list__canvas {
+      padding: 67px 40px 27px 40px;
+    }
+
+    .scan-list__title {
+      font-size: 18px;
     }
   }
 }
