@@ -19,14 +19,11 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  // gap: 16px 20px;
-  // flex-wrap: wrap;
-  // align-items: center;
-  // display: flex;
 }
 
 .scan-list__item {
-  width: calc(50% - 20px);
+  position: relative;
+  width: calc((100% - 20px) / 2);
   height: 182px;
   margin-right: 20px;
   margin-bottom: 16px;
@@ -39,26 +36,12 @@
   &:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
-}
-
-.scan-list__canvas {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  height: 100%;
-  background: #ffffff;
-  opacity: 0.8;
-  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
-    inset -1px -1px 16px #ffffff;
-  border-radius: 50px 0px;
-  // padding: 15px 19px;
 
   &:nth-child(1) {
     &::before {
       content: '';
       position: absolute;
+      z-index: 1;
       top: 15px;
       left: 19px;
       display: block;
@@ -66,7 +49,7 @@
       width: 92px;
       background-image: url('../images/3d-scanning/mobile/scan-process-1.png');
       background-size: contain;
-      background-origin: padding-box;
+      background-repeat: no-repeat;
 
       @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
@@ -83,54 +66,101 @@
     &::before {
       content: '';
       position: absolute;
+      z-index: 1;
       top: 15px;
       left: 19px;
       display: block;
       height: 83px;
       width: 92px;
       background-image: url('../images/3d-scanning/mobile/scan-process-2.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+          background-image: url('../images/3d-scanning/mobile/scan-process-2@2x.png');
+        }
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 15px;
+      left: 19px;
+      display: block;
+      height: 83px;
+      width: 92px;
+      background-image: url('../images/3d-scanning/mobile/scan-process-3.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+          background-image: url('../images/3d-scanning/mobile/scan-process-3@2x.png');
+        }
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 15px;
+      left: 19px;
+      display: block;
+      height: 83px;
+      width: 92px;
+      background-image: url('../images/3d-scanning/mobile/scan-process-4.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+          background-image: url('../images/3d-scanning/mobile/scan-process-4@2x.png');
+        }
+      }
     }
   }
 }
 
-// &:nth-child(2) {
-//   background-image: url('../images/3d-scanning/mobile/scan-process-2.png');
-// }
-
-// &:nth-child(2) {
-//   &::before {
-//     content: '';
-//     position: absolute;
-//     top: 15px;
-//     left: 19px;
-//     display: block;
-//     background-image: url('../images/3d-scanning/mobile/scan-process-2.png');
-//     height: 83px;
-//     width: 92px;
-//   }
-// }
-
-// url('../images/3d-scanning/mobile/scan-process-2.png'),
-// url('../images/3d-scanning/mobile/scan-process-3.png'),
-// url('../images/3d-scanning/mobile/scan-process-4.png');
+.scan-list__canvas {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  opacity: 0.8;
+  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
+    inset -1px -1px 16px #ffffff;
+  border-radius: 50px 0px;
+  padding-bottom: 15px;
+}
 
 .scan-list__title {
+  max-width: 50%;
   text-align: center;
-
   font-family: 'CeraPro';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
   color: #487996;
-}
-
-@media screen and (min-width: 469px) {
-  .scan-list__item {
-    &:nth-child(2n) {
-      margin-right: 20px;
-    }
-  }
 }
 
 @media screen and (min-width: $width-tablet) {
@@ -144,7 +174,7 @@
   }
 
   .scan-list__item {
-    width: 152px;
+    max-width: calc((100% - 96px) / 4);
     height: 210px;
 
     &:nth-child(n) {
@@ -155,41 +185,188 @@
     &:last-child {
       margin-right: 0;
     }
+
+    &:nth-child(1) {
+      &::before {
+        top: 20px;
+        left: 22px;
+        height: 95px;
+        width: 107px;
+        background-image: url('../images/3d-scanning/tablet/scan-process-1.png');
+
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          & {
+            background-image: url('../images/3d-scanning/tablet/scan-process-1@2x.png');
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        top: 20px;
+        left: 22px;
+        height: 95px;
+        width: 107px;
+        background-image: url('../images/3d-scanning/tablet/scan-process-2.png');
+
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          & {
+            background-image: url('../images/3d-scanning/tablet/scan-process-2@2x.png');
+          }
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        top: 20px;
+        left: 22px;
+        height: 95px;
+        width: 107px;
+        background-image: url('../images/3d-scanning/tablet/scan-process-3.png');
+
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          & {
+            background-image: url('../images/3d-scanning/tablet/scan-process-3@2x.png');
+          }
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      &::before {
+        top: 20px;
+        left: 22px;
+        height: 95px;
+        width: 107px;
+        background-image: url('../images/3d-scanning/tablet/scan-process-4.png');
+
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          & {
+            background-image: url('../images/3d-scanning/tablet/scan-process-4@2x.png');
+          }
+        }
+      }
+    }
+  }
+  .scan-list__canvas {
+    padding-bottom: 23px;
+  }
+
+  .scan-list__title {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: $width-desktop) {
+  .scanning-section {
+    padding-bottom: 80px;
+  }
+  .scanning-section__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    margin-left: 117px;
+  }
+
+  .scan-list__item {
+    height: 381px;
+
+    &:nth-child(1) {
+      &::before {
+        top: 60px;
+        left: 40px;
+        height: 215px;
+        width: 240px;
+        background-image: url('../images/3d-scanning/desktop/scan-process-1.png');
+
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          & {
+            background-image: url('../images/3d-scanning/desktop/scan-process-1@2x.png');
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        top: 60px;
+        left: 40px;
+        height: 215px;
+        width: 240px;
+        background-image: url('../images/3d-scanning/desktop/scan-process-2.png');
+
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          & {
+            background-image: url('../images/3d-scanning/desktop/scan-process-2@2x.png');
+          }
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        top: 60px;
+        left: 40px;
+        height: 215px;
+        width: 240px;
+        background-image: url('../images/3d-scanning/desktop/scan-process-3.png');
+
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          & {
+            background-image: url('../images/3d-scanning/desktop/scan-process-3@2x.png');
+          }
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      &::before {
+        top: 60px;
+        left: 40px;
+        height: 215px;
+        width: 240px;
+        background-image: url('../images/3d-scanning/desktop/scan-process-4.png');
+
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          & {
+            background-image: url('../images/3d-scanning/desktop/scan-process-4@2x.png');
+          }
+        }
+      }
+    }
   }
 
   .scan-list__canvas {
-    padding: 23px 22px;
-
-    &::before {
-      top: 23px;
-      left: 21px;
-      // background-image: url();
-      height: 94px;
-      width: 107px;
-    }
+    padding-bottom: 27px;
   }
 
-  @media screen and (min-width: $width-desktop) {
-    .scanning-section {
-      padding-bottom: 80px;
-    }
-    .scanning-section__title {
-      font-size: 36px;
-      margin-bottom: 40px;
-      margin-left: 117px;
-    }
-
-    .scan-list__item {
-      width: 320px;
-      height: 381px;
-    }
-
-    .scan-list__canvas {
-      padding: 67px 40px 27px 40px;
-    }
-
-    .scan-list__title {
-      font-size: 18px;
-    }
+  .scan-list__title {
+    max-width: 55%;
+    font-size: 18px;
   }
 }
