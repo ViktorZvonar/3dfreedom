@@ -82,6 +82,7 @@
   &:hover,
     &:focus {
       color: getColor('title-text');
+      font-weight: 700;
       outline: none;
     }
 }
@@ -118,6 +119,7 @@
   &:hover,
     &:focus {
       color: getColor('title-text');
+      font-weight: 700;
       outline: none;
     }
 }
