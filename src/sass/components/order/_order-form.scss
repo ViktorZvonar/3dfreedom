@@ -41,9 +41,12 @@
 }
 
 .comment__area {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
   width: 280px;
   height: 199px;
-  position: relative;
   background-color: transparent;
 }
 

@@ -86,9 +86,23 @@
                   id="comment"
                   placeholder="Залишіть своє повідомлення"
                 ></textarea>
-                <svg class="comment__icon" width="22" height="20">
-                  <use href="./images/icons.svg#icon-paper-clip"></use>
-                </svg>
+
+                <div>
+                  <input
+                    class="comment__upload visually-hidden"
+                    type="file"
+                    id="file"
+                    name="file"
+                    multiple
+                  />
+                  <label for="file">
+                    <span
+                      ><svg class="comment__icon" width="22" height="22">
+                        <use
+                          href="./images/icons.svg#icon-paper-clip"
+                        ></use></svg></span
+                  ></label>
+                </div>
               </div>
 
               <p class="comment__add-file">
