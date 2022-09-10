@@ -85,7 +85,7 @@
       width: 7px;
       height: 7px;
       margin: 0 12px 4px -19px;
-      color: getColor(title-text);
+      background-color: getColor(title-text);
       border-radius: 3px 0;
       border: 1px solid getColor('title-text');
   
@@ -98,13 +98,16 @@
 .modeling-img__item {
   width: 280px;
 
+
   @include mq($width-tablet) {
     width: 246px;
     margin-right: 0;
+    float: right;
   }
 
  @include mq($width-desktop) {
     width: 555px;
     margin-right: 0;
+    float: right;
   }
 }
