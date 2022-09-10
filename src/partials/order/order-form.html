@@ -1,0 +1,99 @@
+<section class="order-form">
+  <div class="container">
+    <h2 class="visually-hidden">зворотній зв'язок</h2>
+    <form class="form">
+      <div class="form__thumb">
+        <p class="form__title">зв'яжіться з нами</p>
+        <label for="name" class="form__label"> Ім'я </label>
+        <input
+          type="text"
+          class="form__input"
+          name="name"
+          id="name"
+          placeholder="Ім'я"
+        />
+        <label for="email" class="form__label"> Email </label>
+        <input
+          type="email"
+          class="form__input"
+          name="email"
+          id="email"
+          placeholder="Email"
+        />
+        <label for="plastics" class="form__label"> Види пластику </label>
+        <input
+          type="text"
+          list="types-plastic"
+          class="form__input"
+          name="plastics"
+          id="plastics"
+          placeholder="Види пластику"
+        />
+        <datalist id="types-plastic">
+          <option>Поліетилен</option>
+          <option>Поліпропілен</option>
+          <option>Полістирол</option>
+        </datalist>
+
+        <label for="print-quality" class="form__label"> Якість друку </label>
+        <input
+          type="text"
+          list="types-quality"
+          class="form__input"
+          name="quality"
+          id="quality"
+          placeholder="Якість друку"
+        />
+        <datalist id="types-quality">
+          <option>Висока</option>
+          <option>Середня</option>
+          <option>Прийнятна</option>
+        </datalist>
+
+        <label for="colour" class="form__label"> Колір </label>
+        <input
+          type="text"
+          list="types-colour"
+          class="form__input"
+          name="colour"
+          id="colour"
+          placeholder="Колір"
+        />
+        <datalist id="types-colour">
+          <option>Червоний</option>
+          <option>Зелений</option>
+          <option>Синій</option>
+        </datalist>
+
+        <label for="comment" class="comment__label">Повідомлення</label>
+        <div class="comment__area">
+          <textarea
+            class="comment__text"
+            name="comment"
+            id="comment"
+            placeholder="Залишіть своє повідомлення"
+          ></textarea>
+
+          <div>
+            <input
+              class="comment__upload visually-hidden"
+              type="file"
+              id="file"
+              name="file"
+              multiple
+            />
+            <label for="file">
+              <svg class="comment__icon" width="22" height="22">
+                <use href="./images/icons.svg#icon-paper-clip"></use></svg
+            ></label>
+          </div>
+        </div>
+
+        <p class="comment__add-file">
+          *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
+        </p>
+        <button class="button-link" type="submit">ВІДПРАВИТИ</button>
+      </div>
+    </form>
+  </div>
+</section>
