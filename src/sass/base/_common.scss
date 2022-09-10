@@ -23,15 +23,14 @@ body {
 
 .title {
   color: getColor('title-text');
-  @media screen and (max-width: 767px) {
-    @include font(24px, 1.25, 700, null);
+
+  @include font(24px, 30px, null, 700);
+
+  @include mq($width-tablet) {
+    @include font(36px, 45px);
   }
 
-  @media screen and (min-width: 768px) {
-    @include font(36px, 1.25, 700, null);
-  }
-
-  @media screen and (min-width: 1200px) {
-    @include font(48px, 1.25, 700, null);
+  @include mq($width-desktop) {
+    @include font(48px, 60px);
   }
 }
