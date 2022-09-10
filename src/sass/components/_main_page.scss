@@ -8,8 +8,15 @@
     margin-bottom: 120px;
   }
 }
+
+.main-gallery > .container {
+  @include mq($width-desktop) {
+    padding: 0 149px;
+  }
+}
+
 .main-hero__title {
-  font-family: $font-hero, sans-serif;
+  font-family: $font-hero;
   font-weight: 400;
   font-size: 18px;
   line-height: calc(21 / 18);
@@ -23,11 +30,14 @@
     font-size: 24px;
     line-height: calc(28 / 24);
     width: 336px;
+    margin-bottom: 60px;
   }
   @include mq($width-desktop) {
     font-size: 48px;
     line-height: calc(56 / 48);
     width: 630px;
+    margin-left: 426px;
+    margin-right: 384px;
   }
 }
 
@@ -44,6 +54,7 @@
   }
   @include mq($width-tablet) {
     max-width: 400px;
+    margin-bottom: 60px;
     gap: 29px;
   }
   @include mq($width-desktop) {
@@ -69,7 +80,7 @@
 }
 
 .main-hero__text {
-  font-family: $font-hero, sans-serif;
+  font-family: $font-hero;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -101,15 +112,22 @@
 
 .main-gallery__list {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 32px;
+  @include mq($width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+  @include mq($width-desktop) {
+    row-gap: 40px;
+  }
 }
 
 .main-gallery__item {
-  display: inline-block;
-  width: 100%;
+  display: block;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   @include mq(null, $width-tablet) {
     &:not(:last-child) {
       margin-bottom: 24px;
@@ -140,66 +158,26 @@
   }
 }
 
-// -----------
-
-.more-photos {
-  padding-bottom: 60px;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 80px;
-  }
-  @media screen and (min-width: 1440px) {
-    padding-bottom: 156px;
-  }
+.main-hero > .container {
+  position: relative;
 }
 
-.more-photos__title {
-  color: getColor('title-text');
-  margin-bottom: 16px;
-  @media screen and (max-width: 767px) {
-    @include font(24px, 1.25, 700, null);
+.main-hero__arrow {
+  position: absolute;
+  bottom: -17px;
+  left: 237px;
+  &:hover,
+  &:focus {
+    fill: getColor('active-color');
+    cursor: pointer;
   }
-
-  @media screen and (min-width: 768px) {
-    @include font(36px, 1.25, 700, null);
-    margin-bottom: 32px;
+  @include mq(null, $width-tablet) {
+    display: none;
   }
-
-  @media screen and (min-width: 1200px) {
-    @include font(48px, 1.25, 700, null);
-    margin-bottom: 60px;
-  }
-}
-
-// .more-photos__list {
-//   display: flex;
-//   justify-content: center;
-//   flex-wrap: wrap;
-//   gap: 16px;
-
-//   .more-photos__item {
-//     width: 100%;
-//     max-width: 480;
-//     @media screen and (min-width: 768px) {
-//       width: calc((100% - 32px) / 3);
-//     }
-
-//     @media screen and (min-width: 1200px) {
-//       width: calc((100% - 32px) / 3);
-//     }
-//   }
-// }
-.more-photos__list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 16px;
-  .more-photos__item {
-    width: 280px;
-    @media screen and (min-width: 768px) {
-      width: calc((100% - 32px) / 3);
-    }
-    @media screen and (min-width: 1200px) {
-      width: calc((100% - 32px) / 3);
-    }
+  @include mq(null, $width-desktop) {
+    width: 16px;
+    height: 16px;
+    left: 103px;
+    bottom: 133px;
   }
 }
