@@ -41,12 +41,11 @@
 }
 
 .comment__area {
+  position: relative;
   background-color: transparent;
 }
 
 .comment__text {
-  position: relative;
-
   background-color: transparent;
 
   min-width: 280px;
@@ -54,16 +53,13 @@
   resize: none;
 
   margin-top: 4px;
-
   padding: 22px 22px;
 
   outline: none;
-
   border: 1px solid map-get($colors, 'title-text');
   border-radius: 50px 0px;
 
   &::placeholder {
-    font-size: 16px;
     line-height: 1.25;
 
     color: #cdcdcd;
@@ -71,23 +67,12 @@
 }
 
 .comment__icon {
-  fill: #cdcdcd;
-  z-index: 999;
-}
-
-.div-icon {
-  width: 22px;
-  height: 20px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: transparent;
-
   position: absolute;
   bottom: 23px;
   right: 21px;
+
+  fill: #cdcdcd;
+  z-index: 999;
 }
 
 .comment__add-file {
