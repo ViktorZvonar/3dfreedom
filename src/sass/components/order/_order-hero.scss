@@ -1,6 +1,11 @@
+.order-hero {
+  padding-bottom: 40px;
+}
+
 .order-hero__title {
   font-weight: 700;
   line-height: calc(30 / 24);
+  text-align: center;
   font-size: 24px;
   color: getColor('title-text');
 
@@ -11,6 +16,8 @@
   width: 280px;
   height: 171px;
   background-image: url(../images/order/mobile/order-img.jpg);
+  margin-left: auto;
+  margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 280px 171px;
