@@ -1,18 +1,29 @@
 .hero-container {
-  padding-top: 40px;
-  padding-bottom: 40px;
+ padding: 44 20 40 20;
+  
+  @include mq($width-desktop) {
+    padding-top: 40px;
+      // padding-right: 88px;
+      // padding-left: 32px;
+      // padding-bottom: 60px;
+  }
+  @include mq($width-tablet) {
+      padding-top: 40px;
+      // padding-right: 146px;
+      // padding-left: 149px;
+      // padding-bottom: 28px;
+    }
 }
-    .hero-title {
+.hero-title {
       margin-top: 0;
       margin-bottom: 16px;
       font-family: 'Cera Pro';
       font-weight: 700;
       font-size: 24px;
       line-height: 1.25;
-      text-align: left;
-      color: #487996;
+       color: #487996;
   
-      @include mq($width-tablet) {
+    @include mq($width-tablet) {
         margin-bottom: 16px;
       }
   
@@ -22,52 +33,28 @@
         line-height: 1.25;
       }
     }
-  
-    @include mq($width-tablet) {
+    .container-description {
+
+      @include mq($width-desktop) {
+          display: flex;
+
+        }
+    }
+    .hero__description {
       margin-bottom: 16px;
+
+      @include mq($width-tablet) {
+        width: 515px;
+        margin-bottom: 16px;
+      }
+      
+      @include mq($width-desktop) {
+        width: 515px;
+      }
     }
   
-    @include mq($width-desktop) {
-      margin-bottom: 67px;
-      font-size: 48px;
-      line-height: 1.25;
-    }
+   
 
-.hero-list {
-  list-style: none;
-  justify-content: center;
 
-  @include mq($width-tablet) {
-    gap: 58px;
-    margin-bottom: 78px;
-    padding-left: 0;
-    display: flex;
-  }
-}
-.hero__item {
-  font-family: 'Cera Pro';
+ 
 
-  @include mq($width-tablet) {
-    width: 515px;
-  }
-}
-
-.hero__item:not(:last-child) {
-  margin-bottom: 16px;
-
-  @include mq($width-desktop) {
-    margin-bottom: 0;
-    margin-right: 72px;
-  }
-}
-.hero__description {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.25;
-  font-family: 'Cera Pro';
-
-  @include mq($width-desktop) {
-    font-size: 18px;
-    line-height: 1.27;
-  }
-}
