@@ -1,15 +1,10 @@
-.modeling {
-  @include mq($width-tablet) {
-    margin-bottom: 100px;
-  }
-}
-
 .container-modeling {
   @include mq($width-tablet) {
     display: flex;
     max-width: 768px;
   }
-    @include mq($width-desktop) {
+
+  @include mq($width-desktop) {
     display: flex;
     width: 1440px;
   }
@@ -30,7 +25,7 @@
     margin-bottom: 16px;
   }
 
-    @include mq($width-desktop) {
+  @include mq($width-desktop) {
     margin-bottom: 67px;
     font-size: 48px;
     line-height: 1.25;
@@ -44,57 +39,61 @@
     margin-bottom: 40px;
   }
 
-    @include mq($width-desktop) {
+  @include mq($width-desktop) {
     gap: 58px;
     margin-bottom: 78px;
   }
 }
+
 .modeling-list__img {
   list-style: none;
+
   @include mq($width-tablet) {
     margin-bottom: 16px;
   }
 
-    @include mq($width-desktop) {
+  @include mq($width-desktop) {
     gap: 58px;
     margin-bottom: 78px;
   }
 }
+
 .modeling-item {
   font-weight: 300;
   font-family: 'Cera Pro';
-    font-size: 16px;
-    line-height: 1.25;
-    text-align: left;
-    color: #2B2B2B;
-    gap: 16px;
-    padding-left: 0;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: left;
+  color: #2B2B2B;
+  gap: 16px;
+  padding-left: 0;
 
   @include mq($width-tablet) {
     margin-bottom: 16px;
   }
 
- @include mq($width-desktop) {
+  @include mq($width-desktop) {
     gap: 58px;
     margin-bottom: 78px;
   }
 
-    &::before {
-      content: '';
-      display: inline-block;
-      width: 7px;
-      height: 7px;
-      margin: 0 12px 4px -19px;
-      background-color: getColor(title-text);
-      border-radius: 3px 0;
-      border: 1px solid getColor('title-text');
-  
-      @include mq($width-tablet) {
-        width: 8px;
-        height: 8px;
-      }
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 0 12px 4px -19px;
+    background-color: getColor(title-text);
+    border-radius: 3px 0;
+    border: 1px solid getColor('title-text');
+
+    @include mq($width-tablet) {
+      width: 8px;
+      height: 8px;
     }
+  }
 }
+
 .modeling-img__item {
   width: 280px;
 
@@ -105,9 +104,10 @@
     float: right;
   }
 
- @include mq($width-desktop) {
+  @include mq($width-desktop) {
     width: 555px;
     margin-right: 0;
     float: right;
   }
 }
+
