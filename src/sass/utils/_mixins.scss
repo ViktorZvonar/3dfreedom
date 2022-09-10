@@ -64,3 +64,10 @@
   letter-spacing: $ls;
   font-weight: $fw;
 }
+
+@mixin font2($fs, $lh, $fw, $ls) {
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+  letter-spacing: $ls;
+}
