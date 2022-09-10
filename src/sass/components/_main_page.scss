@@ -9,6 +9,16 @@
   }
 }
 
+.main-hero {
+  padding-top: 20px;
+  @include mq($width-tablet) {
+    padding-top: 14px;
+  }
+  @include mq($width-desktop) {
+    padding-top: 58px;
+  }
+}
+
 .main-gallery > .container {
   @include mq($width-desktop) {
     padding: 0 149px;
@@ -166,6 +176,7 @@
   position: absolute;
   bottom: -17px;
   left: 237px;
+  @include animate(fill);
   &:hover,
   &:focus {
     fill: getColor('active-color');
