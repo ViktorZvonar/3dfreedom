@@ -74,6 +74,17 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.01em;
+  
+  transition-property: color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+  &:hover,
+    &:focus {
+      color: getColor('title-text');
+      font-weight: 700;
+      outline: none;
+    }
 }
 
 .footer-socials {
@@ -87,6 +98,7 @@
   @include mq($width-desktop) {
     margin-left: 103px;
   }
+
 }
 
 .footer-socials__item {
@@ -100,6 +112,16 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.01em;
+
+  transition-property: color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+    &:focus {
+      color: getColor('title-text');
+      font-weight: 700;
+      outline: none;
+    }
 }
 
 .footer-contacts {
@@ -125,6 +147,11 @@
 .footer-contacts__link {
   @extend %link;
   color: getColor('title-text');
+
+  &:focus {
+      font-weight: 700;
+      outline: none;
+    }
 }
 
 .footer-contacts__name {
@@ -144,4 +171,9 @@
 .phones__link {
   @extend %link;
   color: getColor('title-text');
+
+  &:focus {
+      font-weight: 700;
+      outline: none;
+    }
 }

@@ -1,0 +1,16 @@
+.lang {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+  @include mq($width-tablet) {
+    order: -1;
+    margin-right: 38px;
+  }
+
+  @include mq($width-desktop) {
+    margin-right: 118px;
+  }
+}
