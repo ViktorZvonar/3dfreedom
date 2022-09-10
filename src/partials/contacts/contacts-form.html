@@ -4,28 +4,27 @@
     <form class="form">
       <div class="form__thumb">
         <p class="form__title">зв'яжіться з нами</p>
-        <div class="">
-          <label for="name"> Ім'я </label>
-          <input
-            class="form__input"
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Олексій"
-          />
-        </div>
-        <div class="">
-          <label for="email"></label>
-          <input
-            class="form__input"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-          />
-        </div>
+
+        <label for="name" class="form__label"> Ім'я </label>
+        <input
+          class="form__input form__input--first"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Олексій"
+        />
+
+        <label for="email" class="form__label"></label>
+        <input
+          class="form__input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+        />
+
         <div class="form__comment">
-          <label for="comment">Повідомлення</label>
+          <label for="comment" class="label__comment">Повідомлення</label>
           <div class="comment-area">
             <textarea
               class="form__input__comment"
@@ -36,8 +35,8 @@
             </textarea>
           </div>
         </div>
-        <p class="add-file">
-          *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
+        <p class="comment__add-file">
+          *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
         </p>
         <button type="submit">ВІДПРАВИТИ</button>
       </div>
