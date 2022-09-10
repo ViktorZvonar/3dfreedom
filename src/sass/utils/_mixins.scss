@@ -20,7 +20,12 @@
   }
 }
 
+// Берется интервал от $from включительно до $until НЕ включительно,
+// то есть интервал = [$from, $until) кто математику помнит
 @mixin mq($from: null, $until: null) {
+  @if ($until) and (unit($until) == 'px') {
+    $until: $until - 0.1px;
+  }
   @if ($from) and ($until) {
     @media screen and (min-width: $from) and (max-width: $until) {
       @content;

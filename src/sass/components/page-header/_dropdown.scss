@@ -9,14 +9,6 @@
   cursor: default;
   text-transform: uppercase;
 
-  // @include animate(margin-bottom);
-
-  // @include mq($until: $width-desktop - 0.1px) {
-  //   &.is-dropdown {
-  //     margin-bottom: 24px;
-  //   }
-  // }
-
   @include mq($width-desktop) {
     margin-bottom: 0;
     padding: 10px;
@@ -90,7 +82,7 @@
 }
 
 :not(.is-dropdown) + .dropdown__list {
-  @include mq($until: $width-desktop - 0.1px) {
+  @include mq($until: $width-desktop) {
     max-height: 0px;
     visibility: hidden;
   }
