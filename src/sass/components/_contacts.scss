@@ -6,12 +6,32 @@
   text-transform: uppercase;
   color: map-get($colors, 'title-text');
   margin-bottom: 16px;
+  @media screen and(min-width: 1440px) {
+    margin-bottom: 24px;
+  }
 }
+
+.article__hero {
+  @media screen and(min-width: 768px) {
+    display: flex;
+  }
+}
+
 .hero-video {
   margin-bottom: 16px;
   width: 100%;
   max-width: 440px;
-  height: auto;
+  height: 100%;
+  border-radius: 15px;
+  @media screen and(min-width: 768px) {
+    width: 336px;
+    height: 261px;
+    margin-right: 32px;
+  }
+  @media screen and(min-width: 1440px) {
+    width: 555px;
+    height: 315px;
+  }
 }
 
 .print-features {
@@ -26,6 +46,13 @@
     margin-left: 8px;
   }
 }
+.form {
+  @media screen and(min-width: 768px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+  }
+}
 
 .form__title {
   font-weight: 700;
@@ -34,10 +61,17 @@
   color: map-get($colors, 'title-text');
   text-transform: uppercase;
   margin-bottom: 8px;
+  @media screen and(min-width: 768px) {
+    text-align: center;
+  }
 }
 .form__label {
   font-size: 14px;
   line-height: 1.43;
+  @media screen and(min-width: 768px) {
+    display: block;
+    margin-bottom: 8px;
+  }
 }
 .form__input {
   display: block;
@@ -53,6 +87,7 @@
 }
 
 //комментарий
+
 .form__comment {
   margin-bottom: 4px;
 }
@@ -109,12 +144,25 @@
   width: 280px;
   height: 56px;
   border: transparent;
+  @media screen and(min-width: 768px) {
+    margin-right: 0;
+  }
 }
 
 ///////// contacts
 .container-info {
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.info-list {
+  @media screen and(min-width: 768px) {
+    display: flex;
+  }
 }
 
 .info {
@@ -122,6 +170,10 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
+    @media screen and(min-width: 768px) {
+      margin-bottom: 0;
+      min-width: 184px;
+    }
   }
   &__tel,
   &__email,
@@ -131,17 +183,29 @@
     line-height: 1.28;
     color: map-get($colors, 'title-text');
     margin-bottom: 8px;
+    @media screen and(min-width: 768px) {
+      font-size: 24px;
+      line-height: 1.25;
+    }
   }
+
   &__email__link {
     line-height: 1.25;
   }
-  &__tel {
+  &__tel,
+  &__schedule {
     text-transform: uppercase;
   }
   &__link,
   &__days {
     margin-bottom: 8px;
     line-height: 1.25;
+    text-transform: capitalize;
+  }
+  &__days {
+    @media screen and(min-width: 768px) {
+      text-align: right;
+    }
   }
   &__link:last-child {
     margin-bottom: 0;
@@ -149,7 +213,4 @@
   &__days:last-child {
     margin-bottom: 0;
   }
-}
-.hero-video {
-  max-width: 100%;
 }
