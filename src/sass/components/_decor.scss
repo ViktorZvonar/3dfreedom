@@ -39,23 +39,23 @@
   }
 }
 // картинка круг
-// .decor-block {
-//   background-image: url('../images/main/desktop/backgraund-imgs/gallary-bgi-5.jpg');
-//   position: absolute;
-//   width: 144px;
-//   height: 144px;
-//   // left: 1264px;
-//   // top: 1512px;
-//   left: 1132px;
-//   top: 1357px;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 72px;
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url('../images/main/desktop/backgraund-imgs/gallary-bgi-5@2x.jpg');
-//   }
-// }
+.decor-block {
+  @media screen and (min-width: 1440px) {
+    background-image: url('../images/main/desktop/backgraund-imgs/gallary-bgi-5.jpg');
+    position: absolute;
+    width: 144px;
+    height: 144px;
+    top: 1512px;
+    right: 90px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/main/desktop/backgraund-imgs/gallary-bgi-5@2x.jpg');
+    }
+  }
+}
 .decor-contacts {
   width: 369.65px;
   height: 1425.49px;
