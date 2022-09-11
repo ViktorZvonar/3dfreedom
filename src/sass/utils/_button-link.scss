@@ -21,4 +21,5 @@
 }
   .buttons-link-tablet:hover,
   .buttons-link-tablet:focus {color: getColor('background');
-    background: getColor('title-text');}
+    background: getColor('title-text');
+    border-radius: 30px;}
