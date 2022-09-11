@@ -4,7 +4,7 @@
 
   @include mq($width-tablet) {
     display: flex;
-    align-items:flex-end;
+    align-items:center;
   }
 
   @include mq($width-desktop) {
@@ -29,7 +29,6 @@ max-width: 624px;
 }
 
 .creation__title {
-margin-top: 40px;
 margin-bottom: 16px;
 
 font-size: 18px;
@@ -50,6 +49,10 @@ font-size: 36px;
 
 .creation__list {
 list-style: none;
+
+@include mq(null, $width-tablet){
+  margin-bottom: 40px;
+}
 }
 
 .creation__item {

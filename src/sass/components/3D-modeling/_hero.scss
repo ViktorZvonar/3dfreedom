@@ -1,20 +1,21 @@
 
 .modeling-hero__container {
+  padding-top: 20px;
+    padding-bottom: 40px;
+
+  @include mq($width-tablet) {
+      padding-top: 14px;
+    }
+
   @include mq($width-desktop) {
-    padding: 0 149px;
+    padding: 60px 149px 40px;
   }
 }
 
 .modeling-hero__title {
-  margin-top: 20px;
   margin-bottom: 16px;
 
-  @include mq($width-tablet) {
-      margin-top: 14px;
-    }
-
   @include mq($width-desktop) {
-  margin-top: 60px;
   margin-bottom: 24px;}
 }
 
@@ -41,9 +42,9 @@
     }
 
   @include mq($width-desktop) {
-    margin-bottom: 0;
     font-size: 18px;
   &:not(:last-child) {
+    margin-bottom: 0;
       margin-right: 72px;
     }
   }
