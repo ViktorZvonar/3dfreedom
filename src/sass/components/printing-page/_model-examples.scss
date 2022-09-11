@@ -21,14 +21,20 @@
     &__list{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         gap: 16px 20px;
         margin-bottom: 40px;
+        list-style: none;
 
         @include mq($width-tablet) {gap: 32px;}
     }
 
-    .model-examples__div{
+    &__item{    width: calc(50% - 10px);
+
+    @include mq($width-tablet)
+    {width: calc(25% - 24px);}}
+
+
+    &__div{
         display: flex; 
         align-items: center;   
         height: 86px;
@@ -44,22 +50,23 @@
         justify-content: space-between;
         padding-top: 23px;
         padding-bottom: 15px;
-        width: 130px;
+       /* width: 130px;*/
         height: 158px;
         opacity: 0.8;
         background: #FFFFFF;
         border-radius: 50px 0;
         box-shadow: inset 1px 1px 16px #CBCBCB, inset -1px -1px 16px #FFFFFF;
         border-radius: 50px 0px;
-    
+    /*/@media screen and (min-width:469px) and (max-width:767px){ 
+
+    .model-examples__canvas {width: 134px;  }
+}*/
     @include mq($width-tablet) {
         padding-top: 36px;
         padding-bottom: 22px;
-        width: 152px;
         height: 182px;    }
 
     @include mq($width-desktop) {
-        width: 320px;
         height: 382px;}   }
 
     &__description{
@@ -72,9 +79,4 @@
 
         @include mq($width-desktop) {
             font-size:18px;
-            height: 59px;    }   }
-}
-@media screen and (min-width:469px) and (max-width:767px){ 
-
-    .model-examples__canvas {width: 134px;  }
-}
+            height: 59px;    }   }}
