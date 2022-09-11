@@ -17,9 +17,15 @@
     width: 280px;
     height: 56px;
     border-color: transparent;
+    outline-color: none;
 
-}
-  .buttons-link-tablet:hover,
-  .buttons-link-tablet:focus {color: getColor('background');
-    background: getColor('title-text');
-    border-radius: 30px;}
+    @include animate(color background outline-color);
+      &:hover {color: getColor('background');
+      background: getColor('title-text');}
+      
+      &:focus {color: getColor('background');
+        background: getColor('title-text');
+        outline-color: getColor('title-text')}
+  }
+
+  
