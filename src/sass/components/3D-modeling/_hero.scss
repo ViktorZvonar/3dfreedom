@@ -1,62 +1,53 @@
-.hero-container {
 
-  
-  @include mq($width-desktop) {
-    padding-top: 40px;
-     
-  }
+.modeling-hero__container {
+  padding-top: 20px;
+    padding-bottom: 40px;
+
   @include mq($width-tablet) {
-      padding-top: 40px;
-      
-    
+      padding-top: 14px;
     }
-}
-
-.hero-title {
-  margin-top: 0;
-  margin-bottom: 16px;
-  font-family: 'Cera Pro';
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.25;
-  color: #487996;
-  
-  @include mq($width-tablet) {
-    margin-bottom: 16px;
-  }
 
   @include mq($width-desktop) {
-    margin-bottom: 24px;
-    font-size: 48px;
-    line-height: 1.25;
+    padding: 60px 149px 40px;
   }
 }
 
-.container-description {
+.modeling-hero__title {
+  margin-bottom: 16px;
+
+  @include mq($width-desktop) {
+  margin-bottom: 24px;}
+}
+
+.modeling-hero__box {
 
   @include mq($width-desktop) {
   display: flex;
   }
 }
 
-.hero__description {
-  margin-bottom: 16px;
+.modeling-hero__description {
+  width: 100%;
+  max-width: 440px;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.27;
+
+  &:not(:last-child) {
+      margin-bottom: 16px;
+    }
 
   @include mq($width-tablet) {
-    width: 515px;
-    margin-bottom: 16px;
-  }
+    max-width: 515px;
+    }
 
   @include mq($width-desktop) {
-    width: 515px;
-    margin-right: 72px;
+    font-size: 18px;
+  &:not(:last-child) {
+    margin-bottom: 0;
+      margin-right: 72px;
+    }
   }
 }
-  
-   
 
-
- 
 
