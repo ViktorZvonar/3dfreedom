@@ -97,12 +97,14 @@
   }
 
   @include mq($width-desktop) {
+    width: 100%;
   }
 }
 
 .order-hero__ad {
   font-weight: 300;
   line-height: 1.25;
+  width: 100%;
   @include mq($width-desktop) {
     font-size: 18px;
     line-height: 1.28;
