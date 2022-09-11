@@ -4,12 +4,12 @@
 
   @include mq($width-tablet) {
     display: flex;
-    align-items:flex-end;
+    align-items:center;
   }
 
   @include mq($width-desktop) {
     padding: 0 117px;
-    display: flex;
+    align-items: flex-end;
   }
 }
 
@@ -99,6 +99,7 @@ font-size: 16px;
   width: 280px;
   height: 164px;
   margin-left: auto;
+  margin-right: auto;
   background-size: contain;
   @include retina() {
   background-color: url(../images/3d-modeling/mobile/3d-model@2x.png);
