@@ -1,6 +1,11 @@
 <section class="more-photos">
   <div class="container">
-    <h2 class="title">Більше фото</h2>
+    <h2 class="more-photos__title">Більше фото</h2>
+    <div class="gallary__backdrop">
+      <div class="gallary__btn-next"></div>
+      <div class="gallary__btn-prev"></div>
+    </div>
+
     <ul class="more-photos__list">
       <li class="more-photos__item">
         <picture>
@@ -51,9 +56,10 @@
           />
 
           <img
+            class="gallery-modal"
             src="./images/main/mobile/gallery/more-photos-mozjpeg/more-photos-1.jpg"
             alt="Фото фігурок іграшок вироблених 3-Д принтером"
-            width="280px"
+            class="gallary__image"
           />
         </picture>
       </li>
@@ -106,9 +112,10 @@
           />
 
           <img
+            class="gallery-modal"
             src="./images/main/mobile/gallery/more-photos-mozjpeg/more-photos-2.jpg"
             alt="Модель конструкції сцени"
-            width="280px"
+            class="gallary__image"
           />
         </picture>
       </li>
@@ -136,6 +143,7 @@
             "
             media="(min-width: 768px)"
             type="image/webp"
+            width:500px;
           />
           <source
             srcset="
@@ -143,6 +151,7 @@
               ./images/main/tablet/gallery/more-photos-mozjpeg/more-photos-3@2x.jpg 2x
             "
             media="(min-width: 768px)"
+            width:500px;
           />
           <source
             srcset="
@@ -161,9 +170,10 @@
           />
 
           <img
+            class="gallery-modal"
             src="./images/main/mobile/gallery/more-photos-mozjpeg/more-photos-3.jpg"
             alt="Модель робота"
-            width="280px"
+            class="gallary__image"
           />
         </picture>
       </li>
@@ -216,9 +226,10 @@
           />
 
           <img
+            class="gallery-modal"
             src="./images/main/mobile/gallery/more-photos-mozjpeg/more-photos-4.jpg"
             alt="Череп"
-            width="280px"
+            class="gallary__image"
           />
         </picture>
       </li>
@@ -271,9 +282,10 @@
           />
 
           <img
+            class="gallery-modal"
             src="./images/main/mobile/gallery/more-photos-mozjpeg/more-photos-5.jpg"
             alt="Модель танк"
-            width="280px"
+            class="gallary__image"
           />
         </picture>
       </li>
@@ -326,9 +338,9 @@
           />
 
           <img
+            class="gallery-modal"
             src="./images/main/mobile/gallery/more-photos-mozjpeg/more-photos-6.jpg"
             alt="Дві настольні лампи"
-            width="280px"
           />
         </picture>
       </li>
@@ -381,9 +393,9 @@
           />
 
           <img
+            class="gallery-modal"
             src="./images/main/mobile/gallery/more-photos-mozjpeg/more-photos-7.jpg"
             alt="Модель спортивного авто"
-            width="280px"
           />
         </picture>
       </li>
@@ -436,9 +448,9 @@
           />
 
           <img
+            class="gallery-modal"
             src="./images/main/mobile/gallery/more-photos-mozjpeg/more-photos-8.jpg"
             alt="Модель куполу будинку"
-            width="280px"
           />
         </picture>
       </li>
@@ -491,9 +503,9 @@
           />
 
           <img
+            class="gallery-modal"
             src="./images/main/mobile/gallery/more-photos-mozjpeg/more-photos-9.jpg"
             alt="Настольна лампа у вигляді гриба"
-            width="280px"
           />
         </picture>
       </li>
@@ -546,9 +558,9 @@
           />
 
           <img
+            class="gallery-modal"
             src="./images/main/mobile/gallery/more-photos-mozjpeg/more-photos-10.jpg"
             alt="Три запальнички"
-            width="280px"
           />
         </picture>
       </li>
@@ -601,9 +613,9 @@
           />
 
           <img
+            class="gallery-modal"
             src="./images/main/mobile/gallery/more-photos-mozjpeg/more-photos-11.jpg"
             alt="Моделька авто пікап"
-            width="280px"
           />
         </picture>
       </li>
@@ -656,12 +668,13 @@
           />
 
           <img
+            class="gallery-modal"
             src="./images/main/mobile/gallery/more-photos-mozjpeg/more-photos-12.jpg"
             alt="Композиція горшки-клітки для квітів"
-            width="280px"
           />
         </picture>
       </li>
     </ul>
   </div>
 </section>
+<script src="./js/gallary.js"></script>

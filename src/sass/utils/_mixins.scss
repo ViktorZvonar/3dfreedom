@@ -1,3 +1,7 @@
+@use 'sass:math';
+@use 'sass:list';
+@use 'sass:map';
+
 @mixin animate($p, $d: $duration, $tf: $timing-function) {
   @if (list.length($p) > 2) {
     transition-property: list.append($p, (), comma);
@@ -16,7 +20,12 @@
   }
 }
 
+// Берется интервал от $from включительно до $until НЕ включительно,
+// то есть интервал = [$from, $until) кто математику помнит
 @mixin mq($from: null, $until: null) {
+  @if ($until) and (unit($until) == 'px') {
+    $until: $until - 0.1px;
+  }
   @if ($from) and ($until) {
     @media screen and (min-width: $from) and (max-width: $until) {
       @content;
@@ -32,7 +41,31 @@
   }
 }
 
-@mixin font($fs, $lh, $fw, $ls) {
+// Удобней пользоваться. Отличается порядок аргументов ls и fw
+// font-weight реже указывается (по крайней мере в тех макетах, которые мы верстали)
+// Можно высоту строки на калькуляторе не считать, миксин сам посчитает,
+// удобнее с макета переносить.
+// Но можно и указать, тогда округлит до сотых.
+// Можно ненужные параметры справа не указывать.
+// Например, @include font(16px, 19px, 0.02em)
+// @include font(16px, 19/16)
+// @include font(2rem, 1.3, null, 700)
+
+@mixin font($fs, $lh: null, $ls: null, $fw: null) {
+  font-size: $fs;
+  @if $lh != null {
+    @if unit($lh) == '' {
+      $lh: round($lh * 100) / 100;
+    } @else if unit($fs) == unit($lh) {
+      $lh: math.div(round(math.div($lh, $fs) * 100), 100);
+    }
+    line-height: $lh;
+  }
+  letter-spacing: $ls;
+  font-weight: $fw;
+}
+
+@mixin font2($fs, $lh, $fw, $ls) {
   font-size: $fs;
   line-height: $lh;
   font-weight: $fw;

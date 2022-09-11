@@ -6,15 +6,8 @@
   position: relative;
   z-index: 1;
 
-  text-align: center;
   cursor: default;
   text-transform: uppercase;
-
-  @include mq($until: $width-desktop - 0.1px) {
-    &.is-dropdown {
-      margin-bottom: 24px;
-    }
-  }
 
   @include mq($width-desktop) {
     margin-bottom: 0;
@@ -32,9 +25,6 @@
       border-color: #007bff transparent transparent transparent;
       @include animate(transform);
     }
-
-    // .dropdown:hover &::after,
-    // .dropdown:focus-within &::after,
     &.is-dropdown::after {
       transform: rotateX(180deg);
     }
@@ -46,11 +36,10 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  overflow: hidden;
 
-  height: 150px; // Костыль, поплывет если изменится контент
-  @include animate(height);
-  // width: 100%;
+  overflow: hidden;
+  max-height: 250px; // Не менее высоты контента
+  @include animate(max-height visibility margin-top);
 
   @include mq($width-desktop) {
     position: absolute;
@@ -59,11 +48,9 @@
     top: 0;
     transform: translate(-50%, -16px);
 
-    // display: flex;
-    // flex-direction: column;
-    gap: 4px;
-    min-width: max-content; //144px;
-    padding: 37px 6px 12px;
+    gap: 0;
+    min-width: max-content;
+    padding: 35px 6px 10px;
 
     background-color: #ffffff;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
@@ -77,15 +64,17 @@
   }
 }
 
-.dropdown__list .page-nav__link {
-  padding: 2px 0;
+.page-nav__sublink {
+  @include mq($width-desktop) {
+    padding: 2px 0;
+  }
 }
 
-// .dropdown:hover .dropdown__list,
-// .dropdown:focus-within .dropdown__list,
 .is-dropdown + .dropdown__list {
+  margin-top: 24px;
   @include mq($width-desktop) {
     transform: translate(-50%, -2px);
+    margin-top: 0;
     opacity: 1;
     visibility: visible;
     pointer-events: all;
@@ -93,7 +82,8 @@
 }
 
 :not(.is-dropdown) + .dropdown__list {
-  @include mq($until: $width-desktop - 0.1px) {
-    height: 0;
+  @include mq($until: $width-desktop) {
+    max-height: 0px;
+    visibility: hidden;
   }
 }
