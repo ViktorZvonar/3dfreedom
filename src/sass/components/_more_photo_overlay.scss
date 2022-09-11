@@ -1,0 +1,77 @@
+// .backdrop {
+//     @include mq($width-tablet) {
+//         z-index: 100;
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background: rgba(43, 43, 43, 0.8);
+//     }
+// }
+
+// .gallery-modal {
+//     @include mq($width-tablet) {
+//         min-width: 554px;
+//         min-height: 369px;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         background-color: #ffffff;
+//     }
+
+//     @include mq($width-desktop) {
+//         min-width: 906px;
+//         min-height: 605px;
+//     }
+// }
+
+// .arrow-previous {
+//     position: absolute;
+//     background-color: transparent;
+//     border: none;
+//     cursor: pointer;
+
+//     @include mq($width-tablet) {
+//         top: 50%;
+//         left: -47px;
+//     }
+
+//     @include mq($width-desktop) {
+//         top: 50%;
+//         left: -74px;
+//     }
+// }
+
+// .arrow-next {
+//     cursor: pointer;
+//     position: absolute;
+//     background-color: transparent;
+//     border: none;
+//     @include mq($width-tablet) {
+//         top: 50%;
+//         right: -47px;
+//     }
+//     @include mq($width-desktop) {
+//         top: 50%;
+//         right: -74px;
+//     }
+// }
+
+// .arrow-previous__icon,
+// .arrow-next__icon{
+//         fill: #ffffff;
+//     @include mq($width-tablet) {
+//         width: 26px;
+//         height: 26px;
+//     }
+//     @include mq($width-desktop) {
+//         width: 42px;
+//         height: 42px;
+//     }
+//     &:hover,
+//     &:focus {
+//         fill: #dbd6d6;
+//     }
+// }

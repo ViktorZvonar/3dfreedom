@@ -1,0 +1,109 @@
+.order-form {
+  padding-bottom: 60px;
+}
+
+.form__title {
+  font-weight: 700;
+  line-height: 1.28;
+  font-size: 18px;
+  color: map-get($colors, 'title-text');
+  margin-bottom: 24px;
+
+  text-transform: uppercase;
+}
+
+.form__label {
+  display: none;
+}
+
+.form__input {
+  display: block;
+  margin-bottom: 44px;
+  width: 100%;
+  line-height: 1.25;
+
+  color: map-get($colors, 'primary-text');
+
+  border: transparent;
+  border-bottom: 1px solid map-get($colors, 'title-text');
+
+  &::placeholder {
+    color: map-get($colors, 'primary-text');
+  }
+}
+
+.comment__label {
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: map-get($colors, 'primary-text');
+  margin-bottom: 4px;
+}
+
+.comment__area {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  height: 199px;
+  background-color: transparent;
+}
+
+.comment__text {
+  background-color: transparent;
+
+  width: 280px;
+  height: 199px;
+  resize: none;
+
+  margin-top: 4px;
+  padding: 22px 22px;
+
+  outline: none;
+  border: 1px solid map-get($colors, 'title-text');
+  border-radius: 50px 0px;
+
+  &::placeholder {
+    line-height: 1.25;
+
+    color: getColor('icon-color');
+  }
+}
+
+.comment__icon {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+
+  fill: getColor('icon-color');
+}
+
+.comment__add-file {
+  margin-top: 4px;
+  margin-bottom: 40px;
+
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: #cdcdcd;
+}
+
+.button-link {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: getColor('title-text');
+  padding: 16px 32px;
+  background: getColor('background');
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  border-radius: 30.5px;
+  width: 280px;
+  height: 56px;
+}
