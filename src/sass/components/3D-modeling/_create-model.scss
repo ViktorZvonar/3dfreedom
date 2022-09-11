@@ -56,12 +56,10 @@ list-style: none;
 }
 
 .creation__item {
-display: flex;
-align-items: center;
+padding-left: 15px;
 font-weight: 300;
 font-size: 16px;
 line-height: 1.25;
-text-align: start;
 padding-left: 0;
 
 &:not(:last-child) {
@@ -77,12 +75,13 @@ font-size: 16px;
 }
 }
 
+
 .creation__item::before {
   content: '';
   display: inline-block;
   width: 7px;
   height: 7px;
-  margin-right: 9px;
+  margin: 0 8px 2px -1px;
   background-color: getColor('title-text');
   border-radius: 3px 0;
   
