@@ -1,20 +1,20 @@
 .decor-main {
   width: 369.65px;
   height: 1425.49px;
-  // background-image: url('../images/decor/mobile/decor-mob.png');
+  background-image: url('../images/decor/mobile/decor-mob.png');
   background-repeat: no-repeat;
   background-position: center;
-  // background-size: px px;
+  background-size: 320px 1425.49px;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: -2;
-  // @media (min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   background-image: url('../images/decor/mobile/decor-mob-2x.png');
-  // }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/decor/mobile/decor-mob-2x.png');
+  }
   @media screen and (min-width: 768px) {
     width: 802px;
     height: 1507.15px;
@@ -38,6 +38,7 @@
     }
   }
 }
+// картинка круг
 // .decor-block {
 //   background-image: url('../images/main/desktop/backgraund-imgs/gallary-bgi-5.jpg');
 //   position: absolute;
@@ -58,25 +59,25 @@
 .decor-contacts {
   width: 369.65px;
   height: 1425.49px;
-  // background-image: url('../images/decor/mobile/decor-mob-contact.png');
+  background-image: url('../images/decor/mobile/decor-mob-contact.png');
   background-repeat: no-repeat;
   background-position: center;
-  // background-size: px px;
+  background-size: 320px 1425.49px;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: -2;
-  // @media (min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   background-image: url('../images/decor/mobile/decor-mob-contact-2x.png');
-  // }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/decor/mobile/decor-mob-contact-2x.png');
+  }
   @media screen and (min-width: 768px) {
     width: 802px;
-    height: 1507.15px;
+    height: 1403.83px;
     background-image: url('../images/decor/tablet/decor-tab-long.png');
-    background-size: 768px 1507.15px;
+    background-size: 768px 1403.83px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -98,25 +99,25 @@
 .decor-common {
   width: 369.65px;
   height: 1425.49px;
-  // background-image: url('../images/decor/mobile/decor-mob.png');
+  background-image: url('../images/decor/mobile/decor-mob.png');
   background-repeat: no-repeat;
   background-position: center;
-  // background-size: px px;
+  background-size: 320px 1425.49px;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: -2;
-  // @media (min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   background-image: url('../images/decor/mobile/decor-mob-2x.png');
-  // }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/decor/mobile/decor-mob-2x.png');
+  }
   @media screen and (min-width: 768px) {
     width: 802px;
-    height: 1507.15px;
+    height: 1403.83px;
     background-image: url('../images/decor/tablet/decor-tab-long.png');
-    background-size: 768px 1507.15px;
+    background-size: 768px 1403.83px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -138,25 +139,25 @@
 .decor-scanning {
   width: 369.65px;
   height: 1425.49px;
-  // background-image: url('../images/decor/mobile/decor-mob.png');
+  background-image: url('../images/decor/mobile/decor-mob.png');
   background-repeat: no-repeat;
   background-position: center;
-  // background-size: px px;
+  background-size: 320px 1425.49px;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: -2;
-  // @media (min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   background-image: url('../images/decor/mobile/decor-mob-2x.png');
-  // }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/decor/mobile/decor-mob-2x.png');
+  }
   @media screen and (min-width: 768px) {
     width: 802px;
-    height: 1507.15px;
+    height: 1403.83px;
     background-image: url('../images/decor/tablet/decor-tab.png');
-    background-size: 768px 1507.15px;
+    background-size: 768px 1403.83px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
