@@ -4,7 +4,7 @@
 
   @include mq($width-tablet) {
     display: flex;
-    align-items:center;
+    align-items:flex-end;
   }
 
   @include mq($width-desktop) {
