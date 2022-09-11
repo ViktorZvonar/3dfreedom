@@ -1,16 +1,29 @@
 .lang {
   padding: 10px;
+
+  color: #bdbdbd;
   border: none;
   border-radius: 4px;
   appearance: none;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
+  order: 1;
+
+  @include animate(transform text-shadow);
+
   @include mq($width-tablet) {
-    order: -1;
+    order: 0;
     margin-right: 38px;
   }
 
   @include mq($width-desktop) {
     margin-right: 118px;
   }
+}
+
+.lang:hover,
+.lang:focus {
+  transform: scale(1.1);
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }

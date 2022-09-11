@@ -1,44 +1,61 @@
 <section class="contacts-form">
-  <div class="container">
+  <div class="container container-form">
     <h2 class="visually-hidden">зворотній зв'язок</h2>
     <form class="form">
       <div class="form__thumb">
-        <p class="form__title">зв'яжіться з нами</p>
+        <div class="form__thumb">
+          <p class="form__title">зв'яжіться з нами</p>
+          <div class="form__field">
+            <input
+              type="text"
+              class="form__input"
+              name="name"
+              id="name"
+              placeholder=" "
+            />
+            <label for="name" class="form__label">Ім'я</label>
+          </div>
+          <div class="form__field">
+            <input
+              type="email"
+              class="form__input"
+              name="email"
+              id="email"
+              placeholder=" "
+            />
+            <label for="email" class="form__label">Email</label>
+          </div>
 
-        <label for="name" class="form__label"> Ім'я </label>
-        <input
-          class="form__input form__input--first"
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Олексій"
-        />
-
-        <label for="email" class="form__label"></label>
-        <input
-          class="form__input"
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email"
-        />
-
-        <div class="form__comment">
-          <label for="comment" class="label__comment">Повідомлення</label>
-          <div class="comment-area">
+          <label for="comment" class="comment__label">Повідомлення</label>
+          <div class="comment__area">
             <textarea
-              class="form__input__comment"
+              class="comment__text"
               name="comment"
               id="comment"
               placeholder="Залишіть своє повідомлення"
-            >
-            </textarea>
+            ></textarea>
+            <div>
+              <input
+                class="comment__upload visually-hidden"
+                type="file"
+                id="file"
+                name="file"
+                multiple
+              />
+              <label for="file">
+                <svg class="comment__icon" width="22" height="22">
+                  <use href="./images/icons.svg#icon-paper-clip"></use>
+                </svg>
+              </label>
+            </div>
           </div>
         </div>
         <p class="comment__add-file">
           *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
         </p>
-        <button type="submit" class="button-link">ВІДПРАВИТИ</button>
+        <button type="submit" class="button-link contacts-btn">
+          ВІДПРАВИТИ
+        </button>
       </div>
     </form>
   </div>
