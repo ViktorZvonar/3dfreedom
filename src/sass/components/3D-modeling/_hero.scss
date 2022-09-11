@@ -3,15 +3,11 @@
   
   @include mq($width-desktop) {
     padding-top: 40px;
-      // padding-right: 88px;
-      // padding-left: 32px;
-      // padding-bottom: 60px;
+     
   }
   @include mq($width-tablet) {
       padding-top: 40px;
-      // padding-right: 146px;
-      // padding-left: 149px;
-      // padding-bottom: 28px;
+    
     }
 }
 
