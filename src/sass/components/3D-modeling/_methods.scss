@@ -1,26 +1,22 @@
 
 .method__title {
+     font-size: 18px;
      margin-bottom: 16px;
-          font-family: 'Cera Pro';
-          font-weight: 700;
-          font-size: 18px;
-          line-height: 1.25;
-          text-align: left;
-          text-transform: uppercase;
-          width: 280px;
-          color: #487996;
+     font-family: 'Cera Pro';
+     font-weight: 700;
+     line-height: 1.25;
+     text-transform: uppercase;
+     color: #487996;
      
-          @include mq($width-tablet) {
-               margin-bottom: 16px;
-               width: 648px;
-          }
+     @include mq($width-tablet) {
+     margin-bottom: 16px;
+     font-size: 24px;
+     }
      
-          @include mq($width-desktop) {
-               margin-bottom: 67px;
-               font-size: 48px;
-               line-height: 1.25;
-               width: 842px;
-          }
+     @include mq($width-desktop) {
+     margin-bottom: 24px;
+     font-size: 36px;
+     }
 }
 
 .method__list {

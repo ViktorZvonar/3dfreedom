@@ -2,11 +2,11 @@
 
 @include mq($width-tablet) {
 position: relative;
+padding-bottom: 40px;
 }
   
 @include mq($width-desktop) {
-padding-left: 149px;
-padding-right: 149px;
+padding-bottom: 60px;
 }
 }
 .modeling__div {
