@@ -8,6 +8,7 @@
   text-align: center;
   font-size: 24px;
   color: getColor('title-text');
+  margin-bottom: 16px;
 
   text-transform: uppercase;
 
@@ -17,11 +18,18 @@
 
     text-align: start;
   }
+
+  @include mq($width-desktop) {
+    font-size: 48px;
+    text-align: start;
+    margin-bottom: 24px;
+  }
 }
 
 .order-hero__wrap {
   @include mq($width-tablet) {
     display: flex;
+    width: 100%;
   }
 }
 
@@ -35,7 +43,6 @@
   background-position: center;
   background-size: 280px 171px;
   border-radius: 15px;
-  margin-top: 16px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -64,18 +71,42 @@
   }
 }
 
+@include mq($width-desktop) {
+  .order-hero__bg {
+    background-image: url(../images/order/desktop/mozjpeg/order-desktop-img.jpg);
+    width: 555px;
+    height: 400px;
+    background-size: 555px 400px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .order-hero__bg {
+      background-image: url(../images/order/desktop/mozjpeg/order-desktop-img@2x.jpg);
+    }
+  }
+}
+
 .order-hero__list {
   margin-top: 16px;
   @include mq($width-tablet) {
+    margin-top: 0;
     max-width: 336px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include mq($width-desktop) {
   }
 }
 
 .order-hero__ad {
-  width: auto;
   font-weight: 300;
-  font-size: 16px;
-  line-height: calc(20 / 16);
+  line-height: 1.25;
+  @include mq($width-desktop) {
+    font-size: 18px;
+    line-height: 1.28;
+  }
 
   color: getColor('primary-text');
   &:not(:first-child) {
@@ -84,5 +115,14 @@
     @include mq($width-tablet) {
       margin-top: 0;
     }
+    @include mq($width-desktop) {
+      margin-top: 24px;
+    }
+  }
+}
+
+.order-hero__container {
+  @include mq($width-desktop) {
+    width: 1142px;
   }
 }

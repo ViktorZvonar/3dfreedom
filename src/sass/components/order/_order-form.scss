@@ -198,7 +198,7 @@
   }
 }
 
-.order-form__wrap {
+.order-form__container {
   @include mq($width-desktop) {
     display: flex;
     flex-wrap: wrap;
