@@ -92,24 +92,33 @@
 }
 
 @media screen and (min-width: $width-desktop) {
+  .scanning-hero {
+    padding-bottom: 22px;
+  }
   .scanning-hero__title {
+    margin-left: 117px;
     margin-bottom: 24px;
     font-size: 48px;
   }
 
   .scanning-hero__list {
-    // position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    height: 300px;
     width: 515px;
   }
 
   .scanning-hero__item {
-    width: 515px;
+    margin-left: 117px;
+    margin-bottom: 0;
 
-    gap: 72px;
-    margin-bottom: 24px;
+    &:first-child {
+      margin-bottom: 24px;
+    }
+    &:last-child {
+      margin-left: 72px;
+    }
   }
 
   .scanning-hero__descr {
@@ -118,7 +127,10 @@
 
   .scanning-hero__overlay {
     position: absolute;
-    z-index: 1;
+    left: 736px;
+    top: 176px;
+    display: block;
+    z-index: unset;
     width: 435px;
     height: 286px;
     background-image: url('../images/3d-scanning/desktop/scanning.jpg');
