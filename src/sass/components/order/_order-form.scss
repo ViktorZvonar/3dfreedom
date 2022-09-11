@@ -8,8 +8,21 @@
   text-transform: uppercase;
 }
 
+.form__field {
+  position: relative;
+}
+
 .form__label {
-  display: none;
+  position: absolute;
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__input:focus + .form__label {
+  transform: translateY(-20px);
+  font-size: 14px;
 }
 
 .form__input {
@@ -17,6 +30,7 @@
   margin-bottom: 44px;
   width: 100%;
   line-height: 1.25;
+  outline: transparent;
 
   color: map-get($colors, 'primary-text');
 
