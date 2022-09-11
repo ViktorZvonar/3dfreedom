@@ -137,13 +137,14 @@ display: flex;
 }
 .modeling__text {
   font-weight: 300;
-    font-family: 'Cera Pro';
-    font-size: 16px;
-    line-height: 1.25;
-    text-align: left;
-    color: #2B2B2B;
-    gap: 16px;
-    padding-left: 0;
+  font-size: 16px;
+  font-family: 'Cera Pro';
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: left;
+  color: #2B2B2B;
+  gap: 16px;
+  padding-left: 0;
   
     @include mq($width-tablet) {
       margin-bottom: 16px;
@@ -152,6 +153,8 @@ display: flex;
     @include mq($width-desktop) {
       gap: 58px;
       margin-bottom: 78px;
+      font-weight: 300;
+      font-size: 16px;
     }
  }
 .modeling__t-img {
