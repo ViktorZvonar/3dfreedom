@@ -1,25 +1,30 @@
-
-.method__title {
-     font-size: 18px;
+.modeling-method__title {
      margin-bottom: 16px;
-     font-family: 'Cera Pro';
+     margin-top: 40px;
+
+     font-size: 18px;
      font-weight: 700;
      line-height: 1.25;
      text-transform: uppercase;
-     color: #487996;
+     color: getColor('title-text');
      
      @include mq($width-tablet) {
-     margin-bottom: 16px;
      font-size: 24px;
+     max-width: 584px;
+     margin-bottom: 24px;
      }
      
-     @include mq($width-desktop) {
-     margin-bottom: 24px;
+     @include mq($width-desktop) { 
+     max-width: 900px;
+     padding: 0 117px;
+     margin-bottom: 40px;
+     margin-top: 100px;
+
      font-size: 36px;
      }
 }
 
-.method__list {
+.modeling-method__list {
      list-style: none;
      display: flex;
      flex-wrap: wrap;
@@ -30,14 +35,19 @@
           margin-bottom: 40px;
           column-gap: 32px;
           row-gap: 16px;
-            }
+          }
      }
      
-.method__item {
+.modeling-method__item {
      width: calc((100% - 20px) / 2);
 
      @include mq($width-tablet) {
           width: calc((100% - 32px * 3) / 4);
           
      }     
+}
+
+.modeling-button {
+     margin-top: 80px;
+     margin-bottom: 80px;
 }

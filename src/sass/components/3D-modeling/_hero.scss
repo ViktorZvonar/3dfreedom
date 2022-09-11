@@ -1,62 +1,52 @@
-.hero-container {
 
-  
+.modeling-hero__container {
   @include mq($width-desktop) {
-    padding-top: 40px;
-     
+    padding: 0 149px;
   }
-  @include mq($width-tablet) {
-      padding-top: 40px;
-      
-    
-    }
 }
 
-.hero-title {
-  margin-top: 0;
+.modeling-hero__title {
+  margin-top: 20px;
   margin-bottom: 16px;
-  font-family: 'Cera Pro';
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.25;
-  color: #487996;
-  
+
   @include mq($width-tablet) {
-    margin-bottom: 16px;
-  }
+      margin-top: 14px;
+    }
 
   @include mq($width-desktop) {
-    margin-bottom: 24px;
-    font-size: 48px;
-    line-height: 1.25;
-  }
+  margin-top: 60px;
+  margin-bottom: 24px;}
 }
 
-.container-description {
+.modeling-hero__box {
 
   @include mq($width-desktop) {
   display: flex;
   }
 }
 
-.hero__description {
-  margin-bottom: 16px;
+.modeling-hero__description {
+  width: 100%;
+  max-width: 440px;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.27;
+
+  &:not(:last-child) {
+      margin-bottom: 16px;
+    }
 
   @include mq($width-tablet) {
-    width: 515px;
-    margin-bottom: 16px;
-  }
+    max-width: 515px;
+    }
 
   @include mq($width-desktop) {
-    width: 515px;
-    margin-right: 72px;
+    margin-bottom: 0;
+    font-size: 18px;
+  &:not(:last-child) {
+      margin-right: 72px;
+    }
   }
 }
-  
-   
 
-
- 
 
