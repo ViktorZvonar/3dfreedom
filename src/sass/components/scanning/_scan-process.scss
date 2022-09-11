@@ -43,8 +43,8 @@
       position: absolute;
       z-index: 1;
       top: 15px;
-      left: center;
-      // transform: translateX(50%);
+      left: 50%;
+      transform: translateX(-50%);
       display: block;
       height: 83px;
       width: 92px;
@@ -69,7 +69,8 @@
       position: absolute;
       z-index: 1;
       top: 15px;
-      left: 19px;
+      left: 50%;
+      transform: translateX(-50%);
       display: block;
       height: 83px;
       width: 92px;
@@ -94,7 +95,8 @@
       position: absolute;
       z-index: 1;
       top: 15px;
-      left: 19px;
+      left: 50%;
+      transform: translateX(-50%);
       display: block;
       height: 83px;
       width: 92px;
@@ -119,7 +121,8 @@
       position: absolute;
       z-index: 1;
       top: 15px;
-      left: 19px;
+      left: 50%;
+      transform: translateX(-50%);
       display: block;
       height: 83px;
       width: 92px;
@@ -190,7 +193,8 @@
     &:nth-child(1) {
       &::before {
         top: 20px;
-        left: 22px;
+        left: 50%;
+        transform: translateX(-50%);
         height: 95px;
         width: 107px;
         background-image: url('../images/3d-scanning/tablet/scan-process-1.png');
@@ -209,7 +213,8 @@
     &:nth-child(2) {
       &::before {
         top: 20px;
-        left: 22px;
+        left: 50%;
+        transform: translateX(-50%);
         height: 95px;
         width: 107px;
         background-image: url('../images/3d-scanning/tablet/scan-process-2.png');
@@ -228,7 +233,8 @@
     &:nth-child(3) {
       &::before {
         top: 20px;
-        left: 22px;
+        left: 50%;
+        transform: translateX(-50%);
         height: 95px;
         width: 107px;
         background-image: url('../images/3d-scanning/tablet/scan-process-3.png');
@@ -247,7 +253,8 @@
     &:nth-child(4) {
       &::before {
         top: 20px;
-        left: 22px;
+        left: 50%;
+        transform: translateX(-50%);
         height: 95px;
         width: 107px;
         background-image: url('../images/3d-scanning/tablet/scan-process-4.png');
@@ -288,7 +295,8 @@
     &:nth-child(1) {
       &::before {
         top: 60px;
-        left: 40px;
+        left: 50%;
+        transform: translateX(-50%);
         height: 215px;
         width: 240px;
         background-image: url('../images/3d-scanning/desktop/scan-process-1.png');
@@ -307,7 +315,8 @@
     &:nth-child(2) {
       &::before {
         top: 60px;
-        left: 40px;
+        left: 50%;
+        transform: translateX(-50%);
         height: 215px;
         width: 240px;
         background-image: url('../images/3d-scanning/desktop/scan-process-2.png');
@@ -326,7 +335,8 @@
     &:nth-child(3) {
       &::before {
         top: 60px;
-        left: 40px;
+        left: 50%;
+        transform: translateX(-50%);
         height: 215px;
         width: 240px;
         background-image: url('../images/3d-scanning/desktop/scan-process-3.png');
@@ -345,7 +355,8 @@
     &:nth-child(4) {
       &::before {
         top: 60px;
-        left: 40px;
+        left: 50%;
+        transform: translateX(-50%);
         height: 215px;
         width: 240px;
         background-image: url('../images/3d-scanning/desktop/scan-process-4.png');
