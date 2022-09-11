@@ -1,40 +1,43 @@
-.modeling-container {
+.creation__container {
+  margin: 0;
+  padding: 0;
 
-@include mq($width-tablet) {
-position: relative;
-padding-bottom: 40px;
-display: flex;
-}
-  
-@include mq($width-desktop) {
-padding-bottom: 60px;
-display: flex;
+  @include mq($width-tablet) {
+    display: flex;
+    align-items:center;
+  }
 
+  @include mq($width-desktop) {
+    padding: 0 117px;
+    display: flex;
+  }
 }
-}
-.modeling__div {
+
+.creation__box {
 flex-direction: column;
+width: 100%;
+max-width: 440px;
   
 @include mq($width-tablet) {
 position: relative;
-align-items: center;
 }
   
 @include mq($width-desktop) {
 position: relative;
+max-width: 624px;
 }
 }
-.modeling-title {
-font-size: 18px;
+
+.creation__title {
 margin-bottom: 16px;
-font-family: 'Cera Pro';
+
+font-size: 18px;
 font-weight: 700;
 line-height: 1.25;
 text-transform: uppercase;
-color: #487996;
+color: getColor('title-text');
 
 @include mq($width-tablet) {
-margin-bottom: 16px;
 font-size: 24px;
 }
 
@@ -43,42 +46,44 @@ margin-bottom: 24px;
 font-size: 36px;
 }
 }
-.modeling-list {
+
+.creation__list {
 list-style: none;
-margin-bottom: 40px;
+
+@include mq(null, $width-tablet){
+  margin-bottom: 40px;
 }
-.modeling-item {
+}
+
+.creation__item {
 display: flex;
 align-items: center;
 font-weight: 300;
 font-size: 16px;
-font-family: 'Cera Pro';
-font-size: 16px;
 line-height: 1.25;
-text-align: left;
-color: #2B2B2B;
-gap: 16px;
+text-align: start;
 padding-left: 0;
 
+&:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
 @include mq($width-tablet) {
-margin-bottom: 16px;
 }
 
 @include mq($width-desktop) {
-gap: 58px;
-margin-bottom: 78px;
 font-weight: 300;
 font-size: 16px;
 }
 }
-.modeling-item::before {
+
+.creation__item::before {
   content: '';
   display: inline-block;
   width: 7px;
   height: 7px;
-  // margin: 0 10px 4px 0;
-  margin: 0 12px 4px 0;
-  background-color: getColor(title-text);
+  margin-right: 9px;
+  background-color: getColor('title-text');
   border-radius: 3px 0;
   
   @include mq($width-tablet) {
@@ -87,16 +92,12 @@ font-size: 16px;
   }
 }
 
-.modeling-item:not(:last-child) {
-  margin-bottom: 16px;
-}
 .modeling__img-container {
   background-image: url(/src/images/3d-modeling/mobile/3d-model.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 280px;
   height: 164px;
-  margin-right: auto;
   margin-left: auto;
   background-size: contain;
   @include retina() {
@@ -133,24 +134,6 @@ font-size: 16px;
   }
 }
 }
-// .modeling__t-img {
-
-//   @include mq($width-desktop) {
-//   background-color: #fff;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 0px 0px 0px 35px;
-//   transform: rotate(-90deg);
-//   width: 74px;
-//   height: 71px;
-//   z-index: -1;
-//   position: absolute;
-//   bottom: 15;
-//   right: 0;
-//   }
-//   @include mq($width-desktop) {
-//   display: none;  
-//   }
-// }
 
 
 
