@@ -15,7 +15,6 @@ flex-direction: column;
   
 @include mq($width-tablet) {
 position: relative;
-display: flex;
 align-items: center;
 }
   
