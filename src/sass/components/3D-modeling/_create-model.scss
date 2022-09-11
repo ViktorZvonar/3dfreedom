@@ -7,6 +7,7 @@ padding-bottom: 40px;
   
 @include mq($width-desktop) {
 padding-bottom: 60px;
+display: flex;
 }
 }
 .modeling__div {
@@ -44,10 +45,6 @@ font-size: 36px;
 .modeling-list {
 list-style: none;
 margin-bottom: 40px;
-
-// @include mq($width-tablet) {
-
-// }
 }
 .modeling-item {
 display: flex;
