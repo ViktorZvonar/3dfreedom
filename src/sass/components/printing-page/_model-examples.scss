@@ -1,5 +1,7 @@
 .model-examples{
     padding-top: 20px;
+    @include mq($width-tablet) {
+        padding-top: 14px;}    
     @include mq($width-desktop) {padding-top: 60px;}
 
     &__title{
@@ -10,15 +12,11 @@
         line-height: 1.25;
         color: getColor('title-text');
         
-        @include mq($width-tablet) {
-            font-size:36px;}     
-        
         @include mq($width-desktop) {
             margin-bottom: 24px;
             padding-left: 117px;
             font-size:48px;}     
     }
-
 
     &__list{
         display: flex;
@@ -28,8 +26,6 @@
         margin-bottom: 40px;
 
         @include mq($width-tablet) {gap: 32px;}
-
-       
     }
 
     .model-examples__div{
@@ -38,8 +34,7 @@
         height: 86px;
         
         @include mq($width-desktop) {
-            height: 240px;}
-        }
+            height: 240px;}        }
 
 
     &__canvas{   
@@ -58,7 +53,7 @@
         border-radius: 50px 0px;
     
     @include mq($width-tablet) {
-        padding-top: 40px;
+        padding-top: 36px;
         padding-bottom: 22px;
         width: 152px;
         height: 182px;    }
