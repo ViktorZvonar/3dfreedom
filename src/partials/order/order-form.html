@@ -26,50 +26,60 @@
           <label for="email" class="form__label">Email</label>
         </div>
 
-        <label for="plastics" class="form__label"></label>
-        <input
-          type="text"
-          list="types-plastic"
-          class="form__input"
-          name="plastics"
-          id="plastics"
-          placeholder="Види пластику"
-        />
-        <datalist id="types-plastic">
-          <option>Поліетилен</option>
-          <option>Поліпропілен</option>
-          <option>Полістирол</option>
-        </datalist>
+        <div class="form__field">
+          <input
+            type="text"
+            list="types-plastic"
+            class="form__input form__list"
+            name="plastics"
+            id="plastics"
+          />
+          <label for="plastics" class="form__label--selective"
+            >Види пластику</label
+          >
+          <datalist id="types-plastic">
+            <option>Поліетилен</option>
+            <option>Поліпропілен</option>
+            <option>Полістирол</option>
+            <option>Труднощі у виборі - ми допоможемо</option>
+          </datalist>
+        </div>
 
-        <label for="print-quality" class="form__label"></label>
-        <input
-          type="text"
-          list="types-quality"
-          class="form__input"
-          name="quality"
-          id="quality"
-          placeholder="Якість друку"
-        />
-        <datalist id="types-quality">
-          <option>Висока</option>
-          <option>Середня</option>
-          <option>Прийнятна</option>
-        </datalist>
+        <div class="form__field">
+          <input
+            type="text"
+            list="types-quality"
+            class="form__input form__list"
+            name="quality"
+            id="quality"
+          />
+          <label for="print-quality" class="form__label--selective"
+            >Якість друку</label
+          >
+          <datalist id="types-quality">
+            <option>300 мікрон</option>
+            <option>200 мікрон</option>
+            <option>100 мікрон</option>
+            <option>Труднощі у виборі - ми допоможемо</option>
+          </datalist>
+        </div>
 
-        <label for="colour" class="form__label"></label>
-        <input
-          type="text"
-          list="types-colour"
-          class="form__input"
-          name="colour"
-          id="colour"
-          placeholder="Колір"
-        />
-        <datalist id="types-colour">
-          <option>Червоний</option>
-          <option>Зелений</option>
-          <option>Синій</option>
-        </datalist>
+        <div class="form__field">
+          <input
+            type="text"
+            list="types-colour"
+            class="form__input form__list"
+            name="colour"
+            id="colour"
+          />
+          <label for="colour" class="form__label--selective">Колір</label>
+          <datalist id="types-colour">
+            <option>Червоний</option>
+            <option>Зелений</option>
+            <option>Синій</option>
+            <option>Труднощі у виборі - ми допоможемо</option>
+          </datalist>
+        </div>
 
         <label for="comment" class="comment__label">Повідомлення</label>
         <div class="comment__area">
