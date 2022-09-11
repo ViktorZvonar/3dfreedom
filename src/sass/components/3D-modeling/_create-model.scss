@@ -3,6 +3,7 @@
 @include mq($width-tablet) {
 position: relative;
 padding-bottom: 40px;
+display: flex;
 }
   
 @include mq($width-desktop) {
