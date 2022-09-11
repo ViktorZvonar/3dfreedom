@@ -5,8 +5,8 @@
 .scanning-hero__title {
   margin-top: 0;
   margin-bottom: 16px;
-  font-family: 'CeraPro';
-  font-style: normal;
+  // font-family: 'CeraPro';
+  // font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
@@ -23,8 +23,8 @@
 }
 
 .scanning-hero__descr {
-  font-family: 'CeraPro';
-  font-style: normal;
+  // font-family: 'CeraPro';
+  // font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
@@ -131,7 +131,7 @@
     top: 176px;
     display: block;
     z-index: unset;
-    width: 435px;
+    max-width: 435px;
     height: 286px;
     background-image: url('../images/3d-scanning/desktop/scanning.jpg');
     background-size: 435px 286px;
