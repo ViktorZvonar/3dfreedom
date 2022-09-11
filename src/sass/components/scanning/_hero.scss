@@ -1,12 +1,9 @@
 .scanning-hero {
-  padding-top: 40px;
   padding-bottom: 40px;
 }
 .scanning-hero__title {
   margin-top: 0;
   margin-bottom: 16px;
-  // font-family: 'CeraPro';
-  // font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
@@ -23,8 +20,6 @@
 }
 
 .scanning-hero__descr {
-  // font-family: 'CeraPro';
-  // font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
@@ -32,7 +27,7 @@
 }
 
 .scanning-hero__overlay {
-  max-width: 280px;
+  width: 280px;
   height: 199px;
   margin-left: auto;
   margin-right: auto;
@@ -52,9 +47,14 @@
 }
 
 @media screen and (min-width: $width-tablet) {
+  .scanning-hero {
+    padding-top: 5px;
+  }
+
   .scanning-container {
     position: relative;
   }
+
   .scanning-hero__title {
     font-size: 36px;
   }
@@ -93,8 +93,14 @@
 
 @media screen and (min-width: $width-desktop) {
   .scanning-hero {
-    padding-bottom: 22px;
+    padding-top: 10px;
+    padding-bottom: 100px;
   }
+
+  .scanning-container {
+    position: relative;
+  }
+
   .scanning-hero__title {
     margin-left: 117px;
     margin-bottom: 24px;
@@ -106,7 +112,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 300px;
-    // width: 515px;
+    max-width: 515px;
   }
 
   .scanning-hero__item {
@@ -128,10 +134,10 @@
   .scanning-hero__overlay {
     position: absolute;
     left: 736px;
-    top: 176px;
+    top: 152px;
     display: block;
     z-index: unset;
-    max-width: 435px;
+    width: 435px;
     height: 286px;
     background-image: url('../images/3d-scanning/desktop/scanning.jpg');
     background-size: 435px 286px;
