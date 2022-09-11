@@ -1,5 +1,8 @@
 .model-examples{
-    
+    padding-top: 20px;
+    @include mq($width-tablet) {
+        padding-top: 14px;}    
+    @include mq($width-desktop) {padding-top: 60px;}
 
     &__title{
         margin-bottom: 16px;
@@ -9,13 +12,11 @@
         line-height: 1.25;
         color: getColor('title-text');
         
-        @include mq($width-tablet) {
-            font-size:36px;}     
-        
         @include mq($width-desktop) {
+            margin-bottom: 24px;
+            padding-left: 117px;
             font-size:48px;}     
     }
-
 
     &__list{
         display: flex;
@@ -27,21 +28,33 @@
         @include mq($width-tablet) {gap: 32px;}
     }
 
+    .model-examples__div{
+        display: flex; 
+        align-items: center;   
+        height: 86px;
+        
+        @include mq($width-desktop) {
+            height: 240px;}        }
 
 
-    &__canvas{   display: flex; 
+    &__canvas{   
+        display: flex; 
         flex-direction: column;
         align-items: center;
-        justify-content:space-evenly;
-    width: 130px;
-    height: 158px;
-    opacity: 0.8;
-    background: #FFFFFF;
-    border-radius: 50px 0;
-    box-shadow: inset 1px 1px 16px #CBCBCB, inset -1px -1px 16px #FFFFFF;
-    border-radius: 50px 0px;
+        justify-content: space-between;
+        padding-top: 23px;
+        padding-bottom: 15px;
+        width: 130px;
+        height: 158px;
+        opacity: 0.8;
+        background: #FFFFFF;
+        border-radius: 50px 0;
+        box-shadow: inset 1px 1px 16px #CBCBCB, inset -1px -1px 16px #FFFFFF;
+        border-radius: 50px 0px;
     
     @include mq($width-tablet) {
+        padding-top: 36px;
+        padding-bottom: 22px;
         width: 152px;
         height: 182px;    }
 
@@ -49,16 +62,19 @@
         width: 320px;
         height: 382px;}   }
 
-    &__description{font-size: 14px;
+    &__description{
+        height: 25px;
+        font-size: 14px;
         line-height: 1.28;
         text-align: center;
         font-weight: inherit;
         color: getColor('title-text');
 
         @include mq($width-desktop) {
-            font-size:18px;}   }
+            font-size:18px;
+            height: 59px;    }   }
 }
-@media screen and (min-width:469px){ 
+@media screen and (min-width:469px) and (max-width:767px){ 
 
     .model-examples__canvas {width: 134px;  }
 }
