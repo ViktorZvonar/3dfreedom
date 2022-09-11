@@ -38,13 +38,14 @@
 .container-description {
 
   @include mq($width-desktop) {
-      display: flex;
-
-    }
+  display: flex;
+  }
 }
 
 .hero__description {
   margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 18px;
 
   @include mq($width-tablet) {
     width: 515px;
