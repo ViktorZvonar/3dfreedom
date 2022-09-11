@@ -71,3 +71,12 @@
   font-weight: $fw;
   letter-spacing: $ls;
 }
+
+@mixin retina($pixel-density: 2) {
+
+  @media (min-device-pixel-ratio: $pixel-density),
+  (min-resolution: ($pixel-density * 96dpi)),
+  (min-resolution: #{$pixel-density}dppx) {
+    @content;
+  }
+}

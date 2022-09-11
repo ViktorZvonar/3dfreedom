@@ -1,17 +1,14 @@
 .hero-container {
- padding: 44 20 40 20;
+
   
   @include mq($width-desktop) {
     padding-top: 40px;
-      // padding-right: 88px;
-      // padding-left: 32px;
-      // padding-bottom: 60px;
+     
   }
   @include mq($width-tablet) {
       padding-top: 40px;
-      // padding-right: 146px;
-      // padding-left: 149px;
-      // padding-bottom: 28px;
+      
+    
     }
 }
 
@@ -38,13 +35,14 @@
 .container-description {
 
   @include mq($width-desktop) {
-      display: flex;
-
-    }
+  display: flex;
+  }
 }
 
 .hero__description {
   margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 18px;
 
   @include mq($width-tablet) {
     width: 515px;
