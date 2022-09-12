@@ -1,43 +1,55 @@
+.modeling-method {
+     padding-top: 40px;
+     padding-bottom: 60px;
 
-.method__title {
+     @include mq($width-desktop) { 
+     padding-top: 100px;
+     padding-bottom: 80px;
+     }
+}
+.modeling-method__title {
      margin-bottom: 16px;
-          font-family: 'Cera Pro';
-          font-weight: 700;
-          font-size: 18px;
-          line-height: 1.25;
-          text-align: left;
-          text-transform: uppercase;
-          width: 280px;
-          color: #487996;
+
+     font-size: 18px;
+     font-weight: 700;
+     line-height: 1.25;
+     text-transform: uppercase;
+     color: getColor('title-text');
      
-          @include mq($width-tablet) {
-               margin-bottom: 16px;
-               width: 648px;
-          }
+     @include mq($width-tablet) {
+     font-size: 24px;
+     max-width: 584px;
+     margin-bottom: 24px;
+     }
      
-          @include mq($width-desktop) {
-               margin-bottom: 67px;
-               font-size: 48px;
-               line-height: 1.25;
-               width: 842px;
-          }
+     @include mq($width-desktop) { 
+     max-width: 900px;
+     padding: 0 117px;
+     margin-bottom: 40px;
+
+     font-size: 36px;
+     }
 }
 
-.method__list {
+.modeling-method__list {
      list-style: none;
      display: flex;
      flex-wrap: wrap;
      column-gap: 20px;
      row-gap: 16px;
+     margin-bottom: 40px;
 
           @include mq($width-tablet) {
-          margin-bottom: 40px;
+          margin-bottom: 60px;
           column-gap: 32px;
           row-gap: 16px;
-            }
+          }
+
+          @include mq($width-desktop) {
+          margin-bottom: 80px;}
      }
      
-.method__item {
+.modeling-method__item {
      width: calc((100% - 20px) / 2);
 
      @include mq($width-tablet) {

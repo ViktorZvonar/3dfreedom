@@ -1,12 +1,10 @@
 .scanning-hero {
-  padding-top: 40px;
   padding-bottom: 40px;
+  padding-top: 20px;
 }
 .scanning-hero__title {
   margin-top: 0;
   margin-bottom: 16px;
-  font-family: 'CeraPro';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
@@ -23,8 +21,6 @@
 }
 
 .scanning-hero__descr {
-  font-family: 'CeraPro';
-  font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
@@ -32,7 +28,12 @@
 }
 
 .scanning-hero__overlay {
-  background-image: url('/src/images/3d-scanning/mobile/scanning.jpg');
+  width: 280px;
+  height: 199px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('../images/3d-scanning/mobile/scanning.jpg');
+  background-repeat: no-repeat;
   background-position: center;
   background-size: 280px 199px;
 
@@ -41,7 +42,114 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     & {
-      background-image: url('/src/images/3d-scanning/mobile/scanning@2x.jpg');
+      background-image: url('../images/3d-scanning/mobile/scanning@2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: $width-tablet) {
+  .scanning-hero {
+    padding-top: 14px;
+  }
+
+  .scanning-container {
+    position: relative;
+  }
+
+  .scanning-hero__title {
+    font-size: 36px;
+  }
+
+  .scanning-hero__item {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .scanning-hero__descr {
+    display: block;
+    width: 514px;
+  }
+
+  .scanning-hero__overlay {
+    position: absolute;
+    z-index: -1;
+    left: 521px;
+    bottom: 20px;
+    width: 241px;
+    height: 172px;
+    background-image: url('../images/3d-scanning/tablet/scanning.jpg');
+    background-size: 241px 172px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/3d-scanning/tablet/scanning@2x.jpg');
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $width-desktop) {
+  .scanning-hero {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  .scanning-container {
+    position: relative;
+  }
+
+  .scanning-hero__title {
+    margin-left: 117px;
+    margin-bottom: 24px;
+    font-size: 48px;
+  }
+
+  .scanning-hero__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    max-width: 515px;
+  }
+
+  .scanning-hero__item {
+    margin-left: 117px;
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-bottom: 24px;
+    }
+    &:last-child {
+      margin-left: 72px;
+    }
+  }
+
+  .scanning-hero__descr {
+    font-size: 18px;
+  }
+
+  .scanning-hero__overlay {
+    position: absolute;
+    left: 736px;
+    top: 152px;
+    display: block;
+    z-index: unset;
+    width: 435px;
+    height: 286px;
+    background-image: url('../images/3d-scanning/desktop/scanning.jpg');
+    background-size: 435px 286px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/3d-scanning/desktop/scanning@2x.jpg');
+      }
     }
   }
 }

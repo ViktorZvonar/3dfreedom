@@ -1,10 +1,10 @@
-<section class="page-contacts">
+<section>
   <div class="container contacts-container">
     <h2 class="contacts__title title">Контакти</h2>
-    <article>
+    <article class="article__hero">
       <iframe
-        width="280px"
-        height="170px"
+        width="560px"
+        height="315яpx"
         src="https://www.youtube.com/embed/hrv0sDACB7M"
         title="YouTube video player"
         frameborder="0"
@@ -24,17 +24,34 @@
 
         <span class="print-features">
           Приємного перегляду!
-          <img
-            srcset="
-              ./images/contacts/mobile/emoji.png    1x,
-              ./images/contacts/mobile/emoji@2x.png 2x
-            "
-            src="./images/contacts/mobile/emoji.png"
-            alt=":)"
-            width="22"
-            height="22"
-            class="print-features__emoji"
-          />
+          <picture>
+            <source
+              srcset="
+                ./images/contacts/desktop/emoji.png    1x,
+                ./images/contacts/desktop/emoji@2x.png 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="
+                ./images/contacts/tablet/emoji.png    1x,
+                ./images/contacts/tablet/emoji@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/contacts/mobile/emoji.png    1x,
+                ./images/contacts/mobile/emoji@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./images/contacts/mobile/emoji.png"
+              alt=":)"
+              class="print-features__emoji"
+            />
+          </picture>
         </span>
       </p>
     </article>
