@@ -28,6 +28,7 @@
 }
 
 .order-form {
+
   @include mq($width-tablet) {
     max-width: 400px;
     margin-left: auto;
