@@ -28,7 +28,6 @@
 }
 
 .order-form {
-
   @include mq($width-tablet) {
     max-width: 400px;
     margin-left: auto;
@@ -284,74 +283,74 @@
   }
 }
 
-// .mobile-tablet-info {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-//   @include mq($width-tablet) {
-//     display: flex;
-//     justify-content: space-between;
-//   }
+.mobile-tablet-info {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include mq($width-tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 
-//   @media screen and (max-width: 767px) {
-//     display: none;
-//   }
-// }
+  @include mq($width-desktop) {
+    display: none;
+  }
+}
 
-// .mobile-tablet-info-list {
-//   @include mq($width-tablet) {
-//     display: flex;
-//   }
-// }
+.mobile-tablet-info-list {
+  @include mq($width-tablet) {
+    display: flex;
+  }
+}
 
-// .mobile-tablet-info {
-//   &__item {
-//     display: flex;
-//     flex-direction: column;
-//     margin-bottom: 25px;
-//     @include mq($width-tablet) {
-//       margin-bottom: 0;
-//       min-width: 184px;
-//     }
-//   }
-//   &__tel,
-//   &__email,
-//   &__schedule {
-//     font-weight: 700;
-//     font-size: 18px;
-//     line-height: 1.28;
-//     color: map-get($colors, 'title-text');
-//     margin-bottom: 8px;
-//     @include mq($width-tablet) {
-//       font-size: 24px;
-//       line-height: 1.25;
-//     }
-//   }
+.mobile-tablet-info {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    @include mq($width-tablet) {
+      margin-bottom: 0;
+      min-width: 184px;
+    }
+  }
+  &__tel,
+  &__email,
+  &__schedule {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.28;
+    color: map-get($colors, 'title-text');
+    margin-bottom: 8px;
+    @include mq($width-tablet) {
+      font-size: 24px;
+      line-height: 1.25;
+    }
+  }
 
-//   &__email__link {
-//     line-height: 1.25;
-//   }
-//   &__tel,
-//   &__schedule {
-//     text-transform: uppercase;
-//   }
-//   &__link,
-//   &__days {
-//     margin-bottom: 8px;
-//     line-height: 1.25;
-//     text-transform: capitalize;
-//   }
-//   &__days {
-//     @include mq($width-tablet) {
-//       text-align: right;
-//     }
-//   }
-//   &__link:last-child {
-//     margin-bottom: 0;
-//   }
-//   &__days:last-child {
-//     margin-bottom: 0;
-//   }
-// }
+  &__email__link {
+    line-height: 1.25;
+  }
+  &__tel,
+  &__schedule {
+    text-transform: uppercase;
+  }
+  &__link,
+  &__days {
+    margin-bottom: 8px;
+    line-height: 1.25;
+    text-transform: capitalize;
+  }
+  &__days {
+    @include mq($width-tablet) {
+      text-align: right;
+    }
+  }
+  &__link:last-child {
+    margin-bottom: 0;
+  }
+  &__days:last-child {
+    margin-bottom: 0;
+  }
+}
 
 .desktop-info {
   &__item {
@@ -390,10 +389,6 @@
   }
   &__days:last-child {
     margin-bottom: 0;
-  }
-
-  @include mq($width-desktop) {
-    margin-left: auto;
   }
 }
 
