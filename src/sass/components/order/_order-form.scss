@@ -1,4 +1,4 @@
-.form__title {
+.order-form__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.28;
@@ -20,16 +20,14 @@
   }
 }
 
-.form {
+.order-form {
   @include mq($width-tablet) {
     max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+
   }
   @include mq($width-desktop) {
     max-width: 555px;
-    margin-left: 0;
-    margin-right: auto;
+    padding-bottom: 80px;
   }
 }
 
@@ -196,12 +194,16 @@
   &__days:last-child {
     margin-bottom: 0;
   }
+
+    @include mq($width-desktop) {
+    margin-left: auto;
+  }
 }
 
 .order-form__container {
   @include mq($width-desktop) {
+    padding-left: 149px;
+    padding-right: 149px;
     display: flex;
-    flex-wrap: wrap;
-    width: 1142px;
   }
 }

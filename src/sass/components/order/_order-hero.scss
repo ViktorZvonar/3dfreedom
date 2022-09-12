@@ -1,5 +1,15 @@
 .order-hero {
   padding-bottom: 40px;
+  padding-top: 20px;
+
+  @include mq($width-tablet) {
+    padding-top: 20px;
+    }
+  
+    @include mq($width-desktop) {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    }
 }
 
 .order-hero__title {
@@ -29,6 +39,7 @@
 .order-hero__wrap {
   @include mq($width-tablet) {
     display: flex;
+    justify-content: space-between;
     width: 100%;
   }
 }
@@ -58,7 +69,7 @@
     margin-left: 0;
     margin-right: 32px;
     background-image: url(../images/order/tablet/order-tablet-img.jpg);
-    width: 336px;
+    width: 100%;
     height: 158px;
     background-size: 336px 158px;
   }
@@ -74,9 +85,11 @@
 @include mq($width-desktop) {
   .order-hero__bg {
     background-image: url(../images/order/desktop/mozjpeg/order-desktop-img.jpg);
-    width: 555px;
+    width: 100%;
     height: 400px;
     background-size: 555px 400px;
+    margin-left: 0;
+    margin-right: auto;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -89,15 +102,16 @@
 
 .order-hero__list {
   margin-top: 16px;
+  width: 100%;
+
   @include mq($width-tablet) {
     margin-top: 0;
-    max-width: 336px;
     display: flex;
     flex-direction: column;
   }
 
   @include mq($width-desktop) {
-    width: 100%;
+    margin-left: 32px;
   }
 }
 
@@ -125,6 +139,8 @@
 
 .order-hero__container {
   @include mq($width-desktop) {
-    width: 1142px;
+    padding-left: 149px;
+    padding-right: 149px;
   }
 }
+
