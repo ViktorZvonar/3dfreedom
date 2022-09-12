@@ -104,10 +104,10 @@
     font-size: 36px;
   }
 }
+
 .form__label {
   position: absolute;
-  display: block;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.43;
   top: 0;
   left: 0;
@@ -117,8 +117,6 @@
     display: block;
     margin-bottom: 8px;
   }
-
-  
 }
 
 .form__input {
@@ -143,11 +141,15 @@
 
 .form__input:focus+.form__label {
   transform: translateY(-20px);
+  font-size: 14px;
 }
 
-.form__input:focus + .form__label,
-.form__input:not(:placeholder-shown) + .form__label {
+.form__input:focus+.form__label,
+.form__input:not(:placeholder-shown)+.form__label {
+  display: block;
   transform: translateY(-20px);
+  font-size: 14px;
+
 }
 //комментарий
 
