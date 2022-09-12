@@ -194,3 +194,13 @@
     bottom: 133px;
   }
 }
+
+// RESPONSIVE FOR MOR GALLERY
+@media screen and (max-width: 479px) {
+  .main-gallery__img--width {
+    width: calc(100% - 10px);
+  }
+  .main-gallery__item {
+    width: calc(100%);
+  }
+}
