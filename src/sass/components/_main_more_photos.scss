@@ -10,6 +10,7 @@
 }
 
 .more-photos__container {
+  position: relative;
   @include mq($width-desktop) {
     padding: 0 117px;
   }
