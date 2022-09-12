@@ -1,82 +1,104 @@
-.model-examples{
-    padding-top: 20px;
+.model-examples {
+  padding-top: 20px;
+  @include mq($width-tablet) {
+    padding-top: 14px;
+  }
+  @include mq($width-desktop) {
+    padding-top: 60px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    text-align: start;
+    font-size: 24px;
+    line-height: 1.25;
+    color: getColor('title-text');
+
     @include mq($width-tablet) {
-        padding-top: 14px;}    
-    @include mq($width-desktop) {padding-top: 60px;}
-
-    &__title{
-        margin-bottom: 16px;
-        font-weight: 700;
-        text-align: start;
-        font-size: 24px;
-        line-height: 1.25;
-        color: getColor('title-text');
-        
-        @include mq($width-desktop) {
-            margin-bottom: 24px;
-            padding-left: 117px;
-            font-size:48px;}     
+      font-size: 36px;
     }
 
-    &__list{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px 20px;
-        margin-bottom: 40px;
-        list-style: none;
-
-        @include mq($width-tablet) {gap: 32px;}
+    @include mq($width-desktop) {
+      margin-bottom: 24px;
+      padding-left: 117px;
+      font-size: 48px;
     }
+  }
 
-    &__item{    width: calc(50% - 10px);
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 20px;
+    margin-bottom: 40px;
+    list-style: none;
 
-    @include mq($width-tablet)
-    {width: calc(25% - 24px);}}
+    @include mq($width-tablet) {
+      gap: 32px;
+    }
+    @include mq($width-desktop) {
+      margin-bottom: 100px;
+    }
+  }
 
+  &__item {
+    width: calc(50% - 10px);
 
-    &__div{
-        display: flex; 
-        align-items: center;   
-        height: 86px;
-        
-        @include mq($width-desktop) {
-            height: 240px;}        }
+    @include mq($width-tablet) {
+      width: calc(25% - 24px);
+    }
+  }
 
+  &__div {
+    display: flex;
+    align-items: center;
+    height: 86px;
 
-    &__canvas{   
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 23px;
-        padding-bottom: 15px;
-       /* width: 130px;*/
-        height: 158px;
-        opacity: 0.8;
-        background: #FFFFFF;
-        border-radius: 50px 0;
-        box-shadow: inset 1px 1px 16px #CBCBCB, inset -1px -1px 16px #FFFFFF;
-        border-radius: 50px 0px;
+    @include mq($width-desktop) {
+      height: 240px;
+    }
+  }
+
+  &__canvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 23px;
+    padding-bottom: 15px;
+    /* width: 130px;*/
+    height: 158px;
+    opacity: 0.8;
+    background: #ffffff;
+    border-radius: 50px 0;
+    box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #ffffff;
+    border-radius: 50px 0px;
     /*/@media screen and (min-width:469px) and (max-width:767px){ 
 
     .model-examples__canvas {width: 134px;  }
 }*/
     @include mq($width-tablet) {
-        padding-top: 36px;
-        padding-bottom: 22px;
-        height: 182px;    }
+      padding-top: 36px;
+      padding-bottom: 22px;
+      height: 182px;
+    }
 
     @include mq($width-desktop) {
-        height: 382px;}   }
+      height: 382px;
+    }
+  }
 
-    &__description{
-        height: 25px;
-        font-size: 14px;
-        line-height: 1.28;
-        text-align: center;
-        font-weight: inherit;
-        color: getColor('title-text');
+  &__description {
+    height: 25px;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: center;
+    font-weight: inherit;
+    color: getColor('title-text');
 
-        @include mq($width-desktop) {
-            font-size:18px;
-            height: 59px;    }   }}
+    @include mq($width-desktop) {
+      font-size: 18px;
+      height: 59px;
+    }
+  }
+}
