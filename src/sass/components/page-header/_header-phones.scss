@@ -2,12 +2,6 @@
   position: relative;
   display: flex;
   align-items: center;
-
-  margin-right: 24px;
-
-  @include mq($width-tablet) {
-    margin-right: 0;
-  }
 }
 
 .header-phones__button {

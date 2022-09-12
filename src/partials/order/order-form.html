@@ -1,69 +1,84 @@
-<section class="order-form">
-  <div class="container">
+<section>
+  <div class="order-form__container container">
     <h2 class="visually-hidden">зворотній зв'язок</h2>
-    <form class="form">
+    <form class="order-form">
       <div class="form__thumb">
-        <p class="form__title">зв'яжіться з нами</p>
-        <label for="name" class="form__label"></label>
-        <input
-          type="text"
-          class="form__input"
-          name="name"
-          id="name"
-          placeholder="Ім'я"
-        />
-        <label for="email" class="form__label"></label>
-        <input
-          type="email"
-          class="form__input"
-          name="email"
-          id="email"
-          placeholder="Email"
-        />
-        <label for="plastics" class="form__label"></label>
-        <input
-          type="text"
-          list="types-plastic"
-          class="form__input"
-          name="plastics"
-          id="plastics"
-          placeholder="Види пластику"
-        />
-        <datalist id="types-plastic">
-          <option>Поліетилен</option>
-          <option>Поліпропілен</option>
-          <option>Полістирол</option>
-        </datalist>
+        <p class="order-form__title">зв'яжіться з нами</p>
+        <div class="form__field">
+          <input
+            type="text"
+            class="form__input"
+            name="name"
+            id="name"
+            placeholder=" "
+          />
+          <label for="name" class="form__label">Ім'я</label>
+        </div>
 
-        <label for="print-quality" class="form__label"></label>
-        <input
-          type="text"
-          list="types-quality"
-          class="form__input"
-          name="quality"
-          id="quality"
-          placeholder="Якість друку"
-        />
-        <datalist id="types-quality">
-          <option>Висока</option>
-          <option>Середня</option>
-          <option>Прийнятна</option>
-        </datalist>
+        <div class="form__field">
+          <input
+            type="email"
+            class="form__input"
+            name="email"
+            id="email"
+            placeholder=" "
+          />
+          <label for="email" class="form__label">Email</label>
+        </div>
 
-        <label for="colour" class="form__label"></label>
-        <input
-          type="text"
-          list="types-colour"
-          class="form__input"
-          name="colour"
-          id="colour"
-          placeholder="Колір"
-        />
-        <datalist id="types-colour">
-          <option>Червоний</option>
-          <option>Зелений</option>
-          <option>Синій</option>
-        </datalist>
+        <div class="form__field">
+          <input
+            type="text"
+            list="types-plastic"
+            class="form__input form__list"
+            name="plastics"
+            id="plastics"
+            placeholder="Види пластику"
+          />
+          <label for="plastics" class="form__label--selective"></label>
+          <datalist id="types-plastic">
+            <option>Поліетилен</option>
+            <option>Поліпропілен</option>
+            <option>Полістирол</option>
+            <option>Труднощі у виборі - ми допоможемо</option>
+          </datalist>
+        </div>
+
+        <div class="form__field">
+          <input
+            type="text"
+            list="types-quality"
+            class="form__input form__list"
+            name="quality"
+            id="quality"
+            placeholder="Якість друку"
+          />
+          <label for="print-quality" class="form__label--selective"></label>
+          <datalist id="types-quality">
+            <option>300 мікрон</option>
+            <option>200 мікрон</option>
+            <option>100 мікрон</option>
+            <option>Труднощі у виборі - ми допоможемо</option>
+          </datalist>
+        </div>
+
+        <div class="form__field">
+          <input
+            type="text"
+            list="types-colour"
+            class="form__input form__list"
+            name="colour"
+            id="colour"
+            placeholder="Колір"
+          />
+          <label for="colour" class="form__label--selective"></label>
+          <datalist id="types-colour">
+            <option>Червоний</option>
+            <option>Зелений</option>
+            <option>Синій</option>
+            <option>Труднощі у виборі - ми допоможемо</option>
+          </datalist>
+        </div>
 
         <label for="comment" class="comment__label">Повідомлення</label>
         <div class="comment__area">
@@ -92,8 +107,39 @@
         <p class="comment__add-file">
           *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
         </p>
-        <button class="button-link" type="submit">ВІДПРАВИТИ</button>
+        <button class="buttons-link contacts-btn" type="submit">
+          ВІДПРАВИТИ
+        </button>
       </div>
     </form>
+
+    <div class="desktop-info">
+      <ul>
+        <li class="desktop-info__item">
+          <p class="desktop-info__tel">телефони</p>
+          <a class="desktop-info__link" href="tel:+380957384551"
+            >+38 (095) -73-84-551</a
+          >
+          <a class="desktop-info__link" href="tel:+380980025235"
+            >+38 (098) -00-25-235</a
+          >
+        </li>
+        <li class="desktop-info__item">
+          <p class="desktop-info__email">Email</p>
+          <a
+            class="desktop-info__email__link"
+            href="mailto:3dfreedom.info@gmail.com"
+            >3dfreedom.info@gmail.com</a
+          >
+        </li>
+      </ul>
+      <div class="schedule">
+        <p class="desktop-info__schedule">Робочий час</p>
+        <ul>
+          <li class="desktop-info__days">Пн-пт: з 8:00 до 19:00</li>
+          <li class="desktop-info__days">Сб, Нд: з 10:00 до 17:00</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
