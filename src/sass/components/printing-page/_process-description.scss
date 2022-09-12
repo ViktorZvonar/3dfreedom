@@ -37,6 +37,8 @@
 
     @include mq($width-desktop) {
       flex-basis: 734px;
+      line-height: calc(23 / 18);
+      margin-bottom: 0;
     }
   }
 
