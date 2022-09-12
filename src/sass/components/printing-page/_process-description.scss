@@ -5,8 +5,9 @@
   font-size: 16px;
   line-height: 1.25;
   color: getColor('primary-text');
-  @include mq($width-tablet){
-    padding-top: 40px;}
+  @include mq($width-tablet) {
+    padding-top: 40px;
+  }
 
   @include mq($width-desktop) {
     padding-top: 100px;
@@ -53,6 +54,10 @@
     margin-right: auto;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.15));
 
+    @include mq($width-mobile) {
+      width: 430px;
+    }
+
     @include mq($width-tablet) {
       margin-left: 0;
       margin-right: 0;
@@ -88,10 +93,12 @@
 }
 
 @media screen and (max-width: 479px) {
-  .process-description__img--width {
-    width: calc(100% - 10px);
-  }
   .process-description__img {
+    width: calc(100%);
+  }
+}
+@media screen and (max-width: 767px) {
+  .process-description__img--width {
     width: calc(100%);
   }
 }
