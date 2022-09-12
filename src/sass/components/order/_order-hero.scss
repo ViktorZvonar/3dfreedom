@@ -1,5 +1,15 @@
 .order-hero {
   padding-bottom: 40px;
+  padding-top: 20px;
+
+  @include mq($width-tablet) {
+    padding-top: 20px;
+    }
+  
+    @include mq($width-desktop) {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    }
 }
 
 .order-hero__title {
@@ -8,8 +18,30 @@
   text-align: center;
   font-size: 24px;
   color: getColor('title-text');
+  margin-bottom: 16px;
 
   text-transform: uppercase;
+
+  @include mq($width-tablet) {
+    font-size: 36px;
+    line-height: 1.25;
+
+    text-align: start;
+  }
+
+  @include mq($width-desktop) {
+    font-size: 48px;
+    text-align: start;
+    margin-bottom: 24px;
+  }
+}
+
+.order-hero__wrap {
+  @include mq($width-tablet) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .order-hero__bg {
@@ -22,8 +54,8 @@
   background-position: center;
   background-size: 280px 171px;
   border-radius: 15px;
-  margin-top: 16px;
 }
+
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -32,11 +64,83 @@
   }
 }
 
+@include mq($width-tablet) {
+  .order-hero__bg {
+    margin-left: 0;
+    margin-right: 32px;
+    background-image: url(../images/order/tablet/order-tablet-img.jpg);
+    width: 100%;
+    height: 158px;
+    background-size: 336px 158px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .order-hero__bg {
+      background-image: url(../images/order/tablet/order-tablet-img@2x.jpg);
+    }
+  }
+}
+
+@include mq($width-desktop) {
+  .order-hero__bg {
+    background-image: url(../images/order/desktop/mozjpeg/order-desktop-img.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: 555px 400px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .order-hero__bg {
+      background-image: url(../images/order/desktop/mozjpeg/order-desktop-img@2x.jpg);
+    }
+  }
+}
+
+.order-hero__list {
+  margin-top: 16px;
+  width: 100%;
+
+  @include mq($width-tablet) {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include mq($width-desktop) {
+    margin-left: 32px;
+  }
+}
+
 .order-hero__ad {
   font-weight: 300;
-  font-size: 16px;
-  line-height: calc(20 / 16);
+  line-height: 1.25;
+  width: 100%;
+  @include mq($width-desktop) {
+    font-size: 18px;
+    line-height: 1.28;
+  }
 
   color: getColor('primary-text');
-  margin-top: 16px;
+  &:not(:first-child) {
+    margin-top: 16px;
+
+    @include mq($width-tablet) {
+      margin-top: 0;
+    }
+    @include mq($width-desktop) {
+      margin-top: 24px;
+    }
+  }
 }
+
+.order-hero__container {
+  @include mq($width-desktop) {
+    padding-left: 149px;
+    padding-right: 149px;
+  }
+}
+
