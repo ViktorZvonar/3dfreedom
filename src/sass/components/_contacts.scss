@@ -128,9 +128,9 @@
   margin-bottom: 44px;
   color: map-get($colors, 'primary-text');
   
-    @include mq($width-desktop) {
-      font-size: 18px;
-      line-height: 1.11;
+  @include mq($width-desktop) {
+    font-size: 18px;
+    line-height: 1.11;
     }
 }
 .form__input:focus + .form__label {
