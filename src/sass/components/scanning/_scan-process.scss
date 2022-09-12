@@ -151,14 +151,12 @@
   box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
     inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
-  padding-bottom: 15px;
+  padding: 15px 15px 16px;
 }
 
 .scan-list__title {
-  max-width: 50%;
+  // max-width: 50%;
   text-align: center;
-  font-family: 'CeraPro';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
