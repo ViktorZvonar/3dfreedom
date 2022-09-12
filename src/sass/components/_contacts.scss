@@ -3,9 +3,9 @@
   padding-bottom: 40px;
 
   @include mq($width-tablet) {
-  padding-top: 24px;
-    }
-    
+    padding-top: 24px;
+  }
+
   @include mq($width-desktop) {
     padding: 60px 149px 100px;
   }
@@ -139,13 +139,13 @@
   }
 }
 
-.form__input:focus+.form__label {
+.form__input:focus + .form__label {
   transform: translateY(-20px);
   font-size: 14px;
 }
 
-.form__input:focus+.form__label,
-.form__input:not(:placeholder-shown)+.form__label {
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
   transform: translateY(-20px);
   font-size: 14px;
 }
@@ -198,7 +198,6 @@
 .comment__add-file {
   line-height: 1.25;
   color: #cdcdcd;
-  margin-top: 4px;
   margin-bottom: 40px;
   @include mq($width-desktop) {
     font-size: 18px;

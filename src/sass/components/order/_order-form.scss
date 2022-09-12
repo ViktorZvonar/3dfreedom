@@ -30,8 +30,6 @@
 .order-form {
   @include mq($width-tablet) {
     max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
   }
   @include mq($width-desktop) {
     max-width: 555px;
@@ -132,7 +130,6 @@
 }
 
 .comment__add-file {
-  margin-top: 4px;
   margin-bottom: 40px;
 
   font-size: 16px;
@@ -283,6 +280,10 @@
   }
   &__days:last-child {
     margin-bottom: 0;
+  }
+
+  @include mq($width-desktop) {
+    margin-left: auto;
   }
 }
 

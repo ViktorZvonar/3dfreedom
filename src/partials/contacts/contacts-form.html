@@ -1,62 +1,96 @@
 <section>
-  <div class="container container-form">
-    <h2 class="visually-hidden">зворотній зв'язок</h2>
-    <form class="form">
-      <div class="form__thumb">
+  <div class="form__revers">
+    <div class="container container-form">
+      <h2 class="visually-hidden">зворотній зв'язок</h2>
+      <form class="form">
         <div class="form__thumb">
-          <p class="form__title">зв'яжіться з нами</p>
-          <div class="form__field">
-            <input
-              type="text"
-              class="form__input"
-              name="name"
-              id="name"
-              placeholder="&nbsp"
-            />
-            <label for="name" class="form__label">Ім'я</label>
-          </div>
-          <div class="form__field">
-            <input
-              type="email"
-              class="form__input"
-              name="email"
-              id="email"
-              placeholder="&nbsp"
-            />
-            <label for="email" class="form__label">Email</label>
-          </div>
-
-          <label for="comment" class="comment__label">Повідомлення</label>
-          <div class="comment__area">
-            <textarea
-              class="comment__text"
-              name="comment"
-              id="comment"
-              placeholder="Залишіть своє повідомлення"
-            ></textarea>
-            <div>
+          <div class="form__thumb">
+            <p class="form__title">зв'яжіться з нами</p>
+            <div class="form__field">
               <input
-                class="comment__upload visually-hidden"
-                type="file"
-                id="file"
-                name="file"
-                multiple
+                type="text"
+                class="form__input"
+                name="name"
+                id="name"
+                placeholder=" "
               />
-              <label for="file">
-                <svg class="comment__icon" width="22" height="22">
-                  <use href="./images/icons.svg#icon-paper-clip"></use>
-                </svg>
-              </label>
+              <label for="name" class="form__label">Ім'я</label>
+            </div>
+            <div class="form__field">
+              <input
+                type="email"
+                class="form__input"
+                name="email"
+                id="email"
+                placeholder=" "
+              />
+              <label for="email" class="form__label">Email</label>
+            </div>
+
+            <label for="comment" class="comment__label">Повідомлення</label>
+            <div class="comment__area">
+              <textarea
+                class="comment__text"
+                name="comment"
+                id="comment"
+                placeholder="Залишіть своє повідомлення"
+              ></textarea>
+              <div>
+                <input
+                  class="comment__upload visually-hidden"
+                  type="file"
+                  id="file"
+                  name="file"
+                  multiple
+                />
+                <label for="file">
+                  <svg class="comment__icon" width="22" height="22">
+                    <use href="./images/icons.svg#icon-paper-clip"></use>
+                  </svg>
+                </label>
+              </div>
             </div>
           </div>
+          <p class="comment__add-file">
+            *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+          </p>
+          <button type="submit" class="buttons-link contacts-btn">
+            ВІДПРАВИТИ
+          </button>
         </div>
-        <p class="comment__add-file">
-          *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
-        </p>
-        <button type="submit" class="buttons-link contacts-btn">
-          ВІДПРАВИТИ
-        </button>
+      </form>
+    </div>
+    <div class="container container-info">
+      <ul class="info-list">
+        <li class="info__item">
+          <p class="info__tel">телефони</p>
+          <a class="info__link" href="tel:+380957384551"
+            >+38 (095) -73-84-551</a
+          >
+          <a class="info__link" href="tel:+380980025235"
+            >+38 (098) -00-25-235</a
+          >
+        </li>
+        <li class="info__item">
+          <p class="info__email">Email</p>
+          <a class="info__email__link" href="mailto:3dfreedom.info@gmail.com"
+            >3dfreedom.info@gmail.com</a
+          >
+        </li>
+      </ul>
+      <div class="schedule">
+        <p class="info__schedule">Робочий час</p>
+        <ul>
+          <li class="info__days">
+            <p>Пн-пт:</p>
+            <p>З 8:00 до 19:00</p>
+          </li>
+          <li class="info__days">
+            <p>Сб, Нд:</p>
+            <p>З 10:00 до 17:00</p>
+          </li>
+        </ul>
       </div>
-    </form>
+    </div>
   </div>
 </section>
