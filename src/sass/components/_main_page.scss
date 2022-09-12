@@ -1,11 +1,13 @@
 .main-hero,
 .main-gallery {
-  margin-bottom: 40px;
+
+  padding-bottom: 40px;
+  
   @include mq($width-tablet) {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
   @include mq($width-desktop) {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -190,5 +192,15 @@
     height: 16px;
     left: 103px;
     bottom: 133px;
+  }
+}
+
+// RESPONSIVE FOR MOR GALLERY
+@media screen and (max-width: 479px) {
+  .main-gallery__img--width {
+    width: calc(100% - 10px);
+  }
+  .main-gallery__item {
+    width: calc(100%);
   }
 }
