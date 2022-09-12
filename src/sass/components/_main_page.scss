@@ -72,9 +72,19 @@
   }
 }
 
+// RESPONSIVE FOR HERO
+@media screen and (max-width: 479px) {
+  .main-hero__image {
+    width: calc(100%);
+  }
+}
+
 .main-hero__item {
   border-radius: 50%;
   overflow: hidden;
+  @media screen and (max-width: 479px) {
+    width: calc(100% / 3 - 10px);
+  }
   &:last-child {
     border-radius: 0 25px 0 25px;
     @include mq($width-desktop) {
