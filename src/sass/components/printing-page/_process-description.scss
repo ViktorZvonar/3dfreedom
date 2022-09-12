@@ -1,11 +1,15 @@
 .process-description {
-  padding-top: 0;
+  padding-top: 38px;
   padding-bottom: 60px;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
   color: getColor('primary-text');
+  @include mq($width-tablet){
+    padding-top: 40px;}
+
   @include mq($width-desktop) {
+    padding-top: 100px;
     padding-bottom: 80px;
     font-size: 18px;
   }
@@ -28,7 +32,7 @@
 
   &__set {
     margin-top: 24px;
-    margin-bottom: 24px;
+    flex-basis: 280px;
 
     @include mq($width-tablet) {
       margin-top: 0;
