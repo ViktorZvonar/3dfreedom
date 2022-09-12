@@ -1,4 +1,17 @@
+body {
+  background-image: url('../images/decor/decor-mob.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  @include mq($width-tablet) {
+    background-image: url('../images/decor/decor-tab.png');
+  }
+  @include mq($width-desktop) {
+    background-image: url('../images/decor/decor-des.png');
+  }
+}
+
 .decor-main {
+  display: none;
   width: 369.65px;
   height: 1425.49px;
   background-image: url('../images/decor/mobile/decor-mob.png');
