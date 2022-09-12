@@ -37,32 +37,33 @@
   }
 
   @include mq($width-desktop) {
-    width: 1440px;
+    width: 1562px;
     height: 2248px;
   }
 }
 
-.background-scanning {
+.background-printing {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -2;
-  width: 370px;
-  height: 2047px;
-  overflow: hidden;
-
-
-  @include mq($width-tablet) {
-    width: 802px;
-    height: 1249px;
-  }
-
-  @include mq($width-desktop) {
-    width: 1562px;
-    height: 1596px;
-  }
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+    width: 370px;
+    height: 1425px;
+    overflow: hidden;
+  
+  
+    @include mq($width-tablet) {
+      width: 802px;
+      height: 1507px;
+    }
+  
+    @include mq($width-desktop) {
+      width: 1562px;
+      height: 2248px;
+    }
 }
+
 
 .background-main__photo {
   position: absolute;
@@ -125,98 +126,12 @@
     }
   }
 }
-.background-common__photo {
+.decor-common {
   position: absolute;
     width: 320px;
     height: 1425px;
-    top: 0px;
-    left: 29px;
-  background-image: url('../images/decor/mobile/decor-mob-contact.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 370px 1425.49px;
-  
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/decor/mobile/decor-mob-contact-2x.png');
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-      height: 1507px;
-      top: 0px;
-      left: 17px;
-    background-image: url('../images/decor/tablet/decor-tab-long.png');
-    background-size: 1562px 2996px;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/decor/tablet/decor-tab-long-2x.png');
-    }
-  }
-  @media screen and (min-width: 1440px) {
-  width: 1440px;
-    height: 2997px;
     top: 0px;
     left: 34px;
-    background-image: url('../images/decor/desktop/decor.png');
-    background-size: 1562px 2996px;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/decor/desktop/decor-2x.png');
-    }
-    
-  }
-}
-.decor-common {
-  width: 369.65px;
-  height: 1425.49px;
-  background-image: url('../images/decor/mobile/decor-mob.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 320px 1425.49px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -2;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/decor/mobile/decor-mob-2x.png');
-  }
-  @media screen and (min-width: 768px) {
-    width: 802px;
-    height: 1403.83px;
-    background-image: url('../images/decor/tablet/decor-tab-long.png');
-    background-size: 768px 1403.83px;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/decor/tablet/decor-tab-long-2x.png');
-    }
-  }
-  @media screen and (min-width: 1440px) {
-    width: 1562px;
-      height: 2996px;
-      top: 0;
-      left: -34px;
-    background-image: url('../images/decor/desktop/decor.png');
-    background-size: 1562px 2996px;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/decor/desktop/decor-2x.png');
-    }
-  }
-}
-.decor-scanning {
-  position: absolute;
-    width: 320px;
-    height: 1425px;
-    top: 0px;
-    left: 29px;
   background-image: url('../images/decor/mobile/decor-mob.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -240,16 +155,64 @@
     }
   }
   @media screen and (min-width: 1440px) {
-    width: 1440px;
+    width: 1562px;
       height: 1596px;
       top: 0;
-      left: 34px;
+      right: -31px;
     background-image: url('../images/decor/desktop/decor-scan.png');
-    background-size: 1562px 1596px;
+    background-size: 1440px 1596px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/decor/desktop/decor-scan-2x.png');
+    }
+  }
+}
+
+.decor-printing {
+  position: absolute;
+  width: 320px;
+  height: 1425px;
+  top: 0px;
+  left: 34px;
+  background-image: url('../images/decor/mobile/decor-mob.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 370px 1425.49px;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../images/decor/mobile/decor-mob-2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 1403.83px;
+    top: 0;
+    left: 17px;
+    background-image: url('../images/decor/tablet/decor-tab.png');
+    background-size: 802px 1403.83px;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/decor/tablet/decor-tab-2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+    height: 2997px;
+    top: 0;
+    right: -31px;
+    background-image: url('../images/decor/desktop/decor.png');
+    background-size: 1562px 2997px;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/decor/desktop/decor-2x.png');
     }
   }
 }
