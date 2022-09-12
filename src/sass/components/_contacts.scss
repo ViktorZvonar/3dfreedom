@@ -296,12 +296,10 @@
 }
 .form__revers {
   @include mq($width-desktop) {
-    padding-left: 149px;
-    padding-right: 149px;
     padding-bottom: 80px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 .container-form {
