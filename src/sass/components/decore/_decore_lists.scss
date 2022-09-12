@@ -86,7 +86,7 @@ $bg-pictute-shadow: 20px 20px 80px rgba(0 0 0 / 0.25);
   position: absolute;
   z-index: -1;
   top: 0;
-  left: 0;
+  left: 50%;
   transform: translate(-50%);
   width: 100%;
   height: 100%;
@@ -254,42 +254,41 @@ $bg-pictute-shadow: 20px 20px 80px rgba(0 0 0 / 0.25);
     @include retina() {
       background-image: url('../images/decor/bg-des-2x-2.jpg');
     }
+  }
+  @for $i from 1 through length($bg-main-right-des) {
+    $params: nth($bg-main-right-des, $i);
 
-    @for $i from 1 through length($bg-main-right-des) {
-      $params: nth($bg-main-right-des, $i);
-
-      .bg__right li:nth-child(#{$i}) {
-        right: nth($params, 1);
-        top: nth($params, 2);
-        border-radius: nth($params, 3)
-          nth($params, 4)
-          nth($params, 5)
-          nth($params, 6);
-      }
+    .bg__right li:nth-child(#{$i}) {
+      right: nth($params, 1);
+      top: nth($params, 2);
+      border-radius: nth($params, 3)
+        nth($params, 4)
+        nth($params, 5)
+        nth($params, 6);
     }
+  }
 
-    .bg__right li:nth-child(7) {
-      height: 124px;
+  .bg__right li:nth-child(7) {
+    height: 124px;
+  }
+
+  .bg__right li:nth-child(9) {
+    height: 116px;
+  }
+
+  .bg__left li:nth-child(6) {
+    box-shadow: $bg-pictute-shadow;
+    background-image: url('../images/decor/bg-des-1.jpg');
+    @include retina() {
+      background-image: url('../images/decor/bg-des-2x-1.jpg');
     }
+  }
 
-    .bg__right li:nth-child(9) {
-      height: 116px;
-    }
-
-    .bg__left li:nth-child(6) {
-      box-shadow: $bg-pictute-shadow;
-      background-image: url('../images/decor/bg-des-1.jpg');
-      @include retina() {
-        background-image: url('../images/decor/bg-des-2x-1.jpg');
-      }
-    }
-
-    .bg__left li:nth-child(12) {
-      box-shadow: $bg-pictute-shadow;
-      background-image: url('../images/decor/bg-des-2.jpg');
-      @include retina() {
-        background-image: url('../images/decor/bg-des-2x-2.jpg');
-      }
+  .bg__left li:nth-child(12) {
+    box-shadow: $bg-pictute-shadow;
+    background-image: url('../images/decor/bg-des-2.jpg');
+    @include retina() {
+      background-image: url('../images/decor/bg-des-2x-2.jpg');
     }
   }
 }
