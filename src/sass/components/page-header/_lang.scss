@@ -1,6 +1,24 @@
 .lang {
+  order: 1;
+  margin-left: 14px;
+  @include animate(transform text-shadow);
+
+  @include mq($width-tablet) {
+    order: 0;
+    margin-left: 0;
+    margin-right: 28px;
+  }
+
+  @include mq($width-desktop) {
+    margin-right: 108px;
+  }
+}
+
+.lang__select {
   padding: 10px;
 
+  font-family: $font-secondary;
+  @include font(14px, 18px, 0.01em, 700);
   color: #bdbdbd;
   border: none;
   border-radius: 4px;
@@ -8,18 +26,6 @@
   background-color: transparent;
   cursor: pointer;
   outline: none;
-  order: 1;
-
-  @include animate(transform text-shadow);
-
-  @include mq($width-tablet) {
-    order: 0;
-    margin-right: 38px;
-  }
-
-  @include mq($width-desktop) {
-    margin-right: 118px;
-  }
 }
 
 .lang:hover,
