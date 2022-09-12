@@ -12,7 +12,7 @@
             id="name"
             placeholder=" "
           />
-          <label for="name" class="form__label">Ім'я</label>
+          <label for="name" class="form__label--main">Ім'я</label>
         </div>
 
         <div class="form__field">
@@ -23,7 +23,7 @@
             id="email"
             placeholder=" "
           />
-          <label for="email" class="form__label">Email</label>
+          <label for="email" class="form__label--main">Email</label>
         </div>
 
         <div class="form__field">
@@ -80,10 +80,10 @@
           </datalist>
         </div>
 
-        <label for="comment" class="comment__label">Повідомлення</label>
-        <div class="comment__area">
+        <label for="comment" class="comment__label--main">Повідомлення</label>
+        <div class="comment__area--main">
           <textarea
-            class="comment__text"
+            class="comment__text--main"
             name="comment"
             id="comment"
             placeholder="Залишіть своє повідомлення"
@@ -98,7 +98,7 @@
               multiple
             />
             <label for="file">
-              <svg class="comment__icon" width="22" height="22">
+              <svg class="comment__icon--main" width="22" height="22">
                 <use href="./images/icons.svg#icon-paper-clip"></use></svg
             ></label>
           </div>
@@ -107,7 +107,9 @@
         <p class="comment__add-file">
           *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
         </p>
-        <button class="button-link" type="submit">ВІДПРАВИТИ</button>
+        <button class="button-link order-button-link" type="submit">
+          відправити
+        </button>
       </div>
     </form>
 

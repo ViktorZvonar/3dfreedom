@@ -3,7 +3,7 @@
   font-size: 18px;
   line-height: 1.28;
   color: map-get($colors, 'title-text');
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 
   text-transform: uppercase;
 
@@ -23,7 +23,6 @@
 .order-form {
   @include mq($width-tablet) {
     max-width: 400px;
-
   }
   @include mq($width-desktop) {
     max-width: 555px;
@@ -35,17 +34,20 @@
   position: relative;
 }
 
-.form__label,
+.form__label--main,
 .form__label--selective {
   position: absolute;
-  font-size: 16px;
   top: 0;
   left: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include mq($width-desktop) {
+    font-size: 18px;
+    left: 1.11;
+  }
 }
 
-.form__input:focus + .form__label,
-.form__input:not(:placeholder-shown) + .form__label {
+.form__input:focus + .form__label--main,
+.form__input:not(:placeholder-shown) + .form__label--main {
   transform: translateY(-20px);
   font-size: 14px;
 }
@@ -75,20 +77,24 @@
   }
 }
 
-.comment__label {
+.comment__label--main {
   display: block;
   line-height: 1.25;
   text-transform: capitalize;
   margin-bottom: 4px;
+  @include mq($width-desktop) {
+    font-size: 18px;
+    left: 1.11;
+  }
 }
 
-.comment__area {
+.comment__area--main {
   position: relative;
-
   background-color: transparent;
+  width: 100%;
 }
 
-.comment__text {
+.comment__text--main {
   background-color: transparent;
 
   width: 100%;
@@ -103,10 +109,14 @@
 
   &::placeholder {
     color: getColor('icon-color');
+    @include mq($width-desktop) {
+      font-size: 18px;
+      left: 1.11;
+    }
   }
 }
 
-.comment__icon {
+.comment__icon--main {
   position: absolute;
   bottom: 18px;
   right: 18px;
@@ -122,9 +132,14 @@
   font-size: 16px;
   line-height: calc(20 / 16);
   color: #cdcdcd;
+
+  @include mq($width-desktop) {
+    font-size: 18px;
+    left: 1.11;
+  }
 }
 
-.button-link {
+.order-button-link {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -195,7 +210,7 @@
     margin-bottom: 0;
   }
 
-    @include mq($width-desktop) {
+  @include mq($width-desktop) {
     margin-left: auto;
   }
 }
