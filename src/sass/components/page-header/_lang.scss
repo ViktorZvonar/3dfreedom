@@ -15,7 +15,7 @@
 }
 
 .lang__select {
-  padding: 10px;
+  padding: 10px 0 10px 10px;
 
   font-family: $font-secondary;
   @include font(14px, 18px, 0.01em, 700);
@@ -26,6 +26,10 @@
   background-color: transparent;
   cursor: pointer;
   outline: none;
+
+  @include mq($width-tablet) {
+    padding: 10px;
+  }
 }
 
 .lang:hover,
