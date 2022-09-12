@@ -117,6 +117,8 @@
     display: block;
     margin-bottom: 8px;
   }
+
+  
 }
 
 .form__input {
@@ -129,12 +131,15 @@
   border-bottom: 1px solid map-get($colors, 'title-text');
   margin-bottom: 44px;
   color: map-get($colors, 'primary-text');
+  &::placeholder {
+      color: map-get($colors, 'primary-text');
+    }
 
-  @include mq($width-desktop) {
-    font-size: 18px;
-    line-height: 1.11;
+     @include mq($width-desktop) {
+       font-size: 18px;
+       line-height: 1.11;
+     }
   }
-}
 
 .form__input:focus+.form__label {
   transform: translateY(-20px);
