@@ -156,9 +156,9 @@
 //   }
 // }
 
-.form__list::-webkit-color-swatch-wrapper {
-  border: 2px solid red;
-}
+// .form__list::-webkit-color-swatch-wrapper {
+//   border: 2px solid red;
+// }
 
 // input:-webkit-autofill {
 //   -webkit-box-shadow: inset 0 0 0 50px #48799680 !important;
@@ -285,7 +285,7 @@
 
 .mobile-tablet-info {
   padding-top: 60px;
-  padding-bottom: 60px;
+
   @include mq($width-tablet) {
     display: flex;
     justify-content: space-between;
