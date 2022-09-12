@@ -3,9 +3,9 @@
   padding-bottom: 40px;
 
   @include mq($width-tablet) {
-  padding-top: 24px;
-    }
-    
+    padding-top: 24px;
+  }
+
   @include mq($width-desktop) {
     padding: 60px 149px 100px;
   }
@@ -48,6 +48,9 @@
 
 .print-features {
   display: block;
+  @include mq($width-tablet) {
+    line-height: 1.25;
+  }
   @include mq($width-desktop) {
     max-width: 515px;
     font-weight: 300;
@@ -94,14 +97,17 @@
   line-height: 1.28;
   color: map-get($colors, 'title-text');
   text-transform: uppercase;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   @include mq($width-tablet) {
+    margin-bottom: 35px;
     text-align: center;
     font-size: 24px;
     line-height: 1.25;
   }
   @include mq($width-desktop) {
     font-size: 36px;
+    text-align: left;
+    margin-bottom: 44px;
   }
 }
 
@@ -113,9 +119,13 @@
   left: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and(min-width: 768px) {
+  @include mq($width-tablet) {
     display: block;
     margin-bottom: 8px;
+  }
+  @include mq($width-desktop) {
+    font-size: 18px;
+    line-height: 1.11;
   }
 }
 
@@ -128,24 +138,23 @@
   border-bottom: 1px solid map-get($colors, 'title-text');
   margin-bottom: 44px;
   color: map-get($colors, 'primary-text');
+  @include mq($width-desktop) {
+    font-size: 18px;
+    line-height: 1.11;
+  }
 
   &::placeholder {
     color: map-get($colors, 'primary-text');
-
-    @media screen and(min-width: 1440px) {
-      font-size: 18px;
-      line-height: 1.11;
-    }
   }
 }
 
-.form__input:focus+.form__label {
+.form__input:focus + .form__label {
   transform: translateY(-20px);
   font-size: 14px;
 }
 
-.form__input:focus+.form__label,
-.form__input:not(:placeholder-shown)+.form__label {
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
   transform: translateY(-20px);
   font-size: 14px;
 }
@@ -161,6 +170,8 @@
   text-transform: capitalize;
   @include mq($width-desktop) {
     margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1.11;
   }
 }
 .comment__area {
@@ -198,7 +209,6 @@
 .comment__add-file {
   line-height: 1.25;
   color: #cdcdcd;
-  margin-top: 4px;
   margin-bottom: 40px;
   @include mq($width-desktop) {
     font-size: 18px;

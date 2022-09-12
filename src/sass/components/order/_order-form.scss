@@ -28,11 +28,8 @@
 }
 
 .order-form {
-
   @include mq($width-tablet) {
     max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
   }
   @include mq($width-desktop) {
     max-width: 555px;
@@ -66,112 +63,6 @@
 .form__list::-webkit-calendar-picker-indicator {
   opacity: 1;
 }
-
-// .order-dropdown {
-//   position: relative;
-// }
-
-// .order-dropdown__heading {
-//   position: relative;
-//   z-index: 1;
-
-//   cursor: default;
-//   text-transform: uppercase;
-
-//   @include mq($width-desktop) {
-//     margin-bottom: 0;
-//     padding: 10px;
-//     text-transform: none;
-//     &::after {
-//       content: '';
-//       position: absolute;
-//       right: -4px;
-//       top: 50%;
-//       width: 0;
-//       height: 0;
-//       border-style: solid;
-//       border-width: 3px 4px 0 4px;
-//       border-color: #007bff transparent transparent transparent;
-//       @include animate(transform);
-//     }
-//     &.is-dropdown::after {
-//       transform: rotateX(180deg);
-//     }
-//   }
-// }
-
-// .order-dropdown__list {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   gap: 24px;
-
-//   overflow: hidden;
-//   max-height: 250px; // Не менее высоты контента
-//   @include animate(max-height visibility margin-top);
-
-//   @include mq($width-desktop) {
-//     position: absolute;
-//     z-index: 0;
-//     left: 50%;
-//     top: 0;
-//     transform: translate(-50%, -16px);
-
-//     gap: 0;
-//     min-width: max-content;
-//     padding: 35px 6px 10px;
-
-//     background-color: #ffffff;
-//     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//     border-radius: 0 0 50% 50%;
-
-//     visibility: hidden;
-//     opacity: 0;
-//     pointer-events: none;
-
-//     @include animate(transform opacity box-shadow visibility);
-//   }
-// }
-
-// .__sublink {
-//   @include mq($width-desktop) {
-//     padding: 2px 0;
-//   }
-// }
-
-// .is-dropdown + .dropdown__list {
-//   margin-top: 24px;
-//   @include mq($width-desktop) {
-//     transform: translate(-50%, -2px);
-//     margin-top: 0;
-//     opacity: 1;
-//     visibility: visible;
-//     pointer-events: all;
-//   }
-// }
-
-// :not(.is-dropdown) + .dropdown__list {
-//   @include mq($until: $width-desktop) {
-//     max-height: 0px;
-//     visibility: hidden;
-//   }
-// }
-
-// .form__list::-webkit-color-swatch-wrapper {
-//   border: 2px solid red;
-// }
-
-// input:-webkit-autofill {
-//   -webkit-box-shadow: inset 0 0 0 50px #48799680 !important;
-// }
-
-// .form__list::-webkit-text-fill-color {
-//   color: #48799680;
-// }
-
-// input::-webkit-calendar-picker-indicator {
-//   -webkit-appearance: none;
-// }
 
 .form__input {
   display: block;
@@ -239,7 +130,6 @@
 }
 
 .comment__add-file {
-  margin-top: 4px;
   margin-bottom: 40px;
 
   font-size: 16px;
@@ -284,74 +174,74 @@
   }
 }
 
-// .mobile-tablet-info {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-//   @include mq($width-tablet) {
-//     display: flex;
-//     justify-content: space-between;
-//   }
+.mobile-tablet-info {
+  padding-top: 60px;
 
-//   @media screen and (max-width: 767px) {
-//     display: none;
-//   }
-// }
+  @include mq($width-tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 
-// .mobile-tablet-info-list {
-//   @include mq($width-tablet) {
-//     display: flex;
-//   }
-// }
+  @include mq($width-desktop) {
+    display: none;
+  }
+}
 
-// .mobile-tablet-info {
-//   &__item {
-//     display: flex;
-//     flex-direction: column;
-//     margin-bottom: 25px;
-//     @include mq($width-tablet) {
-//       margin-bottom: 0;
-//       min-width: 184px;
-//     }
-//   }
-//   &__tel,
-//   &__email,
-//   &__schedule {
-//     font-weight: 700;
-//     font-size: 18px;
-//     line-height: 1.28;
-//     color: map-get($colors, 'title-text');
-//     margin-bottom: 8px;
-//     @include mq($width-tablet) {
-//       font-size: 24px;
-//       line-height: 1.25;
-//     }
-//   }
+.mobile-tablet-info-list {
+  @include mq($width-tablet) {
+    display: flex;
+  }
+}
 
-//   &__email__link {
-//     line-height: 1.25;
-//   }
-//   &__tel,
-//   &__schedule {
-//     text-transform: uppercase;
-//   }
-//   &__link,
-//   &__days {
-//     margin-bottom: 8px;
-//     line-height: 1.25;
-//     text-transform: capitalize;
-//   }
-//   &__days {
-//     @include mq($width-tablet) {
-//       text-align: right;
-//     }
-//   }
-//   &__link:last-child {
-//     margin-bottom: 0;
-//   }
-//   &__days:last-child {
-//     margin-bottom: 0;
-//   }
-// }
+.mobile-tablet-info {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    @include mq($width-tablet) {
+      margin-bottom: 0;
+      min-width: 184px;
+    }
+  }
+  &__tel,
+  &__email,
+  &__schedule {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.28;
+    color: map-get($colors, 'title-text');
+    margin-bottom: 8px;
+    @include mq($width-tablet) {
+      font-size: 24px;
+      line-height: 1.25;
+    }
+  }
+
+  &__email__link {
+    line-height: 1.25;
+  }
+  &__tel,
+  &__schedule {
+    text-transform: uppercase;
+  }
+  &__link,
+  &__days {
+    margin-bottom: 8px;
+    line-height: 1.25;
+    text-transform: capitalize;
+  }
+  &__days {
+    @include mq($width-tablet) {
+      text-align: right;
+    }
+  }
+  &__link:last-child {
+    margin-bottom: 0;
+  }
+  &__days:last-child {
+    margin-bottom: 0;
+  }
+}
 
 .desktop-info {
   &__item {
