@@ -1,9 +1,13 @@
 .contacts-container {
+  padding-top: 20px;
   padding-bottom: 40px;
+
+  @include mq($width-tablet) {
+  padding-top: 24px;
+    }
+    
   @include mq($width-desktop) {
-    padding-left: 149px;
-    padding-right: 149px;
-    padding-bottom: 100px;
+    padding: 60px 149px 100px;
   }
 }
 
@@ -27,14 +31,13 @@
 .hero-video {
   margin-bottom: 16px;
   width: 100%;
-  max-width: 440px;
   height: 171px;
   border-radius: 15px;
   @include mq($width-tablet) {
     width: 336px;
-    max-width: 336px;
     height: 261px;
     margin-right: 32px;
+    margin-bottom: 0;
   }
   @include mq($width-desktop) {
     width: 555px;
@@ -91,7 +94,7 @@
   line-height: 1.28;
   color: map-get($colors, 'title-text');
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 35px;
   @include mq($width-tablet) {
     text-align: center;
     font-size: 24px;
@@ -103,7 +106,8 @@
 }
 .form__label {
   position: absolute;
-  font-size: 16px;
+  display: block;
+  font-size: 14px;
   line-height: 1.43;
   top: 0;
   left: 0;
@@ -117,27 +121,25 @@
   display: block;
   line-height: 1.25;
   outline: transparent;
+  font-size: 18px;
   width: 100%;
   border: transparent;
   border-bottom: 1px solid map-get($colors, 'title-text');
   margin-bottom: 44px;
   color: map-get($colors, 'primary-text');
-  &::placeholder {
-    color: map-get($colors, 'primary-text');
+  
     @include mq($width-desktop) {
       font-size: 18px;
       line-height: 1.11;
     }
-  }
 }
 .form__input:focus + .form__label {
   transform: translateY(-20px);
-  font-size: 14px;
 }
+
 .form__input:focus + .form__label,
 .form__input:not(:placeholder-shown) + .form__label {
   transform: translateY(-20px);
-  font-size: 14px;
 }
 //комментарий
 
@@ -295,6 +297,7 @@
   }
 }
 .form__revers {
+  padding: 0;
   @include mq($width-desktop) {
     padding-bottom: 80px;
     display: flex;
