@@ -1,5 +1,6 @@
 .scanning-hero {
   padding-bottom: 40px;
+  padding-top: 20px;
 }
 .scanning-hero__title {
   margin-top: 0;
@@ -48,7 +49,7 @@
 
 @media screen and (min-width: $width-tablet) {
   .scanning-hero {
-    padding-top: 5px;
+    padding-top: 14px;
   }
 
   .scanning-container {
@@ -93,7 +94,7 @@
 
 @media screen and (min-width: $width-desktop) {
   .scanning-hero {
-    padding-top: 10px;
+    padding-top: 60px;
     padding-bottom: 100px;
   }
 
