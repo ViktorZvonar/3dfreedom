@@ -250,3 +250,31 @@
   }
 }
 
+.mob-nav {
+    background-image: url('../images/decor/mobile/mob-nav.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+  
+  
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/decor/mobile/mob-nav-2x.jpg');
+      }
+    }
+  
+    @include mq($width-tablet) {
+      background-image: url('../images/decor/tablet/tab-nav.jpg');
+  
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        & {
+          background-image: url('../images/decor/tablet/tab-nav-2x.jpg');
+        }
+      }
+    }
+  }
