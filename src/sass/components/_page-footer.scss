@@ -27,13 +27,12 @@
 
   @include mq($width-tablet) {
     flex-direction: row;
-    align-items: stretch;
+    align-items: baseline;
   }
 
   @include mq($width-desktop) {
     margin-left: 277px;
-  }
-}
+  }}
 
 .footer__logo {
   display: block;
@@ -42,13 +41,10 @@
   @include mq($width-tablet) {
     margin-bottom: 20px;
     margin-left: auto;
-    margin-right: auto;
-  }
+    margin-right: auto;  }
 
   @include mq($width-desktop) {
-    margin: 0;
-  }
-}
+    margin: 0;  }}
 
 .footer-nav {
   margin-bottom: 24px;
@@ -57,6 +53,10 @@
     text-align: start;
     margin-right: 52px;
   }
+
+    @include mq($width-desktop) {
+      margin-right: 103px;
+    }
 }
 
 .footer-nav__list {
@@ -71,19 +71,26 @@
 
 .footer-nav__link {
   @extend %link;
+  display: flex;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.01em;
+  outline: none;
+
+  @include mq($until: $width-tablet) {
+    justify-content: center;
+  }
   
-  transition-property: color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include animate(color transform text-shadow);
 
 
   &:hover,
   &:focus {
       color: getColor('title-text');
-      font-weight: 700;
-      outline: none;    }}
+      transform: scale(1.05);
+      text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    }
+}
 
 .footer-socials {
   @extend %list;
@@ -91,10 +98,6 @@
 
   @include mq($width-tablet) {
     text-align: start;
-  }
-
-  @include mq($width-desktop) {
-    margin-left: 103px;
   }
 
 }
@@ -107,19 +110,20 @@
 
 .footer-socials__link {
   @extend %link;
+  display: flex;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.01em;
+  outline: none;
 
-  transition-property: color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include animate(color transform text-shadow);
 
   &:hover,
     &:focus {
       color: getColor('title-text');
-      font-weight: 700;
-      outline: none;
-    }
+      transform: scale(1.05);
+      text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
 }
 
 .footer-contacts {
@@ -134,6 +138,7 @@
   @include mq($width-desktop) {
     text-align: start;
     margin-left: 161px;
+    width: 390px;
   }
 }
 
