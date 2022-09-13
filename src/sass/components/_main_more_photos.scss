@@ -10,6 +10,7 @@
 }
 
 .more-photos__container {
+  position: relative;
   @include mq($width-desktop) {
     padding: 0 117px;
   }
@@ -64,6 +65,16 @@
 
   @include mq($width-desktop) {
     grid-column: span 4;
+  }
+}
+
+// RESPONSIVE FOR MOR PHOTOS
+@media screen and (max-width: 479px) {
+  .gallary__image {
+    width: calc(100% - 10px);
+  }
+  .more-photos__item {
+    place-content: normal;
   }
 }
 
