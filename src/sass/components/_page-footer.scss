@@ -126,6 +126,7 @@
 
 .footer-contacts {
   @extend %list;
+  font-style: normal;
 
   @include mq($width-tablet) {
     margin-left: auto;
