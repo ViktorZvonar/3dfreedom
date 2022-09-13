@@ -181,8 +181,8 @@
 
 .main-hero__arrow {
   position: absolute;
-  bottom: -10px;
-  left: 225px;
+  bottom: 55px;
+  left: 230px;
   @include animate(fill);
   &:hover,
   &:focus {
