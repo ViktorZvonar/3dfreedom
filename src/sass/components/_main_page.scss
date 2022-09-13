@@ -192,11 +192,18 @@
   @include mq(null, $width-tablet) {
     display: none;
   }
-  @include mq(null, $width-desktop) {
-    width: 16px;
+    @include mq($width-tablet) {
+     width: 16px;
     height: 16px;
     left: 133px;
-    bottom: 137px;
+    bottom: 72px;
+    }
+
+  @include mq($width-desktop) {
+    width: 32px;
+    height: 32px;
+    left: 230px;
+    bottom: 60px;
   }
 }
 
