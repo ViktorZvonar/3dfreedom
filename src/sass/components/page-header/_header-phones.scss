@@ -41,7 +41,7 @@
     position: absolute;
     top: calc(100% + 7px);
     left: 0;
-    transform: translateX(-50%);
+    transform: translateX(-60%);
 
     padding: 11px 8px;
 
@@ -67,7 +67,7 @@
 .header-phones__popup-arrow {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 60%;
   transform: translate(calc(-50% + 12px), -75%);
   fill: #fff;
   @include mq($width-tablet) {
