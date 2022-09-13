@@ -2,6 +2,7 @@
   background-image: url('../images/decor/mobile/decor-main-mob.jpg');
   background-repeat: no-repeat;
   background-position: top;
+  background-size: 320px;
 
 
   @media (min-device-pixel-ratio: 2),
@@ -14,6 +15,7 @@
   }
 
   @include mq($width-tablet) {
+  background-size: 768px;
     background-image: url('../images/decor/tablet/decor-main-tab.jpg');
 
     @media (min-device-pixel-ratio: 2),
@@ -27,6 +29,7 @@
   }
 
   @include mq($width-desktop) {
+  background-size: 1440px;
     background-image: url('../images/decor/desktop/decor-main.jpg');
 
     @media (min-device-pixel-ratio: 2),
@@ -44,6 +47,7 @@
   background-image: url('../images/decor/mobile/decor-common-mob.jpg');
     background-repeat: no-repeat;
     background-position: top;
+    background-size: 320px;
   
   
     @media (min-device-pixel-ratio: 2),
@@ -56,6 +60,7 @@
     }
   
     @include mq($width-tablet) {
+      background-size: 768px;
       background-image: url('../images/decor/tablet/decor-common-tab.jpg');
   
       @media (min-device-pixel-ratio: 2),
@@ -69,6 +74,7 @@
     }
   
     @include mq($width-desktop) {
+      background-size: 1440px;
       background-image: url('../images/decor/desktop/decor-common.jpg');
   
       @media (min-device-pixel-ratio: 2),
@@ -86,6 +92,7 @@
   background-image: url('../images/decor/mobile/decor-common-mob.jpg');
   background-repeat: no-repeat;
   background-position: top;
+  background-size: 320px;
 
 
   @media (min-device-pixel-ratio: 2),
@@ -98,6 +105,7 @@
   }
 
   @include mq($width-tablet) {
+    background-size: 768px;
     background-image: url('../images/decor/tablet/decor-common-tab.jpg');
 
     @media (min-device-pixel-ratio: 2),
@@ -111,6 +119,7 @@
   }
 
   @include mq($width-desktop) {
+    background-size: 1440px;
     background-image: url('../images/decor/desktop/decor-scanning.jpg');
 
     @media (min-device-pixel-ratio: 2),
@@ -128,6 +137,7 @@
   background-image: url('../images/decor/mobile/decor-common-mob.jpg');
   background-repeat: no-repeat;
   background-position: top;
+  background-size: 320px;
 
 
   @media (min-device-pixel-ratio: 2),
@@ -140,6 +150,7 @@
   }
 
   @include mq($width-tablet) {
+    background-size: 768px;
     background-image: url('../images/decor/tablet/decor-common-tab.jpg');
 
     @media (min-device-pixel-ratio: 2),
@@ -153,6 +164,7 @@
   }
 
   @include mq($width-desktop) {
+    background-size: 1440px;
     background-image: url('../images/decor/desktop/decor-printing.jpg');
 
     @media (min-device-pixel-ratio: 2),
@@ -170,6 +182,7 @@
   background-image: url('../images/decor/mobile/decor-common-mob.jpg');
   background-repeat: no-repeat;
   background-position: top;
+  background-size: 320px;
 
 
   @media (min-device-pixel-ratio: 2),
@@ -182,6 +195,7 @@
   }
 
   @include mq($width-tablet) {
+    background-size: 768px;
     background-image: url('../images/decor/tablet/decor-common-tab.jpg');
 
     @media (min-device-pixel-ratio: 2),
@@ -195,6 +209,7 @@
   }
 
   @include mq($width-desktop) {
+    background-size: 1440px;
     background-image: url('../images/decor/desktop/decor-order.jpg');
 
     @media (min-device-pixel-ratio: 2),
@@ -212,6 +227,7 @@
   background-image: url('../images/decor/mobile/decor-common-mob.jpg');
   background-repeat: no-repeat;
   background-position: top;
+  background-size: 320px;
 
 
   @media (min-device-pixel-ratio: 2),
@@ -224,6 +240,7 @@
   }
 
   @include mq($width-tablet) {
+    background-size: 768px;
     background-image: url('../images/decor/tablet/decor-common-tab.jpg');
 
     @media (min-device-pixel-ratio: 2),
@@ -237,6 +254,7 @@
   }
 
   @include mq($width-desktop) {
+    background-size: 1440px;
     background-image: url('../images/decor/desktop/decor-contacts.jpg');
 
     @media (min-device-pixel-ratio: 2),
@@ -254,6 +272,7 @@
     background-image: url('../images/decor/mobile/mob-nav.jpg');
     background-repeat: no-repeat;
     background-position: top;
+    background-size: 370px;
   
   
     @media (min-device-pixel-ratio: 2),
@@ -266,6 +285,7 @@
     }
   
     @include mq($width-tablet) {
+      background-size: 768px;
       background-image: url('../images/decor/tablet/tab-nav.jpg');
   
       @media (min-device-pixel-ratio: 2),
