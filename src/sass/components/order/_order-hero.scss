@@ -39,7 +39,6 @@
   }
   @include mq($width-desktop) {
     align-items: flex-start;
-    position: relative;
   }
 }
 
@@ -132,13 +131,14 @@
   @include mq($width-desktop) {
     padding-left: 149px;
     padding-right: 149px;
+    position: relative;
   }
 }
 
 .order-hero__galary {
   position: absolute;
-  bottom: 50px;
-  right: 450px;
+  bottom: 32px;
+  right: 32px;
   display: flex;
   justify-content: center;
   gap: 32px;
