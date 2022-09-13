@@ -1,300 +1,186 @@
 .main-decor {
-  background-image: url('../images/decor/mobile/decor-main-mob.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 320px;
+  background-size: 524px;
 
+  background-image: url('../images/decor/mobile/bg-mob.jpg');
 
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    & {
-      background-image: url('../images/decor/mobile/decor-main-mob-2x.jpg');
-    }
+  @include retina() {
+    background-image: url('../images/decor/mobile/bg-mob-2x.jpg');
   }
 
   @include mq($width-tablet) {
-  background-size: 768px;
-    background-image: url('../images/decor/tablet/decor-main-tab.jpg');
+    background-size: 962px;
+    background-image: url('../images/decor/tablet/bg-main-tab.jpg');
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      & {
-        background-image: url('../images/decor/tablet/decor-main-tab-2x.jpg');
-      }
+    @include retina() {
+      background-image: url('../images/decor/tablet/bg-main-tab-2x.jpg');
     }
   }
 
   @include mq($width-desktop) {
-  background-size: 1440px;
-    background-image: url('../images/decor/desktop/decor-main.jpg');
+    background-size: 1728px;
+    background-image: url('../images/decor/desktop/bg-main-des.jpg');
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      & {
-        background-image: url('../images/decor/desktop/decor-main-2x.jpg');
-      }
+    @include retina() {
+      background-image: url('../images/decor/desktop/bg-main-des-2x.jpg');
     }
   }
 }
 
-.common-decor {
-  background-image: url('../images/decor/mobile/decor-common-mob.jpg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 320px;
-  
-  
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      & {
-        background-image: url('../images/decor/mobile/decor-common-mob.jpg');
-      }
+.modeling-decor {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 524px;
+
+  background-image: url('../images/decor/mobile/bg-mob.jpg');
+
+  @include retina() {
+    background-image: url('../images/decor/mobile/bg-mob-2x.jpg');
+  }
+
+  @include mq($width-tablet) {
+    background-size: 928px;
+    background-image: url('../images/decor/tablet/bg-modeling-tab.jpg');
+
+    @include retina() {
+      background-image: url('../images/decor/tablet/bg-modeling-tab-2x.jpg');
     }
-  
-    @include mq($width-tablet) {
-      background-size: 768px;
-      background-image: url('../images/decor/tablet/decor-common-tab.jpg');
-  
-      @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-        & {
-          background-image: url('../images/decor/tablet/decor-common-tab-2x.jpg');
-        }
-      }
+  }
+
+  @include mq($width-desktop) {
+    background-size: 1600px;
+    background-image: url('../images/decor/desktop/bg-modeling-des.jpg');
+
+    @include retina() {
+      background-image: url('../images/decor/desktop/bg-modeling-des-2x.jpg');
     }
-  
-    @include mq($width-desktop) {
-      background-size: 1440px;
-      background-image: url('../images/decor/desktop/decor-common.jpg');
-  
-      @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-        & {
-          background-image: url('../images/decor/desktop/decor-common-2x.jpg');
-        }
-      }
-    }
+  }
 }
 
 .scanning-decor {
-  background-image: url('../images/decor/mobile/decor-common-mob.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 320px;
+  background-size: 524px;
 
+  background-image: url('../images/decor/mobile/bg-mob.jpg');
 
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    & {
-      background-image: url('../images/decor/mobile/decor-common-mob.jpg');
-    }
+  @include retina() {
+    background-image: url('../images/decor/mobile/bg-mob-2x.jpg');
   }
 
   @include mq($width-tablet) {
-    background-size: 768px;
-    background-image: url('../images/decor/tablet/decor-common-tab.jpg');
+    background-size: 928px;
+    background-image: url('../images/decor/tablet/bg-modeling-tab.jpg');
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      & {
-        background-image: url('../images/decor/tablet/decor-common-tab-2x.jpg');
-      }
+    @include retina() {
+      background-image: url('../images/decor/tablet/bg-modeling-tab-2x.jpg');
     }
   }
 
   @include mq($width-desktop) {
-    background-size: 1440px;
-    background-image: url('../images/decor/desktop/decor-scanning.jpg');
+    background-size: 1600px;
+    background-image: url('../images/decor/desktop/bg-scanning-des.jpg');
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      & {
-        background-image: url('../images/decor/desktop/decor-scanning-2x.jpg');
-      }
+    @include retina() {
+      background-image: url('../images/decor/desktop/bg-scanning-des-2x.jpg');
     }
   }
 }
 
 .printing-decor {
-  background-image: url('../images/decor/mobile/decor-common-mob.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 320px;
+  background-size: 524px;
 
+  background-image: url('../images/decor/mobile/bg-mob.jpg');
 
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    & {
-      background-image: url('../images/decor/mobile/decor-common-mob.jpg');
-    }
+  @include retina() {
+    background-image: url('../images/decor/mobile/bg-mob-2x.jpg');
   }
 
   @include mq($width-tablet) {
-    background-size: 768px;
-    background-image: url('../images/decor/tablet/decor-common-tab.jpg');
+    background-size: 928px;
+    background-image: url('../images/decor/tablet/bg-modeling-tab.jpg');
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      & {
-        background-image: url('../images/decor/tablet/decor-common-tab-2x.jpg');
-      }
+    @include retina() {
+      background-image: url('../images/decor/tablet/bg-modeling-tab-2x.jpg');
     }
   }
 
   @include mq($width-desktop) {
-    background-size: 1440px;
-    background-image: url('../images/decor/desktop/decor-printing.jpg');
+    background-size: 1600px;
+    background-image: url('../images/decor/desktop/bg-printing-des.jpg');
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      & {
-        background-image: url('../images/decor/desktop/decor-printing-2x.jpg');
-      }
+    @include retina() {
+      background-image: url('../images/decor/desktop/bg-printing-des-2x.jpg');
     }
   }
 }
 
 .order-decor {
-  background-image: url('../images/decor/mobile/decor-common-mob.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 320px;
+  background-size: 524px;
 
+  background-image: url('../images/decor/mobile/bg-mob.jpg');
 
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    & {
-      background-image: url('../images/decor/mobile/decor-common-mob.jpg');
-    }
+  @include retina() {
+    background-image: url('../images/decor/mobile/bg-mob-2x.jpg');
   }
 
   @include mq($width-tablet) {
-    background-size: 768px;
-    background-image: url('../images/decor/tablet/decor-common-tab.jpg');
+    background-size: 928px;
+    background-image: url('../images/decor/tablet/bg-order-tab.jpg');
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      & {
-        background-image: url('../images/decor/tablet/decor-common-tab-2x.jpg');
-      }
+    @include retina() {
+      background-image: url('../images/decor/tablet/bg-order-tab-2x.jpg');
     }
   }
 
   @include mq($width-desktop) {
-    background-size: 1440px;
-    background-image: url('../images/decor/desktop/decor-order.jpg');
+    background-size: 1600px;
+    background-image: url('../images/decor/desktop/bg-order-des.jpg');
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      & {
-        background-image: url('../images/decor/desktop/decor-order-2x.jpg');
-      }
+    @include retina() {
+      background-image: url('../images/decor/desktop/bg-order-des-2x.jpg');
     }
   }
 }
 
 .contacts-decor {
-  background-image: url('../images/decor/mobile/decor-common-mob.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 320px;
+  background-size: 524px;
 
+  background-image: url('../images/decor/mobile/bg-mob.jpg');
 
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    & {
-      background-image: url('../images/decor/mobile/decor-common-mob.jpg');
-    }
+  @include retina() {
+    background-image: url('../images/decor/mobile/bg-mob-2x.jpg');
   }
 
   @include mq($width-tablet) {
-    background-size: 768px;
-    background-image: url('../images/decor/tablet/decor-common-tab.jpg');
+    background-size: 928px;
+    background-image: url('../images/decor/tablet/bg-contact-tab.jpg');
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      & {
-        background-image: url('../images/decor/tablet/decor-common-tab-2x.jpg');
-      }
+    @include retina() {
+      background-image: url('../images/decor/tablet/bg-contact-tab-2x.jpg');
     }
   }
 
   @include mq($width-desktop) {
-    background-size: 1440px;
-    background-image: url('../images/decor/desktop/decor-contacts.jpg');
+    background-size: 1600px;
+    background-image: url('../images/decor/desktop/bg-contact-des.jpg');
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      & {
-        background-image: url('../images/decor/desktop/decor-contacts-2x.jpg');
-      }
+    @include retina() {
+      background-image: url('../images/decor/desktop/bg-contact-des-2x.jpg');
     }
   }
 }
 
 .mob-nav {
-    background-image: url('../images/decor/mobile/mob-nav.jpg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 370px;
-  
-  
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      & {
-        background-image: url('../images/decor/mobile/mob-nav-2x.jpg');
-      }
-    }
-  
-    @include mq($width-tablet) {
-      background-size: 768px;
-      background-image: url('../images/decor/tablet/tab-nav.jpg');
-  
-      @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-        & {
-          background-image: url('../images/decor/tablet/tab-nav-2x.jpg');
-        }
-      }
-    }
+  @extend .main-decor;
+  @include mq($width-desktop) {
+    background: none;
   }
+}
