@@ -80,12 +80,10 @@
 
 
   &:hover,
-    &:focus {
+  &:focus {
       color: getColor('title-text');
       font-weight: 700;
-      outline: none;
-    }
-}
+      outline: none;    }}
 
 .footer-socials {
   @extend %list;

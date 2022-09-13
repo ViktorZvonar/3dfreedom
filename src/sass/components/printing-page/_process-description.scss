@@ -5,31 +5,25 @@
   font-size: 16px;
   line-height: 1.25;
   color: getColor('primary-text');
+
   @include mq($width-tablet) {
-    padding-top: 40px;
-  }
+    padding-top: 40px;  }
 
   @include mq($width-desktop) {
     padding-top: 100px;
     padding-bottom: 80px;
-    font-size: 18px;
-  }
+    font-size: 18px;  }
 
   &__item:not(:last-child) {
     margin-bottom: 60px;
     @include mq($width-desktop) {
-      margin-bottom: 100px;
-    }
-  }
+      margin-bottom: 100px;    }  }
 
   &__item {
     @include mq($width-tablet) {
-      display: flex;
-    }
-    @include mq($width-desktop) {
-      justify-content: start;
-    }
-  }
+      display: flex;        }
+
+    @include mq($width-desktop) {justify-content: start;    }  }
 
   &__set {
     margin-top: 24px;
@@ -37,15 +31,12 @@
 
     @include mq($width-tablet) {
       margin-top: 0;
-      flex-basis: 336px;
-    }
+      flex-basis: 336px;    }
 
     @include mq($width-desktop) {
       flex-basis: 734px;
       line-height: calc(23 / 18);
-      margin-bottom: 0;
-    }
-  }
+      margin-bottom: 0;    }  }
 
   &__img {
     display: block;
@@ -54,51 +45,35 @@
     margin-right: auto;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.15));
 
-    @include mq($width-mobile) {
-      width: 430px;
-    }
+    @include mq($width-mobile) { width: 430px;    }
 
     @include mq($width-tablet) {
       margin-left: 0;
       margin-right: 0;
-      flex-basis: 368px;
-    }
+      flex-basis: 368px;    }
 
     @include mq($width-desktop) {
       margin-left: 117px;
-      flex-basis: 321px;
-    }
-  }
+      flex-basis: 321px;    }  }
 
   &__current {
     font-weight: 700;
-    color: getColor('title-text');
-  }
+    color: getColor('title-text');  }
 
   &__description:not(:last-child) {
     margin-bottom: 16px;
-
     @include mq($width-desktop) {
-      margin-bottom: 24px;
-    }
-  }
-}
+      margin-bottom: 24px;    }  }}
 
 .buttons-link-tablet {
   margin-top: 24px;
   @include mq($width-tablet) {
     margin-top: 56px;
-    margin-left: 0;
-  }
-}
+    margin-left: 0;  }}
 
-@media screen and (max-width: 479px) {
-  .process-description__img {
-    width: calc(100%);
-  }
-}
-@media screen and (max-width: 767px) {
-  .process-description__img--width {
-    width: calc(100%);
-  }
-}
+    @media screen and (max-width: 479px) {
+      .process-description__img {
+        width: calc(100%);  }}
+    @media screen and (max-width: 767px) {
+      .process-description__img--width {
+        width: calc(100%);  }}
