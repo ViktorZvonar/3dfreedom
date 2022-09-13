@@ -293,3 +293,11 @@
     right: 45px;
   }
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .order-form__overlay {
+    background-image: url(../images/order/desktop/order-form-image@2x.jpg);
+  }
+}
