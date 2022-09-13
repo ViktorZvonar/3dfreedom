@@ -30,6 +30,10 @@
   @include mq($width-tablet) {
     padding: 10px;
   }
+
+  & option {
+    font-weight: inherit;
+  }
 }
 
 .lang:hover,
