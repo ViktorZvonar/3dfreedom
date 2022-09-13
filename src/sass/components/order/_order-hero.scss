@@ -131,5 +131,36 @@
   @include mq($width-desktop) {
     padding-left: 149px;
     padding-right: 149px;
+    position: relative;
+  }
+}
+
+.order-hero__galary {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  @extend %list;
+  @media screen and (max-width: $width-desktop) {
+    display: none;
+  }
+}
+
+.order-hero__item {
+  overflow: hidden;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+
+  &:nth-child(1) {
+    border-radius: 0px 72px 72px 0px;
+  }
+
+  &:nth-child(2) {
+    border-radius: 72px 0px;
+  }
+
+  &:nth-child(3) {
+    border-radius: 0px 0px 72px 0px;
   }
 }

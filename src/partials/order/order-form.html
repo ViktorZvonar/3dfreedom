@@ -11,6 +11,7 @@
             name="name"
             id="name"
             placeholder="&nbsp"
+            required
           />
           <label for="name" class="form__label--main">Ім'я</label>
         </div>
@@ -22,6 +23,7 @@
             name="email"
             id="email"
             placeholder="&nbsp"
+            required
           />
           <label for="email" class="form__label--main">Email</label>
         </div>
@@ -104,12 +106,10 @@
           </div>
         </div>
 
-        <p class="comment__add-file">
+        <p class="comment__add-file--main">
           *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
         </p>
-        <button class="buttons-link contacts-btn" type="submit">
-          ВІДПРАВИТИ
-        </button>
+        <button class="buttons-link order-btn" type="submit">ВІДПРАВИТИ</button>
       </div>
     </form>
 
@@ -141,6 +141,9 @@
         </ul>
       </div>
     </div>
+
+    <div class="order-form__overlay"></div>
+
     <div class="mobile-tablet-info">
       <ul class="mobile-tablet-info-list">
         <li class="mobile-tablet-info__item">
