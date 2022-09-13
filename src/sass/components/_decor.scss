@@ -1,15 +1,3 @@
-// body {
-//   background-image: url('../images/decor/decor-mob.png');
-//   background-repeat: no-repeat;
-//   background-position: top;
-//   @include mq($width-tablet) {
-//     background-image: url('../images/decor/decor-tab.png');
-//   }
-//   @include mq($width-desktop) {
-//     background-image: url('../images/decor/decor-des.png');
-//   }
-// }
-
 .main-decor {
   background-image: url('../images/decor/mobile/decor-main-mob.jpg');
   background-repeat: no-repeat;
@@ -51,6 +39,175 @@
     }
   }
 }
+
+.common-decor {
+  background-image: url('../images/decor/mobile/decor-common-mob.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+  
+  
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/decor/mobile/decor-common-mob.jpg');
+      }
+    }
+  
+    @include mq($width-tablet) {
+      background-image: url('../images/decor/tablet/decor-common-tab.jpg');
+  
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        & {
+          background-image: url('../images/decor/tablet/decor-common-tab-2x.jpg');
+        }
+      }
+    }
+  
+    @include mq($width-desktop) {
+      background-image: url('../images/decor/desktop/decor-common.jpg');
+  
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        & {
+          background-image: url('../images/decor/desktop/decor-common-2x.jpg');
+        }
+      }
+    }
+}
+
+.scanning-decor {
+  background-image: url('../images/decor/mobile/decor-common-mob.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    & {
+      background-image: url('../images/decor/mobile/decor-common-mob.jpg');
+    }
+  }
+
+  @include mq($width-tablet) {
+    background-image: url('../images/decor/tablet/decor-common-tab.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/decor/tablet/decor-common-tab-2x.jpg');
+      }
+    }
+  }
+
+  @include mq($width-desktop) {
+    background-image: url('../images/decor/desktop/decor-printing.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/decor/desktop/decor-printing-2x.jpg');
+      }
+    }
+  }
+}
+
+.printing-decor {
+  background-image: url('../images/decor/mobile/decor-common-mob.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    & {
+      background-image: url('../images/decor/mobile/decor-common-mob.jpg');
+    }
+  }
+
+  @include mq($width-tablet) {
+    background-image: url('../images/decor/tablet/decor-common-tab.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/decor/tablet/decor-common-tab-2x.jpg');
+      }
+    }
+  }
+
+  @include mq($width-desktop) {
+    background-image: url('../images/decor/desktop/decor-printing.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/decor/desktop/decor-printing-2x.jpg');
+      }
+    }
+  }
+}
+
+.contacts-decor {
+  background-image: url('../images/decor/mobile/decor-common-mob.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    & {
+      background-image: url('../images/decor/mobile/decor-common-mob.jpg');
+    }
+  }
+
+  @include mq($width-tablet) {
+    background-image: url('../images/decor/tablet/decor-common-tab.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/decor/tablet/decor-common-tab-2x.jpg');
+      }
+    }
+  }
+
+  @include mq($width-desktop) {
+    background-image: url('../images/decor/desktop/decor-contacts.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/decor/desktop/decor-contacts-2x.jpg');
+      }
+    }
+  }
+}
+
 
 // .decor-main {
 //   display: none;
