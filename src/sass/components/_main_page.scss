@@ -55,36 +55,28 @@
 .main-hero__list {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 15px;
-  @extend %list;
   margin-bottom: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  @include mq($width-mobile) {
-    max-width: 280px;
-  }
+
   @include mq($width-tablet) {
-    max-width: 400px;
     margin-bottom: 60px;
     gap: 29px;
   }
-  @include mq($width-desktop) {
-    max-width: 672px;
-  }
-}
 
-// RESPONSIVE FOR HERO
-@media screen and (max-width: 767px) {
-  .main-hero__image {
-    width: calc(100% - 10px);
-  }  
+  @include mq($width-desktop) {
+    gap: 32px;
+  }
 }
 
 .main-hero__item {
   border-radius: 50%;
   overflow: hidden;
-  @media screen and (max-width: 479px) {
-    width: calc(100% / 3 - 10px);
+
+  width: min(114px, calc((100% + 15px) / 3 - 15px));
+
+  @include mq($width-desktop) {
+    width: 203px;
   }
   &:last-child {
     border-radius: 0 25px 0 25px;
@@ -192,12 +184,12 @@
   @include mq(null, $width-tablet) {
     display: none;
   }
-    @include mq($width-tablet) {
-     width: 16px;
+  @include mq($width-tablet) {
+    width: 16px;
     height: 16px;
     left: 133px;
     bottom: 72px;
-    }
+  }
 
   @include mq($width-desktop) {
     width: 32px;
