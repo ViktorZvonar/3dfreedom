@@ -1,8 +1,7 @@
 .main-hero,
 .main-gallery {
-
   padding-bottom: 40px;
-  
+
   @include mq($width-tablet) {
     padding-bottom: 60px;
   }
@@ -186,8 +185,8 @@
 
 .main-hero__arrow {
   position: absolute;
-  bottom: -17px;
-  left: 237px;
+  bottom: -10px;
+  left: 225px;
   @include animate(fill);
   &:hover,
   &:focus {
@@ -200,8 +199,8 @@
   @include mq(null, $width-desktop) {
     width: 16px;
     height: 16px;
-    left: 103px;
-    bottom: 133px;
+    left: 133px;
+    bottom: 137px;
   }
 }
 
@@ -213,4 +212,8 @@
   .main-gallery__item {
     width: calc(100%);
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
