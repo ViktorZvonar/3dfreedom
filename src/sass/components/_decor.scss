@@ -188,11 +188,11 @@
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    height: 1403.83px;
+    height: 1320px;
     top: 0;
     left: 17px;
     background-image: url('../images/decor/tablet/decor-tab.png');
-    background-size: 802px 1403.83px;
+    background-size: 768px 1320px;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -202,12 +202,13 @@
   }
 
   @media screen and (min-width: 1440px) {
-    width: 1440px;
-    height: 2997px;
+    width: 1472px;
+    height: 2448px;
     top: 0;
     right: -31px;
     background-image: url('../images/decor/desktop/decor.png');
-    background-size: 1562px 2997px;
+    background-size: 1440px 2448px;
+    
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
