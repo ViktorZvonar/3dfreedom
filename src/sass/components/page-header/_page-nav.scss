@@ -143,3 +143,9 @@
     color: #dceef8;
   }
 }
+
+.page-nav .bg {
+  @include mq($width-desktop) {
+    display: none;
+  }
+}

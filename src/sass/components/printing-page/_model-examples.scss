@@ -30,16 +30,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 16px 20px;
-    margin-bottom: 40px;
     list-style: none;
 
     @include mq($width-tablet) {
-      gap: 32px;
-    }
-    @include mq($width-desktop) {
-      margin-bottom: 100px;
-    }
-  }
+      gap: 32px;  }}
 
   &__item {
     width: calc(50% - 10px);
