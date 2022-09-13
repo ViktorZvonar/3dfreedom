@@ -2,6 +2,7 @@
   padding-bottom: 60px;
   @include mq($width-desktop) {
     padding-bottom: 0;
+    position: relative;
   }
 }
 
@@ -131,7 +132,7 @@
   fill: getColor('icon-color');
 }
 
-.comment__add-file {
+.comment__add-file--main {
   margin-bottom: 40px;
 
   font-size: 16px;
@@ -141,29 +142,12 @@
   @include mq($width-desktop) {
     font-size: 18px;
     left: 1.11;
+    margin-bottom: 24px;
   }
 }
 
-.order-button-link {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: getColor('title-text');
-  padding: 16px 32px;
-  background: getColor('background');
-  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
-    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
-  border-radius: 30.5px;
-  width: 280px;
-  height: 56px;
-  border-color: transparent;
-
+.order-btn {
+  border: transparent;
   @include mq($width-tablet) {
     margin-right: 0;
     width: 177px;
@@ -294,5 +278,28 @@
     padding-left: 149px;
     padding-right: 149px;
     display: flex;
+  }
+}
+
+.order-form__overlay {
+  @include mq($width-desktop) {
+    display: block;
+    z-index: -1;
+    background-image: url(../images/order/desktop/order-form-image.jpg);
+    width: 598px;
+    height: 454px;
+    background-size: 598px 454px;
+
+    position: absolute;
+    bottom: -7px;
+    right: 45px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .order-form__overlay {
+    background-image: url(../images/order/desktop/order-form-image@2x.jpg);
   }
 }
