@@ -130,21 +130,9 @@
 }
 
 .form__input {
-  display: block;
-  line-height: 1.25;
-  outline: transparent;
-  width: 100%;
-  border: transparent;
-  border-bottom: 1px solid map-get($colors, 'title-text');
-  margin-bottom: 44px;
-  color: map-get($colors, 'primary-text');
   @include mq($width-desktop) {
     font-size: 18px;
     line-height: 1.11;
-  }
-
-  &::placeholder {
-    color: map-get($colors, 'primary-text');
   }
 }
 
