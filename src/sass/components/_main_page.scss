@@ -74,10 +74,10 @@
 }
 
 // RESPONSIVE FOR HERO
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .main-hero__image {
-    width: calc(100%);
-  }
+    width: calc(100% - 10px);
+  }  
 }
 
 .main-hero__item {
@@ -159,10 +159,6 @@
   }
 }
 
-.main-gallery__img {
-  width: 100%;
-}
-
 .main-gallery__description {
   display: inline-block;
   font-weight: 300;
@@ -205,9 +201,10 @@
 }
 
 // RESPONSIVE FOR MOR GALLERY
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .main-gallery__img--width {
-    width: calc(100% - 10px);
+    width: calc(100%);
+    max-width: 440px;
   }
   .main-gallery__item {
     width: calc(100%);
