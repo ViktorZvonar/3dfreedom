@@ -1,18 +1,18 @@
 .buttons-link {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: getColor('title-text');
-  padding: 16px 32px;
-  background: getColor('background');
-  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: getColor('title-text');
+    padding: 16px 32px;
+    background: getColor('background');
+    box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
     5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
     border-radius: 30.5px;
     width: 280px;
@@ -26,7 +26,6 @@
       
       &:focus {color: getColor('background');
         background: getColor('title-text');
-        outline-color: getColor('title-text')}
-  }
+        outline-color: getColor('title-text')}  }
 
   

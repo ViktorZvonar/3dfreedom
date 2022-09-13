@@ -9,22 +9,16 @@
 
   &__title {
     margin-bottom: 16px;
-    font-weight: 700;
-    text-align: start;
-    font-size: 24px;
-    line-height: 1.25;
     color: getColor('title-text');
+    @include font(24px, 30px, null, 700);
 
     @include mq($width-tablet) {
-      font-size: 36px;
-    }
+      @include font(36px, 45px);}
 
     @include mq($width-desktop) {
       margin-bottom: 24px;
       padding-left: 117px;
-      font-size: 48px;
-    }
-  }
+      @include font(48px, 60px);  }}
 
   &__list {
     display: flex;
@@ -60,17 +54,13 @@
     justify-content: space-between;
     padding-top: 23px;
     padding-bottom: 15px;
-    /* width: 130px;*/
     height: 158px;
     opacity: 0.8;
     background: #ffffff;
     border-radius: 50px 0;
     box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #ffffff;
     border-radius: 50px 0px;
-    /*/@media screen and (min-width:469px) and (max-width:767px){ 
-
-    .model-examples__canvas {width: 134px;  }
-}*/
+    
     @include mq($width-tablet) {
       padding-top: 36px;
       padding-bottom: 22px;

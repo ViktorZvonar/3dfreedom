@@ -6,12 +6,10 @@ $colors: (
   'active-color': #008cef,
   'white': #ffffff,
   'backdrop': rgba(43, 43, 43, 0.8),
-  'icon-color': #cdcdcd,
-);
+  'icon-color': #cdcdcd,);
 
 @function getColor($key) {
-  @return map-get($colors, $key);
-}
+  @return map-get($colors, $key);}
 
 $width-min-allowable: 320px;
 $width-mobile: 480px;
