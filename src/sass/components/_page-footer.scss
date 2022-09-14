@@ -1,8 +1,13 @@
 .footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 32px;
+    padding-bottom: 32px;
   background-color: getColor('background');
   box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
+
+  @include mq($width-desktop) {
+      padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .footer__container {
@@ -52,6 +57,7 @@
   @include mq($width-tablet) {
     text-align: start;
     margin-right: 52px;
+    margin-bottom: 0;
   }
 
     @include mq($width-desktop) {
