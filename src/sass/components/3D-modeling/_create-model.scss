@@ -21,6 +21,10 @@ max-width: 440px;
 @include mq($width-tablet) {
 position: relative;
 }
+
+@include mq(null, $width-tablet) {
+  padding-bottom: 40px;
+}
   
 @include mq($width-desktop) {
 position: relative;
@@ -49,10 +53,6 @@ font-size: 36px;
 
 .creation__list {
 list-style: none;
-
-@include mq(null, $width-tablet){
-  margin-bottom: 40px;
-}
 }
 
 .creation__item {
