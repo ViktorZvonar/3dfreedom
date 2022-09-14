@@ -186,7 +186,7 @@
 }
 
 .main-block {
-  @media screen and (min-width: 1440px) {
+  @include mq($width-desktop) {
     background-image: url('../images/decor/desktop/main-block.jpg');
     position: absolute;
     width: 144px;
@@ -197,7 +197,7 @@
     right: 0;
     transform: translateY(-50%);
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 72px;
+    border-radius: 50%;
 
     @include retina() {
       background-image: url('../images/decor/desktop/main-block-2x.jpg');
