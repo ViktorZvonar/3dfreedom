@@ -1,3 +1,19 @@
+.gallary__image {
+  @include animate(top left width height transform);
+}
+
+.is-fixed {
+}
+
+.gallary__image.is-fixed {
+  position: fixed;
+  top: var(--top);
+  left: var(--left);
+  width: var(--width);
+  height: var(--height);
+  transform: translate(0px, 0px);
+}
+
 .gallary__image.is-surfaced {
   position: fixed;
   z-index: 4;
@@ -7,7 +23,6 @@
 
   object-fit: contain;
 
-  // width: 236px;
   width: clamp(236px, calc(100vw - 84px), 396px);
 
   height: calc(100vh - 64px);
