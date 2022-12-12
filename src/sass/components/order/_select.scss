@@ -38,26 +38,25 @@ $background-color: #ffffff;
 .select__list {
   z-index: 1;
   position: absolute;
-  background-color: #ffffff;
+  background-color: $background-color;
 
   display: none;
   flex-direction: column;
-  gap: 8px;
-  padding-top: 12px;
+  gap: 15px;
+  padding-top: 25px;
   padding-bottom: 25px;
-  border-bottom: 1px solid $accent-color;
+
   transform: translateY(-50px);
 
   .select__button:focus + & {
-    border-bottom: 1px solid rgba(72, 121, 150, 0.5);
     width: 100%;
+    border-bottom: 1px solid $accent-color;
   }
 }
 
 .select__list_visible {
   display: flex;
   transform: translateY(0px);
-  @include animate(transform);
 }
 
 .select__item {
