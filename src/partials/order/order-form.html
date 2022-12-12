@@ -28,7 +28,93 @@
           <label for="email" class="form__label--main">Email</label>
         </div>
 
-        <div class="form__field">
+        <div class="select">
+          <button class="select__button" type="button">Види пластика</button>
+          <ul class="select__list">
+            <li class="select__item" tabindex="0" data-value="top">
+              Найміцніший
+            </li>
+            <li class="select__item" tabindex="0" data-value="midle">
+              Можна брати
+            </li>
+            <li class="select__item" tabindex="0" data-value="low">
+              Ну...таке собі
+            </li>
+            <li class="select__item" tabindex="0" data-value="need-help">
+              Труднощі у виборі - ми допоможемо
+            </li>
+          </ul>
+          <input
+            type="text"
+            name="plastic-types"
+            value=""
+            class="select__input visually-hidden"
+            tabindex="-1"
+          />
+          <span class="select-icon">
+            <svg width="18.1" height="13">
+              <use href="./images/icons.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </div>
+
+        <div class="select">
+          <button class="select__button" type="button">Якість друку</button>
+          <ul class="select__list">
+            <li class="select__item" tabindex="0" data-value="top">
+              300 мікрон
+            </li>
+            <li class="select__item" tabindex="0" data-value="midle">
+              200 мікрон
+            </li>
+            <li class="select__item" tabindex="0" data-value="low">
+              100 мікрон
+            </li>
+            <li class="select__item" tabindex="0" data-value="need-help">
+              Труднощі у виборі - ми допоможемо
+            </li>
+          </ul>
+          <input
+            type="text"
+            name="plastic-types"
+            value=""
+            class="select__input visually-hidden"
+            tabindex="-1"
+          />
+          <span class="select-icon">
+            <svg width="18.1" height="13">
+              <use href="./images/icons.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </div>
+
+        <div class="select">
+          <button class="select__button" type="button">Колір</button>
+          <ul class="select__list">
+            <li class="select__item" tabindex="0" data-value="top">Червоний</li>
+            <li class="select__item" tabindex="0" data-value="midle">
+              Зелений
+            </li>
+            <li class="select__item" tabindex="0" data-value="low">Синій</li>
+            <li class="select__item" tabindex="0" data-value="need-help">
+              Труднощі у виборі - ми допоможемо
+            </li>
+          </ul>
+          <input
+            type="text"
+            name="plastic-types"
+            value=""
+            class="select__input visually-hidden"
+            tabindex="-1"
+          />
+          <span class="select-icon">
+            <svg width="18.1" height="13">
+              <use href="./images/icons.svg#triangle-down"></use>
+            </svg>
+          </span>
+        </div>
+
+        <!-- <div class="form__field">
           <input
             type="text"
             list="types-plastic"
@@ -44,9 +130,9 @@
             <option>Полістирол</option>
             <option>Труднощі у виборі - ми допоможемо</option>
           </datalist>
-        </div>
+        </div> -->
 
-        <div class="form__field">
+        <!-- <div class="form__field">
           <input
             type="text"
             list="types-quality"
@@ -62,9 +148,9 @@
             <option>100 мікрон</option>
             <option>Труднощі у виборі - ми допоможемо</option>
           </datalist>
-        </div>
+        </div> -->
 
-        <div class="form__field">
+        <!-- <div class="form__field">
           <input
             type="text"
             list="types-colour"
@@ -80,7 +166,7 @@
             <option>Синій</option>
             <option>Труднощі у виборі - ми допоможемо</option>
           </datalist>
-        </div>
+        </div> -->
 
         <label for="comment" class="comment__label--main">Повідомлення</label>
         <div class="comment__area--main">
@@ -101,7 +187,9 @@
             />
             <label for="file">
               <svg class="comment__icon--main" width="22" height="22">
-                <use href="./images/icons.svg#icon-paper-clip"></use></svg            ></label>
+                <use href="./images/icons.svg#icon-paper-clip"></use>
+              </svg>
+            </label>
           </div>
         </div>
 

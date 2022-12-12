@@ -45,8 +45,7 @@
   position: relative;
 }
 
-.form__label--main,
-.form__label--selective {
+.form__label--main {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,10 +61,6 @@
 .form__input:not(:placeholder-shown) + .form__label--main {
   transform: translateY(-20px);
   font-size: 14px;
-}
-
-.form__list::-webkit-calendar-picker-indicator {
-  opacity: 1;
 }
 
 .form__input {
@@ -89,7 +84,7 @@
   display: block;
   line-height: 1.25;
   text-transform: capitalize;
-  margin-bottom: 4px;
+  margin-bottom: 0px;
   @include mq($width-desktop) {
     font-size: 18px;
     left: 1.11;
