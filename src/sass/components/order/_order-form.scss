@@ -45,8 +45,7 @@
   position: relative;
 }
 
-.form__label--main,
-.form__label--selective {
+.form__label--main {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,10 +61,6 @@
 .form__input:not(:placeholder-shown) + .form__label--main {
   transform: translateY(-20px);
   font-size: 14px;
-}
-
-.form__list::-webkit-calendar-picker-indicator {
-  opacity: 1;
 }
 
 .form__input {
@@ -89,7 +84,7 @@
   display: block;
   line-height: 1.25;
   text-transform: capitalize;
-  margin-bottom: 4px;
+  margin-bottom: 0px;
   @include mq($width-desktop) {
     font-size: 18px;
     left: 1.11;
@@ -282,25 +277,142 @@
   }
 }
 
-.order-form__overlay {
+.order-gallery {
+  display: none;
   @include mq($width-desktop) {
-    display: block;
-    z-index: -1;
-    background-image: url(../images/order/desktop/order-form-image.jpg);
-    width: 598px;
-    height: 454px;
-    background-size: 598px 454px;
+    display: flex;
+    justify-content: end;
 
     position: absolute;
-    bottom: -7px;
-    right: 45px;
+    bottom: 85px;
+    right: 145px;
+  }
+}
+.order-gallery__list {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 529px;
+  height: 293px;
+  gap: 10px;
+}
+.order-gallery__item1 {
+  width: 150px;
+  height: 145px;
+  background-image: url(../images/order/desktop/mozjpeg/decor-img.jpg);
+  border-top-right-radius: 50%;
+  box-shadow: 20px 20px 80px #00000040;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 290%;
+    background-image: url(../images/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
+.order-gallery__item2 {
+  width: 150px;
+  height: 145px;
+  background-image: url(../images/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: top;
+  border-bottom-left-radius: 50%;
+  box-shadow: 20px 20px 80px #00000040;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-size: 290%;
+    background-image: url(../images/order/desktop/mozjpeg/decor-img@2x.jpg);
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .order-form__overlay {
-    background-image: url(../images/order/desktop/order-form-image@2x.jpg);
+.order-gallery__item3 {
+  width: 150px;
+  height: 145px;
+  background-image: url(../images/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: top right;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: 20px 20px 80px #00000040;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-size: 290%;
+    background-image: url(../images/order/desktop/mozjpeg/decor-img@2x.jpg);
   }
 }
+.order-gallery__item4 {
+  width: 150px;
+  height: 145px;
+  background-image: url(../images/order/desktop/mozjpeg/decor-img.jpg);
+  border-top-right-radius: 72px;
+  background-position: bottom left;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  box-shadow: 20px 20px 80px #00000040;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-size: 290%;
+    background-image: url(../images/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
+.order-gallery__item5 {
+  width: 150px;
+  height: 145px;
+  background-image: url(../images/order/desktop/mozjpeg/decor-img.jpg);
+  border-top-right-radius: 50%;
+  background-position: bottom;
+  border-radius: 50%;
+  box-shadow: 20px 20px 80px #00000040;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-size: 290%;
+    background-image: url(../images/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
+.order-gallery__item6 {
+  width: 150px;
+  height: 145px;
+  background-image: url(../images/order/desktop/mozjpeg/decor-img.jpg);
+  border-top-right-radius: 50%;
+  background-position: bottom right;
+  border-bottom-right-radius: 50%;
+  box-shadow: 20px 20px 80px #00000040;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-size: 290%;
+    background-image: url(../images/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
+
+// .order-form__overlay {
+//   @include mq($width-desktop) {
+//     display: block;
+//     z-index: -1;
+//     background-image: url(../images/order/desktop/order-form-image.jpg);
+//     width: 598px;
+//     height: 454px;
+//     background-size: 598px 454px;
+
+//     position: absolute;
+//     bottom: -7px;
+//     right: 45px;
+//   }
+// }
+
+// @media screen and (min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .order-form__overlay {
+//     background-image: url(../images/order/desktop/order-form-image@2x.jpg);
+//   }
+// }

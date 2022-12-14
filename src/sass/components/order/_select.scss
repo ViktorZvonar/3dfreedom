@@ -1,0 +1,87 @@
+// select
+
+$accent-color: #487996;
+$main-color: #2b2b2b;
+$background-color: #ffffff;
+
+.select {
+  position: relative;
+
+  width: 100%;
+  margin-bottom: 44px;
+}
+
+.select__button {
+  display: block;
+  width: 100%;
+  min-height: 24px;
+  padding: 0 20px 0 0;
+
+  text-align: start;
+  border: 0;
+  border-bottom: 1px solid $accent-color;
+  color: $main-color;
+  background-color: inherit;
+
+  @include font(16px, 20px, null, 400);
+  cursor: pointer;
+
+  @include mq($width-desktop) {
+    @include font(18px, 20px, null, 400);
+  }
+}
+
+.select__button_active {
+  outline: none;
+}
+
+.select__list {
+  z-index: 1;
+  position: absolute;
+  background-color: $background-color;
+
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  transform: translateY(-50px);
+
+  .select__button:focus + & {
+    width: 100%;
+    border-bottom: 1px solid $accent-color;
+  }
+}
+
+.select__list_visible {
+  display: flex;
+  transform: translateY(0px);
+}
+
+.select__item {
+  font-size: 14px;
+  cursor: pointer;
+  &:focus,
+  &:hover {
+    background-color: rgba(72, 121, 150, 0.5);
+    color: $background-color;
+    outline: none;
+  }
+}
+
+.select-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translateY(10%);
+
+  .form-field__select:focus + & {
+    transform: rotate(180deg);
+  }
+
+  .select__list_visible ~ & {
+    transform: rotate(180deg);
+  }
+}
